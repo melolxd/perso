@@ -1,0 +1,2885 @@
+tourney_name,winner_name,loser_name,score
+Wimbledon,Jannik Sinner(1),Carlos Alcaraz(2),score_simulé
+Wimbledon,Jannik Sinner(1),Novak Djokovic(6),score_simulé
+Wimbledon,Carlos Alcaraz(2),Taylor Fritz(5),score_simulé
+Wimbledon,Jannik Sinner(1),Ben Shelton(10),score_simulé
+Wimbledon,Novak Djokovic(6),Flavio Cobolli(22),score_simulé
+Wimbledon,Carlos Alcaraz(2),Cameron Norrie,score_simulé
+Wimbledon,Taylor Fritz(5),Karen Khachanov(17),score_simulé
+Wimbledon,Jannik Sinner(1),Grigor Dimitrov(19),score_simulé
+Wimbledon,Novak Djokovic(6),Alex de Minaur(11),score_simulé
+Wimbledon,Ben Shelton(10),Lorenzo Sonego,score_simulé
+Wimbledon,Flavio Cobolli(22),Marin Cilic,score_simulé
+Wimbledon,Carlos Alcaraz(2),Andrey Rublev(14),score_simulé
+Wimbledon,Taylor Fritz(5),Jordan Thompson,score_simulé
+Wimbledon,Karen Khachanov(17),Kamil Majchrzak,score_simulé
+Wimbledon,Cameron Norrie,Nicolas Jarry(Q),score_simulé
+Wimbledon,Jannik Sinner(1),Pedro Martinez,score_simulé
+Wimbledon,Novak Djokovic(6),Miomir Kecmanovic,score_simulé
+Wimbledon,Ben Shelton(10),Marton Fucsovics(LL),score_simulé
+Wimbledon,Alex de Minaur(11),August Holmgren(Q),score_simulé
+Wimbledon,Flavio Cobolli(22),Jakub Mensik(15),score_simulé
+Wimbledon,Grigor Dimitrov(19),Sebastian Ofner,score_simulé
+Wimbledon,Lorenzo Sonego,Brandon Nakashima(29),score_simulé
+Wimbledon,Marin Cilic,Jaume Munar,score_simulé
+Wimbledon,Carlos Alcaraz(2),Jan-Lennard Struff,score_simulé
+Wimbledon,Taylor Fritz(5),Alejandro Davidovich Fokina(26),score_simulé
+Wimbledon,Andrey Rublev(14),Adrian Mannarino(Q),score_simulé
+Wimbledon,Karen Khachanov(17),Nuno Borges,score_simulé
+Wimbledon,Nicolas Jarry(Q),Joao Fonseca,score_simulé
+Wimbledon,Kamil Majchrzak,Arthur Rinderknech,score_simulé
+Wimbledon,Cameron Norrie,Mattia Bellucci,score_simulé
+Wimbledon,Jordan Thompson,Luciano Darderi,score_simulé
+Wimbledon,Jannik Sinner(1),Aleksandar Vukic,score_simulé
+Wimbledon,Marin Cilic,Jack Draper(4),score_simulé
+Wimbledon,Novak Djokovic(6),Daniel Evans(WC),score_simulé
+Wimbledon,Ben Shelton(10),Rinky Hijikata,score_simulé
+Wimbledon,Alex de Minaur(11),Arthur Cazaux(Q),score_simulé
+Wimbledon,Sebastian Ofner,Tommy Paul(13),score_simulé
+Wimbledon,Jakub Mensik(15),Marcos Giron,score_simulé
+Wimbledon,Grigor Dimitrov(19),Corentin Moutet,score_simulé
+Wimbledon,August Holmgren(Q),Tomas Machac(21),score_simulé
+Wimbledon,Flavio Cobolli(22),Jack Pinnington Jones(WC),score_simulé
+Wimbledon,Brandon Nakashima(29),Reilly Opelka,score_simulé
+Wimbledon,Marton Fucsovics(LL),Gael Monfils,score_simulé
+Wimbledon,Miomir Kecmanovic,Jesper de Jong,score_simulé
+Wimbledon,Pedro Martinez,Mariano Navone,score_simulé
+Wimbledon,Jaume Munar,Fabian Marozsan,score_simulé
+Wimbledon,Lorenzo Sonego,Nikoloz Basilashvili(Q),score_simulé
+Wimbledon,Carlos Alcaraz(2),Oliver Tarvet(Q),score_simulé
+Wimbledon,Taylor Fritz(5),Gabriel Diallo,score_simulé
+Wimbledon,Cameron Norrie,Frances Tiafoe(12),score_simulé
+Wimbledon,Andrey Rublev(14),Lloyd Harris,score_simulé
+Wimbledon,Karen Khachanov(17),Shintaro Mochizuki(Q),score_simulé
+Wimbledon,Mattia Bellucci,Jiri Lehecka(23),score_simulé
+Wimbledon,Jan-Lennard Struff,Felix Auger-Aliassime(25),score_simulé
+Wimbledon,Alejandro Davidovich Fokina(26),Botic van de Zandschulp,score_simulé
+Wimbledon,Nuno Borges,Billy Harris,score_simulé
+Wimbledon,Luciano Darderi,Arthur Fery(WC),score_simulé
+Wimbledon,Joao Fonseca,Jenson Brooksby,score_simulé
+Wimbledon,Nicolas Jarry(Q),Learner Tien,score_simulé
+Wimbledon,Kamil Majchrzak,Ethan Quinn,score_simulé
+Wimbledon,Adrian Mannarino(Q),Valentin Royer(Q),score_simulé
+Wimbledon,Arthur Rinderknech,Cristian Garin(LL),score_simulé
+Wimbledon,Jordan Thompson,Benjamin Bonzi,score_simulé
+Wimbledon,Jannik Sinner(1),Luca Nardi,score_simulé
+Wimbledon,Jack Draper(4),Sebastian Baez,score_simulé
+Wimbledon,Novak Djokovic(6),Alexandre Muller,score_simulé
+Wimbledon,Nikoloz Basilashvili(Q),Lorenzo Musetti(7),score_simulé
+Wimbledon,Ben Shelton(10),Alex Bolt(Q),score_simulé
+Wimbledon,Alex de Minaur(11),Roberto Carballes Baena,score_simulé
+Wimbledon,Tommy Paul(13),Johannus Monday(WC),score_simulé
+Wimbledon,Jakub Mensik(15),Hugo Gaston,score_simulé
+Wimbledon,Gael Monfils,Ugo Humbert(18),score_simulé
+Wimbledon,Grigor Dimitrov(19),Yoshihito Nishioka,score_simulé
+Wimbledon,Tomas Machac(21),Damir Dzumhur,score_simulé
+Wimbledon,Flavio Cobolli(22),Beibit Zhukayev(Q),score_simulé
+Wimbledon,Mariano Navone,Denis Shapovalov(27),score_simulé
+Wimbledon,Jaume Munar,Alexander Bublik(28),score_simulé
+Wimbledon,Brandon Nakashima(29),Yunchaokete Bu,score_simulé
+Wimbledon,Miomir Kecmanovic,Alex Michelsen(30),score_simulé
+Wimbledon,Arthur Cazaux(Q),Adam Walton,score_simulé
+Wimbledon,Marin Cilic,Raphael Collignon,score_simulé
+Wimbledon,Jesper de Jong,Christopher Eubanks,score_simulé
+Wimbledon,Daniel Evans(WC),Jay Clarke(WC),score_simulé
+Wimbledon,Marton Fucsovics(LL),Aleksandar Kovacevic,score_simulé
+Wimbledon,Marcos Giron,Camilo Ugo Carabelli,score_simulé
+Wimbledon,Rinky Hijikata,David Goffin,score_simulé
+Wimbledon,August Holmgren(Q),Quentin Halys,score_simulé
+Wimbledon,Fabian Marozsan,James McCabe(Q),score_simulé
+Wimbledon,Pedro Martinez,George Loffhagen(WC),score_simulé
+Wimbledon,Corentin Moutet,Francisco Comesana,score_simulé
+Wimbledon,Sebastian Ofner,Hamad Medjedovic,score_simulé
+Wimbledon,Reilly Opelka,Alexander Shevchenko,score_simulé
+Wimbledon,Jack Pinnington Jones(WC),Tomas Martin Etcheverry,score_simulé
+Wimbledon,Lorenzo Sonego,Jaime Faria(Q),score_simulé
+Wimbledon,Aleksandar Vukic,Chun-Hsin Tseng,score_simulé
+Wimbledon,Carlos Alcaraz(2),Fabio Fognini,score_simulé
+Wimbledon,Arthur Rinderknech,Alexander Zverev(3),score_simulé
+Wimbledon,Taylor Fritz(5),Giovanni Mpetshi Perricard,score_simulé
+Wimbledon,Nicolas Jarry(Q),Holger Rune(8),score_simulé
+Wimbledon,Benjamin Bonzi,Daniil Medvedev(9),score_simulé
+Wimbledon,Frances Tiafoe(12),Elmer Moller,score_simulé
+Wimbledon,Andrey Rublev(14),Laslo Djere,score_simulé
+Wimbledon,Nuno Borges,Francisco Cerundolo(16),score_simulé
+Wimbledon,Karen Khachanov(17),Mackenzie McDonald,score_simulé
+Wimbledon,Arthur Fery(WC),Alexei Popyrin(20),score_simulé
+Wimbledon,Jiri Lehecka(23),Hugo Dellien,score_simulé
+Wimbledon,Valentin Royer(Q),Stefanos Tsitsipas(24),score_simulé
+Wimbledon,Felix Auger-Aliassime(25),James Duckworth,score_simulé
+Wimbledon,Alejandro Davidovich Fokina(26),Brandon Holt,score_simulé
+Wimbledon,Jenson Brooksby,Tallon Griekspoor(31),score_simulé
+Wimbledon,Kamil Majchrzak,Matteo Berrettini(32),score_simulé
+Wimbledon,Mattia Bellucci,Oliver Crawford(WC),score_simulé
+Wimbledon,Luciano Darderi,Roman Safiullin,score_simulé
+Wimbledon,Gabriel Diallo,Daniel Altmaier,score_simulé
+Wimbledon,Joao Fonseca,Jacob Fearnley,score_simulé
+Wimbledon,Cristian Garin(LL),Chris Rodesch(Q),score_simulé
+Wimbledon,Billy Harris,Dusan Lajovic(LL),score_simulé
+Wimbledon,Lloyd Harris,Zizou Bergs,score_simulé
+Wimbledon,Adrian Mannarino(Q),Christopher O'Connell,score_simulé
+Wimbledon,Shintaro Mochizuki(Q),Giulio Zeppieri(Q),score_simulé
+Wimbledon,Cameron Norrie,Roberto Bautista Agut,score_simulé
+Wimbledon,Ethan Quinn,Henry Searle(WC),score_simulé
+Wimbledon,Jan-Lennard Struff,Filip Misolic(Q),score_simulé
+Wimbledon,Oliver Tarvet(Q),Leandro Riedi(Q),score_simulé
+Wimbledon,Jordan Thompson,Vit Kopriva,score_simulé
+Wimbledon,Learner Tien,Nishesh Basavareddy,score_simulé
+Wimbledon,Botic van de Zandschulp,Matteo Arnaldi,score_simulé
+Wimbledon,Chris Rodesch,Marton Fucsovics(1),score_simulé
+Wimbledon,James McCabe,Tomas Barrios Vera(5),score_simulé
+Wimbledon,Valentin Royer(6),Titouan Droguet,score_simulé
+Wimbledon,Arthur Cazaux(7),Dusan Lajovic(26),score_simulé
+Wimbledon,Giulio Zeppieri,Cristian Garin(8),score_simulé
+Wimbledon,Jaime Faria(11),Kyrian Jacquet,score_simulé
+Wimbledon,Nikoloz Basilashvili(16),Juan Pablo Ficovich,score_simulé
+Wimbledon,Adrian Mannarino(18),Li Tu,score_simulé
+Wimbledon,Oliver Tarvet(WC),Alexander Blockx(29),score_simulé
+Wimbledon,Filip Misolic(30),Benjamin Hassan,score_simulé
+Wimbledon,Nicolas Jarry(32),Lukas Klein,score_simulé
+Wimbledon,Alex Bolt,Martin Landaluce,score_simulé
+Wimbledon,August Holmgren,Yosuke Watanuki,score_simulé
+Wimbledon,Shintaro Mochizuki,Dominic Stricker,score_simulé
+Wimbledon,Leandro Riedi,Hamish Stewart(WC),score_simulé
+Wimbledon,Beibit Zhukayev,Luka Pavlovic,score_simulé
+Wimbledon,Marton Fucsovics(1),Zachary Svajda,score_simulé
+Wimbledon,Benjamin Hassan,Tristan Schoolkate(2),score_simulé
+Wimbledon,Tomas Barrios Vera(5),Henrique Rocha,score_simulé
+Wimbledon,Valentin Royer(6),Yasutaka Uchiyama,score_simulé
+Wimbledon,Arthur Cazaux(7),Ugo Blanchet,score_simulé
+Wimbledon,Cristian Garin(8),Hady Habib,score_simulé
+Wimbledon,Alex Bolt,Eliot Spizzirri(10),score_simulé
+Wimbledon,Jaime Faria(11),Marco Trungelliti,score_simulé
+Wimbledon,Dominic Stricker,Emilio Nava(13),score_simulé
+Wimbledon,Lukas Klein,Dalibor Svrcina(15),score_simulé
+Wimbledon,Nikoloz Basilashvili(16),Coleman Wong,score_simulé
+Wimbledon,Adrian Mannarino(18),Nicolai Budkov Kjaer(WC),score_simulé
+Wimbledon,James McCabe,Roman Andres Burruchaga(21),score_simulé
+Wimbledon,Kyrian Jacquet,Vilius Gaubas(22),score_simulé
+Wimbledon,Leandro Riedi,Federico Agustin Gomez(24),score_simulé
+Wimbledon,Dusan Lajovic(26),Arthur Bouquier,score_simulé
+Wimbledon,Beibit Zhukayev,Yannick Hanfmann(27),score_simulé
+Wimbledon,Alexander Blockx(29),Timofey Skatov,score_simulé
+Wimbledon,Filip Misolic(30),Gauthier Onclin,score_simulé
+Wimbledon,Nicolas Jarry(32),Jozef Kovalik,score_simulé
+Wimbledon,Titouan Droguet,Taro Daniel,score_simulé
+Wimbledon,Juan Pablo Ficovich,Oliver Bonding(WC),score_simulé
+Wimbledon,August Holmgren,Mikhail Kukushkin,score_simulé
+Wimbledon,Martin Landaluce,Ryan Peniston(WC),score_simulé
+Wimbledon,Shintaro Mochizuki,Felipe Meligeni Alves,score_simulé
+Wimbledon,Luka Pavlovic,James Trotter,score_simulé
+Wimbledon,Chris Rodesch,Mark Lajal,score_simulé
+Wimbledon,Hamish Stewart(WC),Luca Van Assche,score_simulé
+Wimbledon,Oliver Tarvet(WC),Alexis Galarneau,score_simulé
+Wimbledon,Li Tu,Sho Shimabukuro,score_simulé
+Wimbledon,Yosuke Watanuki,Colton Smith,score_simulé
+Wimbledon,Giulio Zeppieri,Paul Jubb(WC),score_simulé
+Wimbledon,Marton Fucsovics(1),Jurij Rodionov,score_simulé
+Wimbledon,Tristan Schoolkate(2),Facundo Diaz Acosta,score_simulé
+Wimbledon,Luca Van Assche,Juan Manuel Cerundolo(3),score_simulé
+Wimbledon,Li Tu,Daniel Elahi Galan(4),score_simulé
+Wimbledon,Tomas Barrios Vera(5),James Story(WC),score_simulé
+Wimbledon,Valentin Royer(6),Marc-Andrea Huesler,score_simulé
+Wimbledon,Arthur Cazaux(7),Ignacio Buse,score_simulé
+Wimbledon,Cristian Garin(8),Francesco Maestrelli,score_simulé
+Wimbledon,Luka Pavlovic,Tristan Boyer(9),score_simulé
+Wimbledon,Eliot Spizzirri(10),Alejandro Moro Canas,score_simulé
+Wimbledon,Jaime Faria(11),Zsombor Piros,score_simulé
+Wimbledon,Mikhail Kukushkin,Thiago Seyboth Wild(12),score_simulé
+Wimbledon,Emilio Nava(13),Mitchell Krueger,score_simulé
+Wimbledon,Oliver Tarvet(WC),Terence Atmane(14),score_simulé
+Wimbledon,Dalibor Svrcina(15),Omar Jasika,score_simulé
+Wimbledon,Nikoloz Basilashvili(16),Pablo Llamas Ruiz,score_simulé
+Wimbledon,Shintaro Mochizuki,Pierre-Hugues Herbert(17),score_simulé
+Wimbledon,Adrian Mannarino(18),Andrea Collarini,score_simulé
+Wimbledon,Paul Jubb(WC),Thiago Agustin Tirante(19),score_simulé
+Wimbledon,Juan Pablo Ficovich,Carlos Taberner(20),score_simulé
+Wimbledon,Roman Andres Burruchaga(21),Dmitry Popko,score_simulé
+Wimbledon,Vilius Gaubas(22),Yuta Shimizu,score_simulé
+Wimbledon,Chris Rodesch,Matteo Gigante(23),score_simulé
+Wimbledon,Federico Agustin Gomez(24),Federico Arnaboldi,score_simulé
+Wimbledon,Titouan Droguet,Andrea Pellegrino(25),score_simulé
+Wimbledon,Dusan Lajovic(26),Liam Draxl,score_simulé
+Wimbledon,Yannick Hanfmann(27),Hugo Grenier,score_simulé
+Wimbledon,Yosuke Watanuki,Thiago Monteiro(28),score_simulé
+Wimbledon,Alexander Blockx(29),Facundo Mena,score_simulé
+Wimbledon,Filip Misolic(30),Guy Den Ouden,score_simulé
+Wimbledon,Martin Landaluce,Francesco Passaro(31),score_simulé
+Wimbledon,Nicolas Jarry(32),Pavel Kotov,score_simulé
+Wimbledon,Ugo Blanchet,Daniel Rincon,score_simulé
+Wimbledon,Alex Bolt,Harold Mayot,score_simulé
+Wimbledon,Oliver Bonding(WC),Viktor Durasovic(Alt),score_simulé
+Wimbledon,Arthur Bouquier,Alastair Gray(WC),score_simulé
+Wimbledon,Nicolai Budkov Kjaer(WC),Yan Bai,score_simulé
+Wimbledon,Taro Daniel,Edas Butvilas,score_simulé
+Wimbledon,Alexis Galarneau,Murphy Cassone,score_simulé
+Wimbledon,Hady Habib,Filip Cristian Jianu,score_simulé
+Wimbledon,Benjamin Hassan,Duje Ajdukovic,score_simulé
+Wimbledon,August Holmgren,Giles Hussey(WC),score_simulé
+Wimbledon,Kyrian Jacquet,Maximilian Marterer,score_simulé
+Wimbledon,Lukas Klein,Jerome Kym,score_simulé
+Wimbledon,Jozef Kovalik,Antoine Escoffier,score_simulé
+Wimbledon,Mark Lajal,Jan Choinski,score_simulé
+Wimbledon,James McCabe,Borna Gojo,score_simulé
+Wimbledon,Felipe Meligeni Alves,Alvaro Guillen Meza,score_simulé
+Wimbledon,Gauthier Onclin,Constant Lestienne,score_simulé
+Wimbledon,Ryan Peniston(WC),Facundo Bagnis,score_simulé
+Wimbledon,Leandro Riedi,Fajing Sun,score_simulé
+Wimbledon,Henrique Rocha,Murkel Dellien,score_simulé
+Wimbledon,Sho Shimabukuro,Aziz Dougaz,score_simulé
+Wimbledon,Timofey Skatov,Stefano Napolitano,score_simulé
+Wimbledon,Colton Smith,Santiago Rodriguez Taverna,score_simulé
+Wimbledon,Hamish Stewart(WC),Valentin Vacherot,score_simulé
+Wimbledon,Dominic Stricker,Saba Purtseladze,score_simulé
+Wimbledon,Zachary Svajda,Lukas Neumayer,score_simulé
+Wimbledon,James Trotter,Calvin Hemery,score_simulé
+Wimbledon,Marco Trungelliti,Alibek Kachmazov,score_simulé
+Wimbledon,Yasutaka Uchiyama,Gijs Brouwer,score_simulé
+Wimbledon,Coleman Wong,Pol Martin Tiffon,score_simulé
+Wimbledon,Giulio Zeppieri,Sumit Nagal,score_simulé
+Wimbledon,Beibit Zhukayev,Vitaliy Sachko,score_simulé
+Roland Garros,Carlos Alcaraz(2),Jannik Sinner(1),score_simulé
+Roland Garros,Jannik Sinner(1),Novak Djokovic(6),score_simulé
+Roland Garros,Carlos Alcaraz(2),Lorenzo Musetti(8),score_simulé
+Roland Garros,Jannik Sinner(1),Alexander Bublik,score_simulé
+Roland Garros,Novak Djokovic(6),Alexander Zverev(3),score_simulé
+Roland Garros,Carlos Alcaraz(2),Tommy Paul(12),score_simulé
+Roland Garros,Lorenzo Musetti(8),Frances Tiafoe(15),score_simulé
+Roland Garros,Jannik Sinner(1),Andrey Rublev(17),score_simulé
+Roland Garros,Alexander Zverev(3),Tallon Griekspoor,score_simulé
+Roland Garros,Alexander Bublik,Jack Draper(5),score_simulé
+Roland Garros,Novak Djokovic(6),Cameron Norrie,score_simulé
+Roland Garros,Carlos Alcaraz(2),Ben Shelton(13),score_simulé
+Roland Garros,Lorenzo Musetti(8),Holger Rune(10),score_simulé
+Roland Garros,Tommy Paul(12),Alexei Popyrin(25),score_simulé
+Roland Garros,Frances Tiafoe(15),Daniel Altmaier,score_simulé
+Roland Garros,Jannik Sinner(1),Jiri Lehecka,score_simulé
+Roland Garros,Alexander Zverev(3),Flavio Cobolli,score_simulé
+Roland Garros,Jack Draper(5),Joao Fonseca,score_simulé
+Roland Garros,Novak Djokovic(6),Filip Misolic(Q),score_simulé
+Roland Garros,Andrey Rublev(17),Arthur Fils(14),score_simulé
+Roland Garros,Alexander Bublik,Henrique Rocha(Q),score_simulé
+Roland Garros,Tallon Griekspoor,Ethan Quinn(Q),score_simulé
+Roland Garros,Cameron Norrie,Jacob Fearnley,score_simulé
+Roland Garros,Carlos Alcaraz(2),Damir Dzumhur,score_simulé
+Roland Garros,Lorenzo Musetti(8),Mariano Navone,score_simulé
+Roland Garros,Holger Rune(10),Quentin Halys,score_simulé
+Roland Garros,Tommy Paul(12),Karen Khachanov(24),score_simulé
+Roland Garros,Ben Shelton(13),Matteo Gigante(Q),score_simulé
+Roland Garros,Frances Tiafoe(15),Sebastian Korda(23),score_simulé
+Roland Garros,Alexei Popyrin(25),Nuno Borges,score_simulé
+Roland Garros,Daniel Altmaier,Hamad Medjedovic,score_simulé
+Roland Garros,Jannik Sinner(1),Richard Gasquet(WC),score_simulé
+Roland Garros,Alexander Zverev(3),Jesper de Jong,score_simulé
+Roland Garros,Jack Draper(5),Gael Monfils,score_simulé
+Roland Garros,Novak Djokovic(6),Corentin Moutet,score_simulé
+Roland Garros,Alexander Bublik,Alex de Minaur(9),score_simulé
+Roland Garros,Arthur Fils(14),Jaume Munar,score_simulé
+Roland Garros,Andrey Rublev(17),Adam Walton,score_simulé
+Roland Garros,Henrique Rocha(Q),Jakub Mensik(19),score_simulé
+Roland Garros,Jacob Fearnley,Ugo Humbert(22),score_simulé
+Roland Garros,Jiri Lehecka,Alejandro Davidovich Fokina(26),score_simulé
+Roland Garros,Filip Misolic(Q),Denis Shapovalov(27),score_simulé
+Roland Garros,Flavio Cobolli,Matteo Arnaldi,score_simulé
+Roland Garros,Joao Fonseca,Pierre-Hugues Herbert(WC),score_simulé
+Roland Garros,Tallon Griekspoor,Gabriel Diallo,score_simulé
+Roland Garros,Cameron Norrie,Federico Agustin Gomez(LL),score_simulé
+Roland Garros,Ethan Quinn(Q),Alexander Shevchenko(LL),score_simulé
+Roland Garros,Carlos Alcaraz(2),Fabian Marozsan,score_simulé
+Roland Garros,Nuno Borges,Casper Ruud(7),score_simulé
+Roland Garros,Lorenzo Musetti(8),Daniel Elahi Galan(LL),score_simulé
+Roland Garros,Holger Rune(10),Emilio Nava(WC),score_simulé
+Roland Garros,Tommy Paul(12),Marton Fucsovics,score_simulé
+Roland Garros,Ben Shelton(13),Hugo Gaston,score_simulé
+Roland Garros,Frances Tiafoe(15),Pablo Carreno Busta,score_simulé
+Roland Garros,Matteo Gigante(Q),Stefanos Tsitsipas(20),score_simulé
+Roland Garros,Sebastian Korda(23),Jenson Brooksby,score_simulé
+Roland Garros,Karen Khachanov(24),Sebastian Ofner,score_simulé
+Roland Garros,Alexei Popyrin(25),Alejandro Tabilo,score_simulé
+Roland Garros,Damir Dzumhur,Giovanni Mpetshi Perricard(31),score_simulé
+Roland Garros,Daniel Altmaier,Vit Kopriva,score_simulé
+Roland Garros,Quentin Halys,Miomir Kecmanovic,score_simulé
+Roland Garros,Hamad Medjedovic,Juan Manuel Cerundolo(Q),score_simulé
+Roland Garros,Mariano Navone,Reilly Opelka,score_simulé
+Roland Garros,Alexander Zverev(3),Learner Tien,score_simulé
+Roland Garros,Jack Draper(5),Mattia Bellucci,score_simulé
+Roland Garros,Novak Djokovic(6),Mackenzie McDonald,score_simulé
+Roland Garros,Alex de Minaur(9),Laslo Djere,score_simulé
+Roland Garros,Cameron Norrie,Daniil Medvedev(11),score_simulé
+Roland Garros,Ethan Quinn(Q),Grigor Dimitrov(16),score_simulé
+Roland Garros,Andrey Rublev(17),Lloyd Harris(Q),score_simulé
+Roland Garros,Jakub Mensik(19),Alexandre Muller,score_simulé
+Roland Garros,Matteo Arnaldi,Felix Auger-Aliassime(29),score_simulé
+Roland Garros,Joao Fonseca,Hubert Hurkacz(30),score_simulé
+Roland Garros,Alexander Bublik,James Duckworth,score_simulé
+Roland Garros,Flavio Cobolli,Marin Cilic(LL),score_simulé
+Roland Garros,Jesper de Jong,Francesco Passaro,score_simulé
+Roland Garros,Federico Agustin Gomez(LL),Aleksandar Kovacevic,score_simulé
+Roland Garros,Pierre-Hugues Herbert(WC),Benjamin Bonzi,score_simulé
+Roland Garros,Gael Monfils,Hugo Dellien,score_simulé
+Roland Garros,Corentin Moutet,Clement Tabur(Q),score_simulé
+Roland Garros,Henrique Rocha(Q),Nikoloz Basilashvili(Q),score_simulé
+Roland Garros,Alexander Shevchenko(LL),Dusan Lajovic,score_simulé
+Roland Garros,Adam Walton,Maximilian Marterer(Q),score_simulé
+Roland Garros,Jannik Sinner(1),Arthur Rinderknech,score_simulé
+Roland Garros,Carlos Alcaraz(2),Giulio Zeppieri(Q),score_simulé
+Roland Garros,Daniel Altmaier,Taylor Fritz(4),score_simulé
+Roland Garros,Casper Ruud(7),Albert Ramos-Vinolas(Q),score_simulé
+Roland Garros,Holger Rune(10),Roberto Bautista Agut,score_simulé
+Roland Garros,Arthur Fils(14),Nicolas Jarry,score_simulé
+Roland Garros,Gabriel Diallo,Francisco Cerundolo(18),score_simulé
+Roland Garros,Stefanos Tsitsipas(20),Tomas Martin Etcheverry,score_simulé
+Roland Garros,Ugo Humbert(22),Christopher O'Connell,score_simulé
+Roland Garros,Sebastian Korda(23),Luciano Darderi,score_simulé
+Roland Garros,Karen Khachanov(24),Aleksandar Vukic,score_simulé
+Roland Garros,Alexei Popyrin(25),Yoshihito Nishioka,score_simulé
+Roland Garros,Alejandro Davidovich Fokina(26),Pablo Llamas Ruiz(Q),score_simulé
+Roland Garros,Denis Shapovalov(27),Pedro Martinez,score_simulé
+Roland Garros,Jacob Fearnley,Stan Wawrinka(WC),score_simulé
+Roland Garros,Richard Gasquet(WC),Terence Atmane(WC),score_simulé
+Roland Garros,Hugo Gaston,Ugo Blanchet(Q),score_simulé
+Roland Garros,Tallon Griekspoor,Marcos Giron,score_simulé
+Roland Garros,Miomir Kecmanovic,Sebastian Baez,score_simulé
+Roland Garros,Jiri Lehecka,Jordan Thompson,score_simulé
+Roland Garros,Filip Misolic(Q),Yunchaokete Bu,score_simulé
+Roland Garros,Jaume Munar,Camilo Ugo Carabelli,score_simulé
+Roland Garros,Sebastian Ofner,Jan-Lennard Struff,score_simulé
+Roland Garros,Alejandro Tabilo,Arthur Cazaux(WC),score_simulé
+Roland Garros,Lorenzo Musetti(8),Yannick Hanfmann(Q),score_simulé
+Roland Garros,Tommy Paul(12),Elmer Moller(LL),score_simulé
+Roland Garros,Ben Shelton(13),Lorenzo Sonego,score_simulé
+Roland Garros,Frances Tiafoe(15),Roman Safiullin,score_simulé
+Roland Garros,Quentin Halys,Tomas Machac(21),score_simulé
+Roland Garros,Mariano Navone,Brandon Nakashima(28),score_simulé
+Roland Garros,Giovanni Mpetshi Perricard(31),Zizou Bergs,score_simulé
+Roland Garros,Juan Manuel Cerundolo(Q),Alex Michelsen(32),score_simulé
+Roland Garros,Nuno Borges,Kyrian Jacquet(Q),score_simulé
+Roland Garros,Jenson Brooksby,Jaime Faria,score_simulé
+Roland Garros,Pablo Carreno Busta,Francisco Comesana,score_simulé
+Roland Garros,Damir Dzumhur,Thiago Agustin Tirante(LL),score_simulé
+Roland Garros,Marton Fucsovics,Tristan Schoolkate(WC),score_simulé
+Roland Garros,Daniel Elahi Galan(LL),Valentin Royer(WC),score_simulé
+Roland Garros,Matteo Gigante(Q),Benjamin Hassan(Q),score_simulé
+Roland Garros,Vit Kopriva,Thiago Monteiro,score_simulé
+Roland Garros,Fabian Marozsan,Luca Nardi,score_simulé
+Roland Garros,Hamad Medjedovic,Kamil Majchrzak,score_simulé
+Roland Garros,Emilio Nava(WC),Botic van de Zandschulp,score_simulé
+Roland Garros,Reilly Opelka,Rinky Hijikata,score_simulé
+Roland Garros,Filip Misolic,Alexander Shevchenko(2),score_simulé
+Roland Garros,Lloyd Harris,Marin Cilic(8),score_simulé
+Roland Garros,Juan Manuel Cerundolo(12),Daniel Elahi Galan(18),score_simulé
+Roland Garros,Yannick Hanfmann(19),Titouan Droguet,score_simulé
+Roland Garros,Giulio Zeppieri,Federico Agustin Gomez(29),score_simulé
+Roland Garros,Nikoloz Basilashvili,Geoffrey Blancaneaux(WC),score_simulé
+Roland Garros,Ugo Blanchet,Lukas Klein,score_simulé
+Roland Garros,Benjamin Hassan,James Trotter,score_simulé
+Roland Garros,Maximilian Marterer,Federico Arnaboldi,score_simulé
+Roland Garros,Henrique Rocha,Luca Van Assche,score_simulé
+Roland Garros,Clement Tabur(WC),Filip Cristian Jianu,score_simulé
+Roland Garros,Matteo Gigante,Elmer Moller(10),score_simulé
+Roland Garros,Ethan Quinn(11),Thiago Agustin Tirante(24),score_simulé
+Roland Garros,Kyrian Jacquet,Jurij Rodionov,score_simulé
+Roland Garros,Pablo Llamas Ruiz,Vilius Gaubas,score_simulé
+Roland Garros,Albert Ramos-Vinolas,Andrea Collarini,score_simulé
+Roland Garros,Marin Cilic(8),Pol Martin Tiffon,score_simulé
+Roland Garros,Juan Manuel Cerundolo(12),Hady Habib,score_simulé
+Roland Garros,Henrique Rocha,Tomas Barrios Vera(13),score_simulé
+Roland Garros,Giulio Zeppieri,Eliot Spizzirri(15),score_simulé
+Roland Garros,Daniel Elahi Galan(18),Dmitry Popko,score_simulé
+Roland Garros,Yannick Hanfmann(19),Matteo Martineau(WC),score_simulé
+Roland Garros,Lloyd Harris,Otto Virtanen(23),score_simulé
+Roland Garros,Federico Agustin Gomez(29),Martin Landaluce,score_simulé
+Roland Garros,Maximilian Marterer,Federico Coria(30),score_simulé
+Roland Garros,Nikoloz Basilashvili,Valentin Vacherot,score_simulé
+Roland Garros,Ugo Blanchet,Cristian Garin,score_simulé
+Roland Garros,Titouan Droguet,Arthur Gea(WC),score_simulé
+Roland Garros,Filip Cristian Jianu,Henri Squire,score_simulé
+Roland Garros,Lukas Klein,Nicolas Moreno De Alboran,score_simulé
+Roland Garros,Clement Tabur(WC),Daniel Evans,score_simulé
+Roland Garros,Luca Van Assche,Timofey Skatov,score_simulé
+Roland Garros,Alexander Shevchenko(2),Mathys Erhard(WC),score_simulé
+Roland Garros,Elmer Moller(10),Kimmer Coppejans,score_simulé
+Roland Garros,Ethan Quinn(11),Bernard Tomic,score_simulé
+Roland Garros,Geoffrey Blancaneaux(WC),Thiago Seyboth Wild(14),score_simulé
+Roland Garros,Vilius Gaubas,Tristan Boyer(16),score_simulé
+Roland Garros,Pablo Llamas Ruiz,Dalibor Svrcina(22),score_simulé
+Roland Garros,Thiago Agustin Tirante(24),August Holmgren,score_simulé
+Roland Garros,Albert Ramos-Vinolas,Roman Andres Burruchaga(25),score_simulé
+Roland Garros,Federico Arnaboldi,Michael Mmoh,score_simulé
+Roland Garros,Andrea Collarini,Alvaro Guillen Meza,score_simulé
+Roland Garros,Matteo Gigante,Zachary Svajda,score_simulé
+Roland Garros,Benjamin Hassan,Sascha Gueymard Wayenburg(WC),score_simulé
+Roland Garros,Kyrian Jacquet,Stefano Napolitano,score_simulé
+Roland Garros,Filip Misolic,Lukas Neumayer,score_simulé
+Roland Garros,Jurij Rodionov,Sumit Nagal,score_simulé
+Roland Garros,James Trotter,Jason Kubler,score_simulé
+Roland Garros,Titouan Droguet,Borna Coric(1),score_simulé
+Roland Garros,Federico Arnaboldi,Chun-Hsin Tseng(4),score_simulé
+Roland Garros,Daniel Evans,Billy Harris(6),score_simulé
+Roland Garros,Marin Cilic(8),Yibing Wu,score_simulé
+Roland Garros,Jurij Rodionov,Christopher Eubanks(9),score_simulé
+Roland Garros,Juan Manuel Cerundolo(12),Gauthier Onclin,score_simulé
+Roland Garros,Tomas Barrios Vera(13),Luka Pavlovic,score_simulé
+Roland Garros,Thiago Seyboth Wild(14),Yasutaka Uchiyama,score_simulé
+Roland Garros,Eliot Spizzirri(15),Hugo Grenier,score_simulé
+Roland Garros,Henri Squire,Felipe Meligeni Alves(17),score_simulé
+Roland Garros,Daniel Elahi Galan(18),Omar Jasika,score_simulé
+Roland Garros,Luca Van Assche,Adrian Mannarino(20),score_simulé
+Roland Garros,Otto Virtanen(23),Antoine Escoffier,score_simulé
+Roland Garros,Valentin Vacherot,Carlos Taberner(28),score_simulé
+Roland Garros,Filip Misolic,Liam Draxl(31),score_simulé
+Roland Garros,Cristian Garin,Harold Mayot(32),score_simulé
+Roland Garros,Nikoloz Basilashvili,Gijs Brouwer,score_simulé
+Roland Garros,Geoffrey Blancaneaux(WC),Mikhail Kukushkin,score_simulé
+Roland Garros,Ugo Blanchet,Chris Rodesch,score_simulé
+Roland Garros,Arthur Gea(WC),Alexander Blockx,score_simulé
+Roland Garros,Hady Habib,Facundo Mena,score_simulé
+Roland Garros,Lloyd Harris,Marc-Andrea Huesler,score_simulé
+Roland Garros,Filip Cristian Jianu,Jozef Kovalik,score_simulé
+Roland Garros,Pol Martin Tiffon,Moise Kouame(WC),score_simulé
+Roland Garros,Michael Mmoh,Calvin Hemery,score_simulé
+Roland Garros,Sumit Nagal,Mitchell Krueger,score_simulé
+Roland Garros,Lukas Neumayer,Marco Trungelliti,score_simulé
+Roland Garros,Dmitry Popko,Aziz Dougaz,score_simulé
+Roland Garros,Henrique Rocha,Robin Bertrand(WC),score_simulé
+Roland Garros,Timofey Skatov,Alibek Kachmazov,score_simulé
+Roland Garros,Clement Tabur(WC),Li Tu,score_simulé
+Roland Garros,Giulio Zeppieri,Jan Choinski,score_simulé
+Roland Garros,Alexander Shevchenko(2),Shintaro Mochizuki,score_simulé
+Roland Garros,Andrea Collarini,Nishesh Basavareddy(3),score_simulé
+Roland Garros,James Trotter,Brandon Holt(5),score_simulé
+Roland Garros,Nicolas Moreno De Alboran,Fabio Fognini(7),score_simulé
+Roland Garros,Elmer Moller(10),Facundo Bagnis,score_simulé
+Roland Garros,Ethan Quinn(11),Mark Lajal,score_simulé
+Roland Garros,Tristan Boyer(16),Daniel Rincon,score_simulé
+Roland Garros,Yannick Hanfmann(19),Ignacio Buse,score_simulé
+Roland Garros,Matteo Gigante,Jerome Kym(21),score_simulé
+Roland Garros,Dalibor Svrcina(22),Gregoire Barrere,score_simulé
+Roland Garros,Thiago Agustin Tirante(24),Juan Pablo Ficovich,score_simulé
+Roland Garros,Roman Andres Burruchaga(25),Constant Lestienne,score_simulé
+Roland Garros,Benjamin Hassan,Pavel Kotov(26),score_simulé
+Roland Garros,Kyrian Jacquet,Taro Daniel(27),score_simulé
+Roland Garros,Federico Agustin Gomez(29),Mae Malige(WC),score_simulé
+Roland Garros,Federico Coria(30),Arthur Bouquier,score_simulé
+Roland Garros,Kimmer Coppejans,Yuta Shimizu,score_simulé
+Roland Garros,Mathys Erhard(WC),James McCabe,score_simulé
+Roland Garros,Vilius Gaubas,Duje Ajdukovic,score_simulé
+Roland Garros,Sascha Gueymard Wayenburg(WC),Tim van Rijthoven,score_simulé
+Roland Garros,Alvaro Guillen Meza,Rodrigo Pacheco Mendez,score_simulé
+Roland Garros,August Holmgren,Murphy Cassone,score_simulé
+Roland Garros,Lukas Klein,Guy Den Ouden,score_simulé
+Roland Garros,Jason Kubler,Alejandro Moro Canas,score_simulé
+Roland Garros,Martin Landaluce,Murkel Dellien,score_simulé
+Roland Garros,Pablo Llamas Ruiz,Alex Bolt,score_simulé
+Roland Garros,Maximilian Marterer,Edas Butvilas,score_simulé
+Roland Garros,Matteo Martineau(WC),Alexis Galarneau,score_simulé
+Roland Garros,Stefano Napolitano,Colton Smith,score_simulé
+Roland Garros,Albert Ramos-Vinolas,Khumoyun Sultanov,score_simulé
+Roland Garros,Zachary Svajda,Beibit Zhukayev,score_simulé
+Roland Garros,Bernard Tomic,Coleman Wong,score_simulé
+Gstaad,Alexander Bublik(2),Juan Manuel Cerundolo,score_simulé
+Gstaad,Alexander Bublik(2),Arthur Cazaux,score_simulé
+Gstaad,Juan Manuel Cerundolo,Ignacio Buse(Q),score_simulé
+Gstaad,Juan Manuel Cerundolo,Casper Ruud(1),score_simulé
+Gstaad,Alexander Bublik(2),Francisco Comesana(7),score_simulé
+Gstaad,Ignacio Buse(Q),Roman Andres Burruchaga,score_simulé
+Gstaad,Arthur Cazaux,Jerome Kym(WC),score_simulé
+Gstaad,Alexander Bublik(2),Alexander Shevchenko,score_simulé
+Gstaad,Arthur Cazaux,Tomas Martin Etcheverry(4),score_simulé
+Gstaad,Francisco Comesana(7),Roberto Carballes Baena,score_simulé
+Gstaad,Jerome Kym(WC),Francesco Passaro(Q),score_simulé
+Gstaad,Casper Ruud(1),Dominic Stricker(WC),score_simulé
+Gstaad,Juan Manuel Cerundolo,David Goffin(6/WC),score_simulé
+Gstaad,Roman Andres Burruchaga,Patrick Zahraj(LL),score_simulé
+Gstaad,Ignacio Buse(Q),Kamil Majchrzak,score_simulé
+Gstaad,David Goffin(6/WC),Martin Landaluce(NG),score_simulé
+Gstaad,Francisco Comesana(7),Marco Trungelliti(Q),score_simulé
+Gstaad,Francesco Passaro(Q),Arthur Rinderknech(8),score_simulé
+Gstaad,Roberto Carballes Baena,Carlos Taberner,score_simulé
+Gstaad,Juan Manuel Cerundolo,Jan-Lennard Struff,score_simulé
+Gstaad,Jerome Kym(WC),Calvin Hemery(Q),score_simulé
+Gstaad,Alexander Shevchenko,Stan Wawrinka,score_simulé
+Gstaad,Ignacio Buse(Q),Laslo Djere(5),score_simulé
+Gstaad,Roman Andres Burruchaga,Dalibor Svrcina,score_simulé
+Gstaad,Arthur Cazaux,Nikoloz Basilashvili,score_simulé
+Gstaad,Kamil Majchrzak,Terence Atmane,score_simulé
+Gstaad,Dominic Stricker(WC),Pierre-Hugues Herbert,score_simulé
+Gstaad,Francesco Passaro(1),Gonzalo Bueno(Alt),score_simulé
+Gstaad,Marco Trungelliti(3),Henry Bernet(WC),score_simulé
+Gstaad,Ignacio Buse(4),Patrick Zahraj,score_simulé
+Gstaad,Calvin Hemery,Facundo Bagnis(PR),score_simulé
+Gstaad,Francesco Passaro(1),Mika Brunold(WC),score_simulé
+Gstaad,Calvin Hemery,Yannick Hanfmann(2),score_simulé
+Gstaad,Marco Trungelliti(3),Alexander Ritschard,score_simulé
+Gstaad,Ignacio Buse(4),Albert Ramos-Vinolas,score_simulé
+Gstaad,Patrick Zahraj,Henrique Rocha(5),score_simulé
+Gstaad,Gonzalo Bueno(Alt),Marc-Andrea Huesler(6),score_simulé
+Gstaad,Facundo Bagnis(PR),Coleman Wong(7),score_simulé
+Gstaad,Henry Bernet(WC),Dmitry Popko(8),score_simulé
+Marseille,Ugo Humbert(2),Hamad Medjedovic,score_simulé
+Marseille,Hamad Medjedovic,Daniil Medvedev(1/WC),score_simulé
+Marseille,Ugo Humbert(2),Zizou Bergs,score_simulé
+Marseille,Daniil Medvedev(1/WC),Jan-Lennard Struff,score_simulé
+Marseille,Ugo Humbert(2),Lorenzo Sonego(7),score_simulé
+Marseille,Zizou Bergs,Zhizhen Zhang,score_simulé
+Marseille,Hamad Medjedovic,Daniel Altmaier,score_simulé
+Marseille,Daniil Medvedev(1/WC),Pierre-Hugues Herbert(Q),score_simulé
+Marseille,Zhizhen Zhang,Hubert Hurkacz(4),score_simulé
+Marseille,Zizou Bergs,Nuno Borges(8),score_simulé
+Marseille,Jan-Lennard Struff,Hugo Grenier(Q),score_simulé
+Marseille,Ugo Humbert(2),Alexander Bublik,score_simulé
+Marseille,Hamad Medjedovic,Karen Khachanov(3),score_simulé
+Marseille,Lorenzo Sonego(7),Luca Van Assche(LL),score_simulé
+Marseille,Daniel Altmaier,Otto Virtanen,score_simulé
+Marseille,Hugo Grenier(Q),Arthur Gea(Q),score_simulé
+Marseille,Pierre-Hugues Herbert(Q),Harold Mayot,score_simulé
+Marseille,Nuno Borges(8),Stan Wawrinka(WC),score_simulé
+Marseille,Daniel Altmaier,Luca Nardi,score_simulé
+Marseille,Zizou Bergs,Clement Chidekh(Q),score_simulé
+Marseille,Alexander Bublik,Richard Gasquet(WC),score_simulé
+Marseille,Jan-Lennard Struff,Manuel Guinard(LL),score_simulé
+Marseille,Luca Van Assche(LL),Benjamin Bonzi,score_simulé
+Marseille,Zhizhen Zhang,Quentin Halys,score_simulé
+Marseille,Otto Virtanen,Sebastian Korda(5),score_simulé
+Marseille,Lorenzo Sonego(7),Botic van de Zandschulp,score_simulé
+Marseille,Hamad Medjedovic,Raphael Collignon(Alt),score_simulé
+Marseille,Hugo Grenier,Lukas Klein(5),score_simulé
+Marseille,Clement Chidekh,Luca Van Assche(6),score_simulé
+Marseille,Pierre-Hugues Herbert(8),Manuel Guinard(WC),score_simulé
+Marseille,Arthur Gea(WC),Yosuke Watanuki(PR),score_simulé
+Marseille,Manuel Guinard(WC),Kamil Majchrzak(1),score_simulé
+Marseille,Yosuke Watanuki(PR),Jozef Kovalik(2),score_simulé
+Marseille,Clement Chidekh,Martin Landaluce(3),score_simulé
+Marseille,Hugo Grenier,Matteo Gigante(4),score_simulé
+Marseille,Lukas Klein(5),Alibek Kachmazov,score_simulé
+Marseille,Luca Van Assche(6),Matteo Martineau(Alt),score_simulé
+Marseille,Arthur Gea(WC),Henri Squire(7),score_simulé
+Marseille,Pierre-Hugues Herbert(8),Calvin Hemery,score_simulé
+Rome,Carlos Alcaraz(3),Jannik Sinner(1),score_simulé
+Rome,Jannik Sinner(1),Tommy Paul(11),score_simulé
+Rome,Carlos Alcaraz(3),Lorenzo Musetti(8),score_simulé
+Rome,Jannik Sinner(1),Casper Ruud(6),score_simulé
+Rome,Tommy Paul(11),Hubert Hurkacz(30),score_simulé
+Rome,Lorenzo Musetti(8),Alexander Zverev(2),score_simulé
+Rome,Carlos Alcaraz(3),Jack Draper(5),score_simulé
+Rome,Casper Ruud(6),Jaume Munar,score_simulé
+Rome,Jannik Sinner(1),Francisco Cerundolo(17),score_simulé
+Rome,Alexander Zverev(2),Arthur Fils(13),score_simulé
+Rome,Carlos Alcaraz(3),Karen Khachanov(23),score_simulé
+Rome,Jack Draper(5),Corentin Moutet,score_simulé
+Rome,Tommy Paul(11),Alex de Minaur(7),score_simulé
+Rome,Lorenzo Musetti(8),Daniil Medvedev(10),score_simulé
+Rome,Hubert Hurkacz(30),Jakub Mensik(20),score_simulé
+Rome,Jannik Sinner(1),Jesper de Jong(LL),score_simulé
+Rome,Casper Ruud(6),Matteo Berrettini(29),score_simulé
+Rome,Alex de Minaur(7),Hugo Dellien(LL),score_simulé
+Rome,Tommy Paul(11),Tomas Machac(19),score_simulé
+Rome,Francisco Cerundolo(17),Sebastian Ofner(Q),score_simulé
+Rome,Jakub Mensik(20),Fabian Marozsan,score_simulé
+Rome,Jaume Munar,Sebastian Korda(22),score_simulé
+Rome,Hubert Hurkacz(30),Marcos Giron,score_simulé
+Rome,Alexander Zverev(2),Vilius Gaubas(Q),score_simulé
+Rome,Carlos Alcaraz(3),Laslo Djere,score_simulé
+Rome,Jack Draper(5),Vit Kopriva(Q),score_simulé
+Rome,Lorenzo Musetti(8),Brandon Nakashima(28),score_simulé
+Rome,Corentin Moutet,Holger Rune(9),score_simulé
+Rome,Daniil Medvedev(10),Alexei Popyrin(24),score_simulé
+Rome,Arthur Fils(13),Stefanos Tsitsipas(18),score_simulé
+Rome,Karen Khachanov(23),Francesco Passaro(WC),score_simulé
+Rome,Jannik Sinner(1),Mariano Navone,score_simulé
+Rome,Marcos Giron,Taylor Fritz(4),score_simulé
+Rome,Casper Ruud(6),Alexander Bublik,score_simulé
+Rome,Alex de Minaur(7),Luca Nardi(WC),score_simulé
+Rome,Tommy Paul(11),Roberto Bautista Agut,score_simulé
+Rome,Jaume Munar,Ben Shelton(12),score_simulé
+Rome,Sebastian Ofner(Q),Frances Tiafoe(15),score_simulé
+Rome,Fabian Marozsan,Andrey Rublev(16),score_simulé
+Rome,Francisco Cerundolo(17),Nicolas Jarry,score_simulé
+Rome,Tomas Machac(19),Learner Tien,score_simulé
+Rome,Jakub Mensik(20),Matteo Gigante(WC),score_simulé
+Rome,Sebastian Korda(22),Aleksandar Vukic,score_simulé
+Rome,Jesper de Jong(LL),Alejandro Davidovich Fokina(25),score_simulé
+Rome,Matteo Berrettini(29),Jacob Fearnley,score_simulé
+Rome,Hubert Hurkacz(30),Pedro Martinez,score_simulé
+Rome,Hugo Dellien(LL),Thiago Seyboth Wild(Q),score_simulé
+Rome,Alexander Zverev(2),Camilo Ugo Carabelli,score_simulé
+Rome,Carlos Alcaraz(3),Dusan Lajovic(Q),score_simulé
+Rome,Jack Draper(5),Luciano Darderi,score_simulé
+Rome,Lorenzo Musetti(8),Otto Virtanen(Q),score_simulé
+Rome,Holger Rune(9),Francisco Comesana,score_simulé
+Rome,Daniil Medvedev(10),Cameron Norrie(LL),score_simulé
+Rome,Arthur Fils(13),Tallon Griekspoor,score_simulé
+Rome,Francesco Passaro(WC),Grigor Dimitrov(14),score_simulé
+Rome,Stefanos Tsitsipas(18),Alexandre Muller,score_simulé
+Rome,Corentin Moutet,Ugo Humbert(21),score_simulé
+Rome,Karen Khachanov(23),Roman Andres Burruchaga(Q),score_simulé
+Rome,Alexei Popyrin(24),Carlos Taberner(Q),score_simulé
+Rome,Vilius Gaubas(Q),Denis Shapovalov(27),score_simulé
+Rome,Brandon Nakashima(28),Jordan Thompson,score_simulé
+Rome,Laslo Djere,Alex Michelsen(31),score_simulé
+Rome,Vit Kopriva(Q),Sebastian Baez(32),score_simulé
+Rome,Roberto Bautista Agut,Matteo Arnaldi,score_simulé
+Rome,Alexander Bublik,Roman Safiullin,score_simulé
+Rome,Jesper de Jong(LL),Alexander Shevchenko(Q),score_simulé
+Rome,Jacob Fearnley,Fabio Fognini(WC),score_simulé
+Rome,Matteo Gigante(WC),Arthur Rinderknech,score_simulé
+Rome,Marcos Giron,Gabriel Diallo,score_simulé
+Rome,Nicolas Jarry,Hugo Gaston,score_simulé
+Rome,Fabian Marozsan,Joao Fonseca,score_simulé
+Rome,Pedro Martinez,Mattia Bellucci,score_simulé
+Rome,Jaume Munar,Tomas Barrios Vera(Q),score_simulé
+Rome,Luca Nardi(WC),Flavio Cobolli,score_simulé
+Rome,Mariano Navone,Federico Cina(WC),score_simulé
+Rome,Sebastian Ofner(Q),Roberto Carballes Baena,score_simulé
+Rome,Thiago Seyboth Wild(Q),Nuno Borges,score_simulé
+Rome,Learner Tien,Reilly Opelka(PR),score_simulé
+Rome,Aleksandar Vukic,Nicolas Moreno De Alboran(Q),score_simulé
+Rome,Roman Andres Burruchaga(Q),Lorenzo Sonego,score_simulé
+Rome,Francisco Comesana,Daniel Altmaier,score_simulé
+Rome,Luciano Darderi,Yunchaokete Bu,score_simulé
+Rome,Laslo Djere,Tomas Martin Etcheverry,score_simulé
+Rome,Vilius Gaubas(Q),Damir Dzumhur,score_simulé
+Rome,Tallon Griekspoor,Miomir Kecmanovic,score_simulé
+Rome,Vit Kopriva(Q),Quentin Halys,score_simulé
+Rome,Dusan Lajovic(Q),Yoshihito Nishioka,score_simulé
+Rome,Corentin Moutet,Rinky Hijikata,score_simulé
+Rome,Alexandre Muller,Jiri Lehecka,score_simulé
+Rome,Cameron Norrie(LL),Christopher O'Connell,score_simulé
+Rome,Francesco Passaro(WC),Chun-Hsin Tseng(Q),score_simulé
+Rome,Carlos Taberner(Q),Aleksandar Kovacevic,score_simulé
+Rome,Jordan Thompson,Giovanni Mpetshi Perricard,score_simulé
+Rome,Camilo Ugo Carabelli,Pablo Carreno Busta(LL),score_simulé
+Rome,Otto Virtanen(Q),Hamad Medjedovic,score_simulé
+Rome,Dusan Lajovic,Cameron Norrie(3),score_simulé
+Rome,Alexander Shevchenko(4),Marton Fucsovics,score_simulé
+Rome,Thiago Seyboth Wild(14),Jesper de Jong(5),score_simulé
+Rome,Vit Kopriva(7),Nishesh Basavareddy(13),score_simulé
+Rome,Roman Andres Burruchaga,Pablo Carreno Busta(8),score_simulé
+Rome,Chun-Hsin Tseng(9),Juan Manuel Cerundolo(24),score_simulé
+Rome,Vilius Gaubas,Hugo Dellien(10),score_simulé
+Rome,Carlos Taberner,Jaime Faria(12),score_simulé
+Rome,Tomas Barrios Vera,Valentin Royer(17),score_simulé
+Rome,Sebastian Ofner,Yannick Hanfmann(21),score_simulé
+Rome,Nicolas Moreno De Alboran,Giulio Zeppieri(WC),score_simulé
+Rome,Otto Virtanen,Federico Arnaboldi(WC),score_simulé
+Rome,Nicolas Moreno De Alboran,Raphael Collignon(1),score_simulé
+Rome,Sebastian Ofner,Kamil Majchrzak(2),score_simulé
+Rome,Cameron Norrie(3),Jacopo Vasami(WC),score_simulé
+Rome,Alexander Shevchenko(4),Juan Pablo Ficovich,score_simulé
+Rome,Jesper de Jong(5),Harold Mayot,score_simulé
+Rome,Federico Arnaboldi(WC),Thiago Monteiro(6),score_simulé
+Rome,Vit Kopriva(7),Dalibor Svrcina,score_simulé
+Rome,Pablo Carreno Busta(8),Thiago Agustin Tirante,score_simulé
+Rome,Chun-Hsin Tseng(9),Gabriele Piraino(WC),score_simulé
+Rome,Hugo Dellien(10),Marc-Andrea Huesler,score_simulé
+Rome,Tomas Barrios Vera,Billy Harris(11),score_simulé
+Rome,Jaime Faria(12),Jerome Kym,score_simulé
+Rome,Nishesh Basavareddy(13),Mitchell Krueger,score_simulé
+Rome,Thiago Seyboth Wild(14),Pierluigi Basile(WC),score_simulé
+Rome,Roman Andres Burruchaga,Daniel Elahi Galan(15),score_simulé
+Rome,Valentin Royer(17),Federico Agustin Gomez,score_simulé
+Rome,Dusan Lajovic,Ethan Quinn(18),score_simulé
+Rome,Otto Virtanen,Tristan Boyer(19),score_simulé
+Rome,Giulio Zeppieri(WC),Pavel Kotov(20),score_simulé
+Rome,Yannick Hanfmann(21),Taro Daniel,score_simulé
+Rome,Carlos Taberner,Adrian Mannarino(22),score_simulé
+Rome,Vilius Gaubas,Eliot Spizzirri(23),score_simulé
+Rome,Juan Manuel Cerundolo(24),Pierre-Hugues Herbert,score_simulé
+Rome,Marton Fucsovics,Stefano Napolitano(Alt),score_simulé
+Montpellier,Felix Auger-Aliassime(2),Aleksandar Kovacevic(Q),score_simulé
+Montpellier,Aleksandar Kovacevic(Q),Andrey Rublev(1/WC),score_simulé
+Montpellier,Felix Auger-Aliassime(2),Jesper de Jong,score_simulé
+Montpellier,Andrey Rublev(1/WC),Nikoloz Basilashvili(Q),score_simulé
+Montpellier,Felix Auger-Aliassime(2),Yunchaokete Bu(8),score_simulé
+Montpellier,Aleksandar Kovacevic(Q),Alexander Bublik(4),score_simulé
+Montpellier,Jesper de Jong,Tallon Griekspoor(5),score_simulé
+Montpellier,Jesper de Jong,Flavio Cobolli(3),score_simulé
+Montpellier,Tallon Griekspoor(5),Richard Gasquet,score_simulé
+Montpellier,Nikoloz Basilashvili(Q),Arthur Rinderknech(7),score_simulé
+Montpellier,Aleksandar Kovacevic(Q),Mattia Bellucci,score_simulé
+Montpellier,Andrey Rublev(1/WC),Christopher Eubanks,score_simulé
+Montpellier,Felix Auger-Aliassime(2),Arthur Cazaux,score_simulé
+Montpellier,Alexander Bublik(4),Dominik Koepfer,score_simulé
+Montpellier,Yunchaokete Bu(8),Constant Lestienne(Q),score_simulé
+Montpellier,Aleksandar Kovacevic(Q),David Goffin(6),score_simulé
+Montpellier,Nikoloz Basilashvili(Q),Mikhail Kukushkin,score_simulé
+Montpellier,Jesper de Jong,Quentin Halys(WC),score_simulé
+Montpellier,Tallon Griekspoor(5),Botic van de Zandschulp,score_simulé
+Montpellier,Arthur Rinderknech(7),Harold Mayot,score_simulé
+Montpellier,Mattia Bellucci,Lucas Pouille,score_simulé
+Montpellier,Christopher Eubanks,Alibek Kachmazov(Q),score_simulé
+Montpellier,Richard Gasquet,Adrian Mannarino,score_simulé
+Montpellier,Constant Lestienne(Q),Borna Coric,score_simulé
+Montpellier,Yunchaokete Bu(8),Daniel Altmaier,score_simulé
+Montpellier,Arthur Cazaux,Stan Wawrinka(WC),score_simulé
+Montpellier,Dominik Koepfer,Gregoire Barrere(WC),score_simulé
+Montpellier,Aleksandar Kovacevic(1),Pablo Carreno Busta(7),score_simulé
+Montpellier,Alibek Kachmazov,Hugo Grenier(3),score_simulé
+Montpellier,Constant Lestienne(6),Terence Atmane(4),score_simulé
+Montpellier,Nikoloz Basilashvili,Titouan Droguet(8),score_simulé
+Montpellier,Aleksandar Kovacevic(1),Robin Bertrand(Alt),score_simulé
+Montpellier,Nikoloz Basilashvili,Matteo Gigante(2),score_simulé
+Montpellier,Hugo Grenier(3),Calvin Hemery,score_simulé
+Montpellier,Terence Atmane(4),Clement Chidekh(WC),score_simulé
+Montpellier,Alibek Kachmazov,Alejandro Moro Canas(5),score_simulé
+Montpellier,Constant Lestienne(6),Benoit Paire(WC),score_simulé
+Montpellier,Pablo Carreno Busta(7),Dalibor Svrcina,score_simulé
+Montpellier,Titouan Droguet(8),Valentin Royer,score_simulé
+Munich,Alexander Zverev(1),Ben Shelton(2),score_simulé
+Munich,Alexander Zverev(1),Fabian Marozsan,score_simulé
+Munich,Ben Shelton(2),Francisco Cerundolo(5),score_simulé
+Munich,Alexander Zverev(1),Tallon Griekspoor,score_simulé
+Munich,Ben Shelton(2),Luciano Darderi,score_simulé
+Munich,Francisco Cerundolo(5),David Goffin,score_simulé
+Munich,Fabian Marozsan,Zizou Bergs,score_simulé
+Munich,Fabian Marozsan,Ugo Humbert(4),score_simulé
+Munich,Francisco Cerundolo(5),Alexander Shevchenko(LL),score_simulé
+Munich,Zizou Bergs,Diego Dedura(LL),score_simulé
+Munich,David Goffin,Mariano Navone,score_simulé
+Munich,Alexander Zverev(1),Daniel Altmaier(WC),score_simulé
+Munich,Ben Shelton(2),Botic van de Zandschulp(LL),score_simulé
+Munich,Luciano Darderi,Miomir Kecmanovic,score_simulé
+Munich,Tallon Griekspoor,Yannick Hanfmann(WC),score_simulé
+Munich,Mariano Navone,Felix Auger-Aliassime(3),score_simulé
+Munich,Ugo Humbert(4),Nicolas Jarry,score_simulé
+Munich,Francisco Cerundolo(5),Jan-Lennard Struff,score_simulé
+Munich,Yannick Hanfmann(WC),Jakub Mensik(6),score_simulé
+Munich,Diego Dedura(LL),Denis Shapovalov(8),score_simulé
+Munich,Zizou Bergs,Alexander Bublik(Q),score_simulé
+Munich,Luciano Darderi,Christopher O'Connell(LL),score_simulé
+Munich,Fabian Marozsan,Justin Engel(WC),score_simulé
+Munich,Alexander Shevchenko(LL),Flavio Cobolli,score_simulé
+Munich,Botic van de Zandschulp(LL),Roberto Bautista Agut,score_simulé
+Munich,Alexander Zverev(1),Alexandre Muller,score_simulé
+Munich,Ben Shelton(2),Borna Gojo(Q),score_simulé
+Munich,Daniel Altmaier(WC),Chun-Hsin Tseng(Q),score_simulé
+Munich,David Goffin,Billy Harris(LL),score_simulé
+Munich,Tallon Griekspoor,Learner Tien(Q),score_simulé
+Munich,Miomir Kecmanovic,Marcos Giron,score_simulé
+Munich,Learner Tien(2),Botic van de Zandschulp(7),score_simulé
+Munich,Alexander Bublik(3),Diego Dedura(WC),score_simulé
+Munich,Borna Gojo(PR),Alexander Shevchenko,score_simulé
+Munich,Chun-Hsin Tseng,Billy Harris,score_simulé
+Munich,Learner Tien(2),Henri Squire(WC),score_simulé
+Munich,Alexander Bublik(3),Alexander Ritschard,score_simulé
+Munich,Chun-Hsin Tseng,Christopher O'Connell(4),score_simulé
+Munich,Billy Harris,Aleksandar Vukic(5),score_simulé
+Munich,Alexander Shevchenko,Rinky Hijikata(6),score_simulé
+Munich,Botic van de Zandschulp(7),Max Hans Rehberg(WC),score_simulé
+Munich,Diego Dedura(WC),Mackenzie McDonald(8),score_simulé
+Munich,Borna Gojo(PR),Daniel Masur,score_simulé
+Perth Sydney,Taylor Fritz(1),Hubert Hurkacz(2),score_simulé
+Perth Sydney,Coco Gauff(1),Iga Swiatek(2),score_simulé
+Perth Sydney,Taylor Fritz(1),Tomas Machac(8),score_simulé
+Perth Sydney,Coco Gauff(1),Karolina Muchova(8),score_simulé
+Perth Sydney,Hubert Hurkacz(2),Alexander Shevchenko(9),score_simulé
+Perth Sydney,Iga Swiatek(2),Elena Rybakina(9),score_simulé
+Perth Sydney,Tomas Machac(8),Flavio Cobolli(4),score_simulé
+Perth Sydney,Karolina Muchova(8),Jasmine Paolini(4),score_simulé
+Perth Sydney,Hubert Hurkacz(2),Billy Harris(6),score_simulé
+Perth Sydney,Iga Swiatek(2),Katie Boulter(6),score_simulé
+Perth Sydney,Taylor Fritz(1),Zhizhen Zhang(5),score_simulé
+Perth Sydney,Coco Gauff(1),Shuai Zhang(5),score_simulé
+Perth Sydney,Elena Rybakina(9),Laura Siegemund(11),score_simulé
+Perth Sydney,Alexander Shevchenko(9),Daniel Masur(11),score_simulé
+Perth Sydney,Tomas Machac(8),Hubert Hurkacz(2),score_simulé
+Perth Sydney,Iga Swiatek(2),Karolina Muchova(8),score_simulé
+Perth Sydney,Katie Boulter(6),Olivia Gadecki(12),score_simulé
+Perth Sydney,Alex de Minaur(12),Billy Harris(6),score_simulé
+Perth Sydney,Taylor Fritz(1),Borna Coric(18),score_simulé
+Perth Sydney,Coco Gauff(1),Donna Vekic(18),score_simulé
+Perth Sydney,Flavio Cobolli(4),Ugo Humbert(10),score_simulé
+Perth Sydney,Jasmine Paolini(4),Chloe Paquet(10),score_simulé
+Perth Sydney,Casper Ruud(15),Hubert Hurkacz(2),score_simulé
+Perth Sydney,Iga Swiatek(2),Malene Helgo(15),score_simulé
+Perth Sydney,Elena Rybakina(9),Maria Sakkari(3),score_simulé
+Perth Sydney,Alexander Shevchenko(9),Stefanos Tsitsipas(3),score_simulé
+Perth Sydney,Xinyu Gao(5),Laura Siegemund(11),score_simulé
+Perth Sydney,Alexander Zverev(11),Zhizhen Zhang(5),score_simulé
+Perth Sydney,Katie Boulter(6),Nadia Podoroska(17),score_simulé
+Perth Sydney,Tomas Martin Etcheverry(17),Billy Harris(6),score_simulé
+Perth Sydney,Felix Auger-Aliassime(7),Taylor Fritz(1),score_simulé
+Perth Sydney,Coco Gauff(1),Leylah Fernandez(7),score_simulé
+Perth Sydney,Flavio Cobolli(4),Dominic Stricker(16),score_simulé
+Perth Sydney,Jasmine Paolini(4),Belinda Bencic(16),score_simulé
+Perth Sydney,Karolina Muchova(8),Malene Helgo(15),score_simulé
+Perth Sydney,Casper Ruud(15),Tomas Machac(8),score_simulé
+Perth Sydney,Laura Siegemund(11),Beatriz Haddad Maia(13),score_simulé
+Perth Sydney,Alexander Zverev(11),Thiago Monteiro(13),score_simulé
+Perth Sydney,Jessica Bouzas Maneiro(14),Maria Sakkari(3),score_simulé
+Perth Sydney,Stefanos Tsitsipas(3),Pablo Carreno Busta(14),score_simulé
+Perth Sydney,Borna Coric(18),Felix Auger-Aliassime(7),score_simulé
+Perth Sydney,Leylah Fernandez(7),Donna Vekic(18),score_simulé
+Perth Sydney,Belinda Bencic(16),Chloe Paquet(10),score_simulé
+Perth Sydney,Ugo Humbert(10),Dominic Stricker(16),score_simulé
+Perth Sydney,Alex de Minaur(12),Tomas Martin Etcheverry(17),score_simulé
+Perth Sydney,Nadia Podoroska(17),Olivia Gadecki(12),score_simulé
+Perth Sydney,Xinyu Gao(5),Beatriz Haddad Maia(13),score_simulé
+Perth Sydney,Zhizhen Zhang(5),Thiago Monteiro(13),score_simulé
+Perth Sydney,Pablo Carreno Busta(14),Alexander Shevchenko(9),score_simulé
+Perth Sydney,Elena Rybakina(9),Jessica Bouzas Maneiro(14),score_simulé
+Monte Carlo,Carlos Alcaraz(2),Lorenzo Musetti(13),score_simulé
+Monte Carlo,Carlos Alcaraz(2),Alejandro Davidovich Fokina,score_simulé
+Monte Carlo,Lorenzo Musetti(13),Alex de Minaur(8),score_simulé
+Monte Carlo,Carlos Alcaraz(2),Arthur Fils(12),score_simulé
+Monte Carlo,Lorenzo Musetti(13),Stefanos Tsitsipas(6),score_simulé
+Monte Carlo,Alex de Minaur(8),Grigor Dimitrov(15),score_simulé
+Monte Carlo,Alejandro Davidovich Fokina,Alexei Popyrin,score_simulé
+Monte Carlo,Carlos Alcaraz(2),Daniel Altmaier(Q),score_simulé
+Monte Carlo,Alexei Popyrin,Casper Ruud(4),score_simulé
+Monte Carlo,Alejandro Davidovich Fokina,Jack Draper(5),score_simulé
+Monte Carlo,Stefanos Tsitsipas(6),Nuno Borges,score_simulé
+Monte Carlo,Arthur Fils(12),Andrey Rublev(7),score_simulé
+Monte Carlo,Alex de Minaur(8),Daniil Medvedev(9),score_simulé
+Monte Carlo,Lorenzo Musetti(13),Matteo Berrettini,score_simulé
+Monte Carlo,Grigor Dimitrov(15),Alejandro Tabilo,score_simulé
+Monte Carlo,Carlos Alcaraz(2),Francisco Cerundolo,score_simulé
+Monte Carlo,Alejandro Tabilo,Novak Djokovic(3),score_simulé
+Monte Carlo,Casper Ruud(4),Roberto Bautista Agut,score_simulé
+Monte Carlo,Andrey Rublev(7),Gael Monfils,score_simulé
+Monte Carlo,Alex de Minaur(8),Tomas Machac,score_simulé
+Monte Carlo,Daniil Medvedev(9),Alexandre Muller,score_simulé
+Monte Carlo,Arthur Fils(12),Flavio Cobolli,score_simulé
+Monte Carlo,Lorenzo Musetti(13),Jiri Lehecka,score_simulé
+Monte Carlo,Alexei Popyrin,Frances Tiafoe(14),score_simulé
+Monte Carlo,Grigor Dimitrov(15),Valentin Vacherot(WC),score_simulé
+Monte Carlo,Daniel Altmaier(Q),Richard Gasquet(WC),score_simulé
+Monte Carlo,Nuno Borges,Pedro Martinez,score_simulé
+Monte Carlo,Alejandro Davidovich Fokina,Tomas Martin Etcheverry,score_simulé
+Monte Carlo,Matteo Berrettini,Alexander Zverev(1),score_simulé
+Monte Carlo,Jack Draper(5),Marcos Giron,score_simulé
+Monte Carlo,Stefanos Tsitsipas(6),Jordan Thompson,score_simulé
+Monte Carlo,Nuno Borges,Holger Rune(10),score_simulé
+Monte Carlo,Arthur Fils(12),Tallon Griekspoor,score_simulé
+Monte Carlo,Frances Tiafoe(14),Miomir Kecmanovic,score_simulé
+Monte Carlo,Grigor Dimitrov(15),Nicolas Jarry,score_simulé
+Monte Carlo,Roberto Bautista Agut,Brandon Nakashima,score_simulé
+Monte Carlo,Flavio Cobolli,Dusan Lajovic(Q),score_simulé
+Monte Carlo,Tomas Martin Etcheverry,Corentin Moutet(Q),score_simulé
+Monte Carlo,Tomas Machac,Sebastian Baez,score_simulé
+Monte Carlo,Pedro Martinez,Lorenzo Sonego,score_simulé
+Monte Carlo,Alexei Popyrin,Ugo Humbert,score_simulé
+Monte Carlo,Daniil Medvedev(9),Karen Khachanov,score_simulé
+Monte Carlo,Alejandro Davidovich Fokina,Ben Shelton(11),score_simulé
+Monte Carlo,Lorenzo Musetti(13),Yunchaokete Bu(Q),score_simulé
+Monte Carlo,Daniel Altmaier(Q),Felix Auger-Aliassime(16),score_simulé
+Monte Carlo,Matteo Berrettini,Mariano Navone(Q),score_simulé
+Monte Carlo,Francisco Cerundolo,Fabio Fognini(WC),score_simulé
+Monte Carlo,Marcos Giron,Denis Shapovalov,score_simulé
+Monte Carlo,Jiri Lehecka,Sebastian Korda,score_simulé
+Monte Carlo,Gael Monfils,Fabian Marozsan(Q),score_simulé
+Monte Carlo,Alexandre Muller,Camilo Ugo Carabelli(Q),score_simulé
+Monte Carlo,Alejandro Tabilo,Stan Wawrinka(WC),score_simulé
+Monte Carlo,Richard Gasquet(WC),Matteo Arnaldi,score_simulé
+Monte Carlo,Jordan Thompson,Giovanni Mpetshi Perricard,score_simulé
+Monte Carlo,Valentin Vacherot(WC),Jan-Lennard Struff,score_simulé
+Monte Carlo,Corentin Moutet(12),David Goffin(2),score_simulé
+Monte Carlo,Mariano Navone(4),Arthur Rinderknech(11),score_simulé
+Monte Carlo,Camilo Ugo Carabelli(6),Hamad Medjedovic(10),score_simulé
+Monte Carlo,Yunchaokete Bu(8),Albert Ramos-Vinolas(WC),score_simulé
+Monte Carlo,Fabian Marozsan,Mattia Bellucci(9),score_simulé
+Monte Carlo,Daniel Altmaier,Pierre-Hugues Herbert(WC),score_simulé
+Monte Carlo,Dusan Lajovic(WC),Laslo Djere,score_simulé
+Monte Carlo,Fabian Marozsan,Zizou Bergs(1),score_simulé
+Monte Carlo,David Goffin(2),Yannick Hanfmann,score_simulé
+Monte Carlo,Daniel Altmaier,Jaume Munar(3),score_simulé
+Monte Carlo,Mariano Navone(4),Chun-Hsin Tseng(Alt),score_simulé
+Monte Carlo,Albert Ramos-Vinolas(WC),Benjamin Bonzi(5),score_simulé
+Monte Carlo,Camilo Ugo Carabelli(6),Hugo Gaston,score_simulé
+Monte Carlo,Laslo Djere,Francisco Comesana(7),score_simulé
+Monte Carlo,Yunchaokete Bu(8),Nicolai Budkov Kjaer(WC),score_simulé
+Monte Carlo,Mattia Bellucci(9),Cameron Norrie,score_simulé
+Monte Carlo,Hamad Medjedovic(10),Borna Gojo(PR),score_simulé
+Monte Carlo,Arthur Rinderknech(11),Luca Nardi,score_simulé
+Monte Carlo,Corentin Moutet(12),Gabriel Diallo,score_simulé
+Monte Carlo,Pierre-Hugues Herbert(WC),Aleksandar Vukic(13),score_simulé
+Monte Carlo,Dusan Lajovic(WC),Alexander Bublik(14),score_simulé
+Houston,Jenson Brooksby(Q),Frances Tiafoe(2),score_simulé
+Houston,Jenson Brooksby(Q),Tommy Paul(1),score_simulé
+Houston,Frances Tiafoe(2),Brandon Nakashima(4),score_simulé
+Houston,Tommy Paul(1),Colton Smith(Q),score_simulé
+Houston,Frances Tiafoe(2),Alex Michelsen(5),score_simulé
+Houston,Brandon Nakashima(4),Christopher Eubanks,score_simulé
+Houston,Jenson Brooksby(Q),Aleksandar Kovacevic,score_simulé
+Houston,Frances Tiafoe(2),Adam Walton,score_simulé
+Houston,Brandon Nakashima(4),Mackenzie McDonald,score_simulé
+Houston,Alex Michelsen(5),Adrian Mannarino(LL),score_simulé
+Houston,Christopher Eubanks,Kei Nishikori(8),score_simulé
+Houston,Tommy Paul(1),Cristian Garin(WC),score_simulé
+Houston,Jenson Brooksby(Q),Alejandro Tabilo(3),score_simulé
+Houston,Aleksandar Kovacevic,Corentin Denolly(Q),score_simulé
+Houston,Colton Smith(Q),Ethan Quinn(WC),score_simulé
+Houston,Ethan Quinn(WC),Jordan Thompson(6),score_simulé
+Houston,Kei Nishikori(8),Mitchell Krueger(Q),score_simulé
+Houston,Christopher Eubanks,Rinky Hijikata,score_simulé
+Houston,Adrian Mannarino(LL),Yannick Hanfmann,score_simulé
+Houston,Mackenzie McDonald,Daniel Elahi Galan,score_simulé
+Houston,Colton Smith(Q),James Duckworth,score_simulé
+Houston,Adam Walton,Michael Mmoh(WC),score_simulé
+Houston,Alex Michelsen(5),Learner Tien,score_simulé
+Houston,Aleksandar Kovacevic,Tomas Martin Etcheverry(7),score_simulé
+Houston,Jenson Brooksby(Q),Taro Daniel,score_simulé
+Houston,Corentin Denolly(Q),Brandon Holt,score_simulé
+Houston,Cristian Garin(WC),Alexander Ritschard,score_simulé
+Houston,Mitchell Krueger(2),Patrick Zahraj(8/Alt),score_simulé
+Houston,Corentin Denolly,Adrian Mannarino(3/Alt),score_simulé
+Houston,Colton Smith(6/WC),Liam Draxl(4),score_simulé
+Houston,Jenson Brooksby(WC),Patrick Maloney,score_simulé
+Houston,Jenson Brooksby(WC),Federico Agustin Gomez(1),score_simulé
+Houston,Mitchell Krueger(2),Toby Kodat,score_simulé
+Houston,Adrian Mannarino(3/Alt),Naoki Nakagawa,score_simulé
+Houston,Liam Draxl(4),William Grant(Alt),score_simulé
+Houston,Corentin Denolly,James Trotter(5),score_simulé
+Houston,Colton Smith(6/WC),Evan Zhu(Alt),score_simulé
+Houston,Patrick Maloney,Andres Andrade(7),score_simulé
+Houston,Patrick Zahraj(8/Alt),Felix Corwin(Alt),score_simulé
+Hong Kong,Alexandre Muller,Kei Nishikori(WC),score_simulé
+Hong Kong,Alexandre Muller,Jaume Munar,score_simulé
+Hong Kong,Kei Nishikori(WC),Juncheng Shang,score_simulé
+Hong Kong,Jaume Munar,Lorenzo Musetti(2),score_simulé
+Hong Kong,Alexandre Muller,Arthur Fils(4),score_simulé
+Hong Kong,Kei Nishikori(WC),Cameron Norrie,score_simulé
+Hong Kong,Juncheng Shang,Fabian Marozsan,score_simulé
+Hong Kong,Fabian Marozsan,Andrey Rublev(1),score_simulé
+Hong Kong,Lorenzo Musetti(2),Gabriel Diallo(Q),score_simulé
+Hong Kong,Jaume Munar,Nuno Borges(5),score_simulé
+Hong Kong,Juncheng Shang,Pedro Martinez(7),score_simulé
+Hong Kong,Kei Nishikori(WC),Karen Khachanov(3),score_simulé
+Hong Kong,Arthur Fils(4),Zizou Bergs(WC),score_simulé
+Hong Kong,Alexandre Muller,Miomir Kecmanovic,score_simulé
+Hong Kong,Cameron Norrie,Lorenzo Sonego,score_simulé
+Hong Kong,Nuno Borges(5),Yunchaokete Bu,score_simulé
+Hong Kong,Pedro Martinez(7),Francesco Passaro(Q),score_simulé
+Hong Kong,Zizou Bergs(WC),Alejandro Moro Canas(Q),score_simulé
+Hong Kong,Gabriel Diallo(Q),Roberto Carballes Baena,score_simulé
+Hong Kong,Alexandre Muller,Marc-Andrea Huesler(Q),score_simulé
+Hong Kong,Jaume Munar,Alejandro Davidovich Fokina,score_simulé
+Hong Kong,Kei Nishikori(WC),Denis Shapovalov,score_simulé
+Hong Kong,Juncheng Shang,Coleman Wong(WC),score_simulé
+Hong Kong,Lorenzo Sonego,Brandon Nakashima(6),score_simulé
+Hong Kong,Miomir Kecmanovic,Luciano Darderi(8),score_simulé
+Hong Kong,Fabian Marozsan,Roman Safiullin,score_simulé
+Hong Kong,Cameron Norrie,Learner Tien,score_simulé
+Hong Kong,Marc-Andrea Huesler,Pavel Kotov(1),score_simulé
+Hong Kong,Gabriel Diallo(2),Hugo Grenier(8),score_simulé
+Hong Kong,Francesco Passaro(4),Denis Yevseyev,score_simulé
+Hong Kong,Alejandro Moro Canas,Jie Cui(WC),score_simulé
+Hong Kong,Pavel Kotov(1),Valentin Royer,score_simulé
+Hong Kong,Gabriel Diallo(2),Ki Lung Ng(WC),score_simulé
+Hong Kong,Alejandro Moro Canas,Daniel Altmaier(3),score_simulé
+Hong Kong,Francesco Passaro(4),Aziz Dougaz,score_simulé
+Hong Kong,Marc-Andrea Huesler,Laslo Djere(5),score_simulé
+Hong Kong,Jie Cui(WC),Juan Manuel Cerundolo(6),score_simulé
+Hong Kong,Denis Yevseyev,Cristian Garin(7),score_simulé
+Hong Kong,Hugo Grenier(8),Terence Atmane,score_simulé
+Hamburg,Flavio Cobolli,Andrey Rublev(3),score_simulé
+Hamburg,Andrey Rublev(3),Felix Auger-Aliassime(6),score_simulé
+Hamburg,Flavio Cobolli,Tomas Martin Etcheverry,score_simulé
+Hamburg,Andrey Rublev(3),Luciano Darderi,score_simulé
+Hamburg,Felix Auger-Aliassime(6),Alexandre Muller,score_simulé
+Hamburg,Flavio Cobolli,Roberto Bautista Agut,score_simulé
+Hamburg,Tomas Martin Etcheverry,Jiri Lehecka,score_simulé
+Hamburg,Alexandre Muller,Alexander Zverev(1/WC),score_simulé
+Hamburg,Roberto Bautista Agut,Frances Tiafoe(2),score_simulé
+Hamburg,Andrey Rublev(3),Justin Engel(WC),score_simulé
+Hamburg,Jiri Lehecka,Francisco Cerundolo(4),score_simulé
+Hamburg,Flavio Cobolli,Alejandro Davidovich Fokina(5),score_simulé
+Hamburg,Felix Auger-Aliassime(6),Giovanni Mpetshi Perricard,score_simulé
+Hamburg,Luciano Darderi,Brandon Nakashima(7),score_simulé
+Hamburg,Tomas Martin Etcheverry,Camilo Ugo Carabelli,score_simulé
+Hamburg,Frances Tiafoe(2),Yunchaokete Bu,score_simulé
+Hamburg,Alejandro Davidovich Fokina(5),Gael Monfils,score_simulé
+Hamburg,Felix Auger-Aliassime(6),Daniel Altmaier,score_simulé
+Hamburg,Camilo Ugo Carabelli,Sebastian Baez(8),score_simulé
+Hamburg,Flavio Cobolli,Vitaliy Sachko(LL),score_simulé
+Hamburg,Tomas Martin Etcheverry,Francisco Comesana,score_simulé
+Hamburg,Giovanni Mpetshi Perricard,Alexander Bublik,score_simulé
+Hamburg,Alexander Zverev(1/WC),Aleksandar Kovacevic(Q),score_simulé
+Hamburg,Andrey Rublev(3),Damir Dzumhur,score_simulé
+Hamburg,Brandon Nakashima(7),Raphael Collignon(Q),score_simulé
+Hamburg,Roberto Bautista Agut,Marcos Giron,score_simulé
+Hamburg,Justin Engel(WC),Jan-Lennard Struff(WC),score_simulé
+Hamburg,Jiri Lehecka,Borna Gojo(Q),score_simulé
+Hamburg,Alexandre Muller,Elias Ymer(Q),score_simulé
+Hamburg,Francisco Cerundolo(4),Pedro Martinez,score_simulé
+Hamburg,Luciano Darderi,Diego Dedura(WC),score_simulé
+Hamburg,Aleksandar Kovacevic(2),Vitaliy Sachko(8),score_simulé
+Hamburg,Raphael Collignon(4),Daniel Dutra da Silva,score_simulé
+Hamburg,Borna Gojo(7/Alt),Dimitar Kuzmanov,score_simulé
+Hamburg,Elias Ymer,Marko Topo(WC),score_simulé
+Hamburg,Dimitar Kuzmanov,Aleksandar Vukic(1),score_simulé
+Hamburg,Aleksandar Kovacevic(2),Max Wiskandt(WC),score_simulé
+Hamburg,Elias Ymer,Christopher O'Connell(3),score_simulé
+Hamburg,Raphael Collignon(4),Patrick Zahraj,score_simulé
+Hamburg,Marko Topo(WC),Emilio Nava(5),score_simulé
+Hamburg,Daniel Dutra da Silva,Max Hans Rehberg(6),score_simulé
+Hamburg,Borna Gojo(7/Alt),Mika Petkovic(WC),score_simulé
+Hamburg,Vitaliy Sachko(8),Denis Yevseyev,score_simulé
+Eastbourne,Taylor Fritz(1),Jenson Brooksby(L),score_simulé
+Eastbourne,Taylor Fritz(1),Alejandro Davidovich Fokina(6),score_simulé
+Eastbourne,Jenson Brooksby(LL),Ugo Humbert(4),score_simulé
+Eastbourne,Taylor Fritz(1),Marcos Giron,score_simulé
+Eastbourne,Alejandro Davidovich Fokina(6),Jakub Mensik(3),score_simulé
+Eastbourne,Ugo Humbert(4),Billy Harris(LL),score_simulé
+Eastbourne,Jenson Brooksby(LL),Daniel Evans(WC),score_simulé
+Eastbourne,Taylor Fritz(1),Joao Fonseca,score_simulé
+Eastbourne,Daniel Evans(WC),Tommy Paul(2),score_simulé
+Eastbourne,Jakub Mensik(3),Reilly Opelka(PR),score_simulé
+Eastbourne,Ugo Humbert(4),Lorenzo Sonego,score_simulé
+Eastbourne,Alejandro Davidovich Fokina(6),James Duckworth(Q),score_simulé
+Eastbourne,Jenson Brooksby(LL),Nuno Borges(8),score_simulé
+Eastbourne,Marcos Giron,Jacob Fearnley,score_simulé
+Eastbourne,Billy Harris(LL),Mattia Bellucci(Q),score_simulé
+Eastbourne,Jacob Fearnley,Flavio Cobolli(5),score_simulé
+Eastbourne,Nuno Borges(8),Jack Pinnington Jones(WC),score_simulé
+Eastbourne,Jenson Brooksby(LL),Francisco Comesana,score_simulé
+Eastbourne,James Duckworth(Q),Aleksandar Vukic(Q),score_simulé
+Eastbourne,Marcos Giron,Luciano Darderi,score_simulé
+Eastbourne,Billy Harris(LL),Cameron Norrie(WC),score_simulé
+Eastbourne,Reilly Opelka(PR),George Loffhagen(Q),score_simulé
+Eastbourne,Alejandro Davidovich Fokina(6),Chun-Hsin Tseng(LL),score_simulé
+Eastbourne,Mattia Bellucci(Q),Quentin Halys,score_simulé
+Eastbourne,Daniel Evans(WC),Miomir Kecmanovic,score_simulé
+Eastbourne,Joao Fonseca,Zizou Bergs,score_simulé
+Eastbourne,Lorenzo Sonego,Fabian Marozsan,score_simulé
+Eastbourne,Mattia Bellucci(1),Chun-Hsin Tseng(5),score_simulé
+Eastbourne,Aleksandar Vukic(3),Jenson Brooksby,score_simulé
+Eastbourne,James Duckworth(7),Johannus Monday,score_simulé
+Eastbourne,George Loffhagen(WC),Billy Harris,score_simulé
+Eastbourne,Mattia Bellucci(1),Marek Gengel,score_simulé
+Eastbourne,Johannus Monday,Christopher O'Connell(2),score_simulé
+Eastbourne,Aleksandar Vukic(3),Jay Clarke,score_simulé
+Eastbourne,Billy Harris,Luca Nardi(4),score_simulé
+Eastbourne,Chun-Hsin Tseng(5),Geoffrey Blancaneaux,score_simulé
+Eastbourne,George Loffhagen(WC),Mackenzie McDonald(6),score_simulé
+Eastbourne,James Duckworth(7),Henry Searle(WC),score_simulé
+Eastbourne,Jenson Brooksby,Kamil Majchrzak(8),score_simulé
+Rio De Janeiro,Sebastian Baez(5),Alexandre Muller,score_simulé
+Rio De Janeiro,Sebastian Baez(5),Camilo Ugo Carabelli(LL),score_simulé
+Rio De Janeiro,Alexandre Muller,Francisco Comesana,score_simulé
+Rio De Janeiro,Francisco Comesana,Alexander Zverev(1),score_simulé
+Rio De Janeiro,Alexandre Muller,Francisco Cerundolo(4),score_simulé
+Rio De Janeiro,Sebastian Baez(5),Chun-Hsin Tseng(Q),score_simulé
+Rio De Janeiro,Camilo Ugo Carabelli(LL),Jaime Faria(LL),score_simulé
+Rio De Janeiro,Francisco Cerundolo(4),Luciano Darderi,score_simulé
+Rio De Janeiro,Alexandre Muller,Tomas Martin Etcheverry(8),score_simulé
+Rio De Janeiro,Jaime Faria(LL),Jaume Munar,score_simulé
+Rio De Janeiro,Camilo Ugo Carabelli(LL),Damir Dzumhur,score_simulé
+Rio De Janeiro,Alexander Zverev(1),Alexander Shevchenko,score_simulé
+Rio De Janeiro,Sebastian Baez(5),Mariano Navone,score_simulé
+Rio De Janeiro,Francisco Comesana,Nicolas Jarry(6),score_simulé
+Rio De Janeiro,Chun-Hsin Tseng(Q),Thiago Monteiro(WC),score_simulé
+Rio De Janeiro,Alexander Zverev(1),Yunchaokete Bu,score_simulé
+Rio De Janeiro,Francisco Cerundolo(4),Hugo Gaston,score_simulé
+Rio De Janeiro,Sebastian Baez(5),Roman Andres Burruchaga(LL),score_simulé
+Rio De Janeiro,Camilo Ugo Carabelli(LL),Pedro Martinez(7),score_simulé
+Rio De Janeiro,Tomas Martin Etcheverry(8),Corentin Moutet,score_simulé
+Rio De Janeiro,Luciano Darderi,Hugo Dellien(Q),score_simulé
+Rio De Janeiro,Damir Dzumhur,Dusan Lajovic,score_simulé
+Rio De Janeiro,Jaime Faria(LL),Tomas Barrios Vera(Q),score_simulé
+Rio De Janeiro,Alexandre Muller,Joao Fonseca(SE),score_simulé
+Rio De Janeiro,Mariano Navone,Roberto Carballes Baena,score_simulé
+Rio De Janeiro,Chun-Hsin Tseng(Q),Alejandro Tabilo(3),score_simulé
+Rio De Janeiro,Nicolas Jarry(6),Juan Manuel Cerundolo(Q),score_simulé
+Rio De Janeiro,Francisco Comesana,Gustavo Heide(WC),score_simulé
+Rio De Janeiro,Thiago Monteiro(WC),Facundo Diaz Acosta,score_simulé
+Rio De Janeiro,Jaume Munar,Thiago Seyboth Wild,score_simulé
+Rio De Janeiro,Alexander Shevchenko,Felipe Meligeni Alves(WC),score_simulé
+Rio De Janeiro,Tomas Barrios Vera,Camilo Ugo Carabelli(1),score_simulé
+Rio De Janeiro,Juan Manuel Cerundolo,Jaime Faria(3),score_simulé
+Rio De Janeiro,Hugo Dellien(4),Roman Andres Burruchaga,score_simulé
+Rio De Janeiro,Chun-Hsin Tseng(6),Marco Trungelliti,score_simulé
+Rio De Janeiro,Camilo Ugo Carabelli(1),Karue Sell(WC),score_simulé
+Rio De Janeiro,Marco Trungelliti,Yannick Hanfmann(2),score_simulé
+Rio De Janeiro,Jaime Faria(3),Mateus Alves(WC),score_simulé
+Rio De Janeiro,Hugo Dellien(4),Juan Pablo Ficovich(Alt),score_simulé
+Rio De Janeiro,Roman Andres Burruchaga,Federico Coria(5),score_simulé
+Rio De Janeiro,Chun-Hsin Tseng(6),Joao Lucas Reis Da Silva(WC),score_simulé
+Rio De Janeiro,Juan Manuel Cerundolo,Thiago Agustin Tirante(7),score_simulé
+Rio De Janeiro,Tomas Barrios Vera,Cristian Garin(8),score_simulé
+London,Carlos Alcaraz(1),Jiri Lehecka,score_simulé
+London,Carlos Alcaraz(1),Roberto Bautista Agut,score_simulé
+London,Jiri Lehecka,Jack Draper(2),score_simulé
+London,Carlos Alcaraz(1),Arthur Rinderknech(LL),score_simulé
+London,Jack Draper(2),Brandon Nakashima,score_simulé
+London,Roberto Bautista Agut,Holger Rune(4),score_simulé
+London,Jiri Lehecka,Jacob Fearnley,score_simulé
+London,Carlos Alcaraz(1),Jaume Munar,score_simulé
+London,Jacob Fearnley,Corentin Moutet(Q),score_simulé
+London,Jiri Lehecka,Gabriel Diallo,score_simulé
+London,Arthur Rinderknech(LL),Reilly Opelka(PR),score_simulé
+London,Jack Draper(2),Alexei Popyrin,score_simulé
+London,Holger Rune(4),Mackenzie McDonald(Q),score_simulé
+London,Roberto Bautista Agut,Jakub Mensik(8),score_simulé
+London,Brandon Nakashima,Daniel Evans(WC),score_simulé
+London,Carlos Alcaraz(1),Adam Walton(LL),score_simulé
+London,Jack Draper(2),Jenson Brooksby(PR),score_simulé
+London,Corentin Moutet(Q),Taylor Fritz(3),score_simulé
+London,Jiri Lehecka,Alex de Minaur(5),score_simulé
+London,Arthur Rinderknech(LL),Ben Shelton(6),score_simulé
+London,Gabriel Diallo,Billy Harris(WC),score_simulé
+London,Jaume Munar,Jordan Thompson,score_simulé
+London,Brandon Nakashima,Giovanni Mpetshi Perricard,score_simulé
+London,Reilly Opelka(PR),Camilo Ugo Carabelli,score_simulé
+London,Alexei Popyrin,Aleksandar Vukic(Q),score_simulé
+London,Holger Rune(4),Christopher O'Connell(LL),score_simulé
+London,Daniel Evans(WC),Frances Tiafoe(7),score_simulé
+London,Jakub Mensik(8),Cameron Norrie(WC),score_simulé
+London,Roberto Bautista Agut,Nuno Borges,score_simulé
+London,Jacob Fearnley,Alex Bolt(Q),score_simulé
+London,Mackenzie McDonald(Q),Gael Monfils,score_simulé
+London,Aleksandar Vukic(6),Adam Walton,score_simulé
+London,Alex Bolt(Alt),Christopher O'Connell(7),score_simulé
+London,Corentin Moutet,Arthur Rinderknech(8),score_simulé
+London,Mackenzie McDonald,Henry Searle(WC),score_simulé
+London,Henry Searle(WC),Yunchaokete Bu(1),score_simulé
+London,Adam Walton,Hamad Medjedovic(2),score_simulé
+London,Corentin Moutet,Mattia Bellucci(3),score_simulé
+London,Mackenzie McDonald,Aleksandar Kovacevic(5),score_simulé
+London,Aleksandar Vukic(6),Juan Manuel Cerundolo,score_simulé
+London,Christopher O'Connell(7),James Duckworth,score_simulé
+London,Arthur Rinderknech(8),Johannus Monday(WC),score_simulé
+London,Alex Bolt(Alt),Jay Clarke(WC),score_simulé
+Kitzbuhel,Alexander Bublik(1),Arthur Cazaux,score_simulé
+Kitzbuhel,Alexander Bublik(1),Botic van de Zandschulp,score_simulé
+Kitzbuhel,Arthur Cazaux(SE),Arthur Rinderknech(6),score_simulé
+Kitzbuhel,Alexander Bublik(1),Alexander Shevchenko,score_simulé
+Kitzbuhel,Arthur Rinderknech(6),Yannick Hanfmann(Q),score_simulé
+Kitzbuhel,Arthur Cazaux(SE),Jan-Lennard Struff(Q),score_simulé
+Kitzbuhel,Botic van de Zandschulp,Thiago Seyboth Wild,score_simulé
+Kitzbuhel,Alexander Bublik(1),Thiago Agustin Tirante,score_simulé
+Kitzbuhel,Yannick Hanfmann(Q),Sebastian Baez(2),score_simulé
+Kitzbuhel,Jan-Lennard Struff(Q),Pedro Martinez(3),score_simulé
+Kitzbuhel,Thiago Seyboth Wild,Roberto Bautista Agut(4),score_simulé
+Kitzbuhel,Arthur Rinderknech(6),Norbert Gombos(Q),score_simulé
+Kitzbuhel,Arthur Cazaux(SE),Francisco Comesana(7),score_simulé
+Kitzbuhel,Alexander Shevchenko,Marton Fucsovics(8),score_simulé
+Kitzbuhel,Botic van de Zandschulp,Filip Misolic,score_simulé
+Kitzbuhel,Filip Misolic,Tomas Martin Etcheverry(5),score_simulé
+Kitzbuhel,Arthur Cazaux(SE),Ignacio Buse(SE),score_simulé
+Kitzbuhel,Yannick Hanfmann(Q),Lukas Neumayer(WC),score_simulé
+Kitzbuhel,Thiago Seyboth Wild,Justin Engel(NG),score_simulé
+Kitzbuhel,Jan-Lennard Struff(Q),Sebastian Ofner,score_simulé
+Kitzbuhel,Thiago Agustin Tirante,Jaime Faria,score_simulé
+Kitzbuhel,Botic van de Zandschulp,Nicolas Jarry(WC),score_simulé
+Kitzbuhel,Arthur Rinderknech(6),Facundo Bagnis(Q),score_simulé
+Kitzbuhel,Francisco Comesana(7),Tristan Boyer,score_simulé
+Kitzbuhel,Marton Fucsovics(8),Joel Schwaerzler(WC),score_simulé
+Kitzbuhel,Norbert Gombos(Q),Hugo Gaston,score_simulé
+Kitzbuhel,Alexander Shevchenko,Daniel Elahi Galan,score_simulé
+Kitzbuhel,Jan-Lennard Struff(1),Jurij Rodionov(7),score_simulé
+Kitzbuhel,Yannick Hanfmann(2),Andrej Martin(Alt),score_simulé
+Kitzbuhel,Facundo Bagnis(PR),Thiago Monteiro(4),score_simulé
+Kitzbuhel,Norbert Gombos(Alt),Radu Albot,score_simulé
+Kitzbuhel,Jan-Lennard Struff(1),Nico Hipfl(WC),score_simulé
+Kitzbuhel,Yannick Hanfmann(2),Albert Ramos-Vinolas,score_simulé
+Kitzbuhel,Norbert Gombos(Alt),Martin Landaluce(3),score_simulé
+Kitzbuhel,Thiago Monteiro(4),Neil Oberleitner(Alt),score_simulé
+Kitzbuhel,Radu Albot,Jerome Kym(5),score_simulé
+Kitzbuhel,Facundo Bagnis(PR),Henrique Rocha(6),score_simulé
+Kitzbuhel,Jurij Rodionov(7),Sandro Kopp(WC),score_simulé
+Kitzbuhel,Andrej Martin(Alt),Juan Carlos Prado Angelo(8),score_simulé
+Stuttgart,Taylor Fritz(2),Alexander Zverev(1),score_simulé
+Stuttgart,Alexander Zverev(1),Ben Shelton(3),score_simulé
+Stuttgart,Taylor Fritz(2),Felix Auger-Aliassime(4),score_simulé
+Stuttgart,Alexander Zverev(1),Brandon Nakashima(6),score_simulé
+Stuttgart,Taylor Fritz(2),Marton Fucsovics(Q),score_simulé
+Stuttgart,Ben Shelton(3),Jiri Lehecka(8),score_simulé
+Stuttgart,Felix Auger-Aliassime(4),Justin Engel(WC),score_simulé
+Stuttgart,Alexander Zverev(1),Corentin Moutet,score_simulé
+Stuttgart,Felix Auger-Aliassime(4),Giovanni Mpetshi Perricard,score_simulé
+Stuttgart,Brandon Nakashima(6),Learner Tien,score_simulé
+Stuttgart,Justin Engel(WC),Alex Michelsen(7),score_simulé
+Stuttgart,Taylor Fritz(2),Quentin Halys,score_simulé
+Stuttgart,Ben Shelton(3),Pierre-Hugues Herbert(Q),score_simulé
+Stuttgart,Jiri Lehecka(8),Jan-Lennard Struff(WC),score_simulé
+Stuttgart,Marton Fucsovics(Q),Arthur Rinderknech,score_simulé
+Stuttgart,Arthur Rinderknech,Denis Shapovalov(5),score_simulé
+Stuttgart,Alex Michelsen(7),Gael Monfils,score_simulé
+Stuttgart,Justin Engel(WC),James Duckworth(Q),score_simulé
+Stuttgart,Marton Fucsovics(Q),Yannick Hanfmann(Q),score_simulé
+Stuttgart,Quentin Halys,Lorenzo Sonego,score_simulé
+Stuttgart,Pierre-Hugues Herbert(Q),Damir Dzumhur,score_simulé
+Stuttgart,Corentin Moutet,Fabio Fognini(WC),score_simulé
+Stuttgart,Learner Tien,Yoshihito Nishioka,score_simulé
+Stuttgart,Brandon Nakashima(6),Jacob Fearnley,score_simulé
+Stuttgart,Jiri Lehecka(8),Benjamin Bonzi,score_simulé
+Stuttgart,Giovanni Mpetshi Perricard,Roman Safiullin,score_simulé
+Stuttgart,Jan-Lennard Struff(WC),Matteo Arnaldi,score_simulé
+Stuttgart,James Duckworth(1),Nikoloz Basilashvili(5),score_simulé
+Stuttgart,Yannick Hanfmann(6),Tristan Boyer(3),score_simulé
+Stuttgart,Marton Fucsovics(4),Beibit Zhukayev,score_simulé
+Stuttgart,Pierre-Hugues Herbert(7),Li Tu,score_simulé
+Stuttgart,Beibit Zhukayev,Marc-Andrea Huesler(8),score_simulé
+Stuttgart,James Duckworth(1),Benjamin Hassan,score_simulé
+Stuttgart,Li Tu,Eliot Spizzirri(2),score_simulé
+Stuttgart,Tristan Boyer(3),Duje Ajdukovic,score_simulé
+Stuttgart,Marton Fucsovics(4),Patrick Zahraj(WC),score_simulé
+Stuttgart,Nikoloz Basilashvili(5),Hugo Grenier,score_simulé
+Stuttgart,Yannick Hanfmann(6),Max Wiskandt(WC),score_simulé
+Stuttgart,Pierre-Hugues Herbert(7),Maximilian Marterer(Alt),score_simulé
+Davis Cup Qualifiers 1St Rd,Zizou Bergs,Cristian Garin,score_simulé
+Davis Cup Qualifiers 1St Rd,Remy Bertola,Martin Landaluce,score_simulé
+Davis Cup Qualifiers 1St Rd,Gabriel Diallo,Fabian Marozsan,score_simulé
+Davis Cup Qualifiers 1St Rd,Marton Fucsovics,Alexis Galarneau,score_simulé
+Davis Cup Qualifiers 1St Rd,Giovanni Mpetshi Perricard,Matheus Pucinelli De Almeida,score_simulé
+Davis Cup Qualifiers 1St Rd,Zizou Bergs,Tomas Barrios Vera,score_simulé
+Davis Cup Qualifiers 1St Rd,Leo Borg,John Peers,score_simulé
+Davis Cup Qualifiers 1St Rd,Roberto Carballes Baena,Jerome Kym,score_simulé
+Davis Cup Qualifiers 1St Rd,Arthur Fils,Thiago Seyboth Wild,score_simulé
+Davis Cup Qualifiers 1St Rd,Marton Fucsovics,Gabriel Diallo,score_simulé
+Davis Cup Qualifiers 1St Rd,Cristian Garin,Alexander Blockx,score_simulé
+Davis Cup Qualifiers 1St Rd,Norbert Gombos,Matej Dodig,score_simulé
+Davis Cup Qualifiers 1St Rd,Ugo Humbert,Joao Fonseca,score_simulé
+Davis Cup Qualifiers 1St Rd,Fabian Marozsan,Alexis Galarneau,score_simulé
+Davis Cup Qualifiers 1St Rd,Pedro Martinez,Dominic Stricker,score_simulé
+Davis Cup Qualifiers 1St Rd,Mackenzie McDonald,Tsung-Hao Huang,score_simulé
+Davis Cup Qualifiers 1St Rd,Filip Misolic,Eero Vasa,score_simulé
+Davis Cup Qualifiers 1St Rd,Elmer Moller,Hamad Medjedovic,score_simulé
+Davis Cup Qualifiers 1St Rd,Kei Nishikori,Billy Harris,score_simulé
+Davis Cup Qualifiers 1St Rd,Yoshihito Nishioka,Jacob Fearnley,score_simulé
+Davis Cup Qualifiers 1St Rd,Holger Rune,Miomir Kecmanovic,score_simulé
+Davis Cup Qualifiers 1St Rd,Ofek Shimanov,Daniel Masur,score_simulé
+Davis Cup Qualifiers 1St Rd,Duje Ajdukovic,Lukas Klein,score_simulé
+Davis Cup Qualifiers 1St Rd,Alex de Minaur,Mikael Ymer,score_simulé
+Davis Cup Qualifiers 1St Rd,Jacob Fearnley,Kei Nishikori,score_simulé
+Davis Cup Qualifiers 1St Rd,Marcos Giron,Chun-Hsin Tseng,score_simulé
+Davis Cup Qualifiers 1St Rd,Yannick Hanfmann,Daniel Cukierman,score_simulé
+Davis Cup Qualifiers 1St Rd,Miomir Kecmanovic,Elmer Moller,score_simulé
+Davis Cup Qualifiers 1St Rd,Jiri Lehecka,Gerard Campana Lee,score_simulé
+Davis Cup Qualifiers 1St Rd,Tomas Machac,Soonwoo Kwon,score_simulé
+Davis Cup Qualifiers 1St Rd,Maximilian Marterer,Yshai Oliel,score_simulé
+Davis Cup Qualifiers 1St Rd,Hamad Medjedovic,Holger Rune,score_simulé
+Davis Cup Qualifiers 1St Rd,Alex Michelsen,Tung-Lin Wu,score_simulé
+Davis Cup Qualifiers 1St Rd,Mariano Navone,Nicolai Budkov Kjaer,score_simulé
+Davis Cup Qualifiers 1St Rd,Lukas Neumayer,Otto Virtanen,score_simulé
+Davis Cup Qualifiers 1St Rd,Yoshihito Nishioka,Billy Harris,score_simulé
+Davis Cup Qualifiers 1St Rd,Dino Prizmic,Jozef Kovalik,score_simulé
+Davis Cup Qualifiers 1St Rd,Jurij Rodionov,Eero Vasa,score_simulé
+Davis Cup Qualifiers 1St Rd,Casper Ruud,Tomas Martin Etcheverry,score_simulé
+Davis Cup Qualifiers 1St Rd,Aleksandar Vukic,Leo Borg,score_simulé
+Davis Cup Qualifiers 1St Rd,Tomas Martin Etcheverry,Nicolai Budkov Kjaer,score_simulé
+Davis Cup Qualifiers 1St Rd,Casper Ruud,Mariano Navone,score_simulé
+Dallas,Denis Shapovalov,Casper Ruud(2),score_simulé
+Dallas,Casper Ruud(2),Jaume Munar,score_simulé
+Dallas,Denis Shapovalov,Tommy Paul(3),score_simulé
+Dallas,Casper Ruud(2),Yoshihito Nishioka,score_simulé
+Dallas,Tommy Paul(3),Reilly Opelka(WC),score_simulé
+Dallas,Denis Shapovalov,Tomas Machac(6),score_simulé
+Dallas,Jaume Munar,Matteo Arnaldi(8),score_simulé
+Dallas,Denis Shapovalov,Taylor Fritz(1),score_simulé
+Dallas,Casper Ruud(2),Michael Mmoh(Q),score_simulé
+Dallas,Tommy Paul(3),Ethan Quinn(Q),score_simulé
+Dallas,Jaume Munar,Ben Shelton(4),score_simulé
+Dallas,Yoshihito Nishioka,Frances Tiafoe(5),score_simulé
+Dallas,Tomas Machac(6),Rinky Hijikata,score_simulé
+Dallas,Matteo Arnaldi(8),Alejandro Davidovich Fokina,score_simulé
+Dallas,Reilly Opelka(WC),Cameron Norrie,score_simulé
+Dallas,Taylor Fritz(1),Arthur Rinderknech,score_simulé
+Dallas,Tomas Machac(6),Kei Nishikori,score_simulé
+Dallas,Michael Mmoh(Q),Roberto Carballes Baena,score_simulé
+Dallas,Jaume Munar,Yunchaokete Bu,score_simulé
+Dallas,Yoshihito Nishioka,Brandon Nakashima,score_simulé
+Dallas,Reilly Opelka(WC),Alexander Shevchenko,score_simulé
+Dallas,Denis Shapovalov,Miomir Kecmanovic,score_simulé
+Dallas,Casper Ruud(2),James Duckworth(LL),score_simulé
+Dallas,Tommy Paul(3),Jenson Brooksby(WC),score_simulé
+Dallas,Ben Shelton(4),Aleksandar Vukic,score_simulé
+Dallas,Cameron Norrie,Alex Michelsen(7),score_simulé
+Dallas,Frances Tiafoe(5),Taro Daniel,score_simulé
+Dallas,Matteo Arnaldi(8),Christopher Eubanks(Q),score_simulé
+Dallas,Alejandro Davidovich Fokina,Brandon Holt(Q),score_simulé
+Dallas,Rinky Hijikata,Adrian Mannarino,score_simulé
+Dallas,Ethan Quinn(Q),Trevor Svajda(WC),score_simulé
+Dallas,Ethan Quinn(7),James Duckworth(1),score_simulé
+Dallas,Christopher Eubanks(2),Jack Pinnington Jones(Alt),score_simulé
+Dallas,Brandon Holt,Ryan Seggerman(WC),score_simulé
+Dallas,Michael Mmoh(PR),Georgi Georgiev(WC),score_simulé
+Dallas,James Duckworth(1),Eric Hadigian(WC),score_simulé
+Dallas,Christopher Eubanks(2),Aidan Mayo(Alt),score_simulé
+Dallas,Michael Mmoh(PR),Tristan Boyer(3),score_simulé
+Dallas,Ryan Seggerman(WC),Federico Agustin Gomez(4),score_simulé
+Dallas,Brandon Holt,Mitchell Krueger(5),score_simulé
+Dallas,Georgi Georgiev(WC),Radu Albot(6),score_simulé
+Dallas,Ethan Quinn(7),James Trotter,score_simulé
+Dallas,Jack Pinnington Jones(Alt),Zachary Svajda(8),score_simulé
+Dubai,Stefanos Tsitsipas(4),Felix Auger-Aliassime,score_simulé
+Dubai,Stefanos Tsitsipas(4),Tallon Griekspoor,score_simulé
+Dubai,Felix Auger-Aliassime,Quentin Halys(Q),score_simulé
+Dubai,Tallon Griekspoor,Daniil Medvedev(1),score_simulé
+Dubai,Stefanos Tsitsipas(4),Matteo Berrettini,score_simulé
+Dubai,Felix Auger-Aliassime,Marin Cilic(PR),score_simulé
+Dubai,Quentin Halys(Q),Luca Nardi(LL),score_simulé
+Dubai,Daniil Medvedev(1),Giovanni Mpetshi Perricard,score_simulé
+Dubai,Stefanos Tsitsipas(4),Karen Khachanov,score_simulé
+Dubai,Tallon Griekspoor,Ugo Humbert(5),score_simulé
+Dubai,Felix Auger-Aliassime,Nuno Borges,score_simulé
+Dubai,Matteo Berrettini,Christopher O'Connell(Q),score_simulé
+Dubai,Marin Cilic(PR),Alexei Popyrin,score_simulé
+Dubai,Quentin Halys(Q),Roberto Bautista Agut,score_simulé
+Dubai,Luca Nardi(LL),Zizou Bergs,score_simulé
+Dubai,Daniil Medvedev(1),Jan-Lennard Struff,score_simulé
+Dubai,Marin Cilic(PR),Alex de Minaur(2),score_simulé
+Dubai,Quentin Halys(Q),Andrey Rublev(3),score_simulé
+Dubai,Ugo Humbert(5),Jiri Lehecka,score_simulé
+Dubai,Christopher O'Connell(Q),Grigor Dimitrov(6),score_simulé
+Dubai,Nuno Borges,Arthur Fils(8),score_simulé
+Dubai,Felix Auger-Aliassime,Alexander Bublik,score_simulé
+Dubai,Matteo Berrettini,Gael Monfils,score_simulé
+Dubai,Tallon Griekspoor,Roman Safiullin(Q),score_simulé
+Dubai,Luca Nardi(LL),Marton Fucsovics(Q),score_simulé
+Dubai,Stefanos Tsitsipas(4),Lorenzo Sonego,score_simulé
+Dubai,Roberto Bautista Agut,Fabian Marozsan,score_simulé
+Dubai,Zizou Bergs,Aziz Dougaz(WC),score_simulé
+Dubai,Karen Khachanov,Daniel Evans(WC),score_simulé
+Dubai,Giovanni Mpetshi Perricard,Zhizhen Zhang,score_simulé
+Dubai,Alexei Popyrin,Hady Habib(WC),score_simulé
+Dubai,Roman Safiullin(1),Otto Virtanen(7),score_simulé
+Dubai,Quentin Halys(2),Pavel Kotov(8),score_simulé
+Dubai,Christopher O'Connell(3),Botic van de Zandschulp(6),score_simulé
+Dubai,Marton Fucsovics(4),Luca Nardi(5),score_simulé
+Dubai,Roman Safiullin(1),Nikoloz Basilashvili(WC),score_simulé
+Dubai,Quentin Halys(2),Yasutaka Uchiyama,score_simulé
+Dubai,Christopher O'Connell(3),Abdulrahman Al Janahi(WC),score_simulé
+Dubai,Marton Fucsovics(4),Jozef Kovalik,score_simulé
+Dubai,Luca Nardi(5),Lloyd Harris,score_simulé
+Dubai,Botic van de Zandschulp(6),Andrea Vavassori(WC),score_simulé
+Dubai,Otto Virtanen(7),Mikhail Kukushkin,score_simulé
+Dubai,Pavel Kotov(8),Yosuke Watanuki(PR),score_simulé
+Santiago,Laslo Djere,Sebastian Baez(3),score_simulé
+Santiago,Laslo Djere,Francisco Cerundolo(1),score_simulé
+Santiago,Sebastian Baez(3),Camilo Ugo Carabelli,score_simulé
+Santiago,Francisco Cerundolo(1),Tomas Martin Etcheverry(5),score_simulé
+Santiago,Sebastian Baez(3),Damir Dzumhur,score_simulé
+Santiago,Laslo Djere,Jaime Faria,score_simulé
+Santiago,Camilo Ugo Carabelli,Federico Coria,score_simulé
+Santiago,Federico Coria,Alejandro Tabilo(2),score_simulé
+Santiago,Sebastian Baez(3),Francisco Comesana,score_simulé
+Santiago,Damir Dzumhur,Mariano Navone(6),score_simulé
+Santiago,Camilo Ugo Carabelli,Thiago Monteiro,score_simulé
+Santiago,Francisco Cerundolo(1),Yannick Hanfmann,score_simulé
+Santiago,Laslo Djere,Pedro Martinez(4),score_simulé
+Santiago,Tomas Martin Etcheverry(5),Cristian Garin(WC),score_simulé
+Santiago,Jaime Faria,Gustavo Heide(Q),score_simulé
+Santiago,Tomas Martin Etcheverry(5),Hugo Gaston,score_simulé
+Santiago,Mariano Navone(6),Alexander Shevchenko,score_simulé
+Santiago,Camilo Ugo Carabelli,Nicolas Jarry(7),score_simulé
+Santiago,Jaime Faria,Luciano Darderi(8),score_simulé
+Santiago,Francisco Comesana,Felipe Meligeni Alves(Q),score_simulé
+Santiago,Federico Coria,Tomas Barrios Vera(WC),score_simulé
+Santiago,Damir Dzumhur,Corentin Moutet,score_simulé
+Santiago,Thiago Monteiro,Juan Manuel Cerundolo(Q),score_simulé
+Santiago,Laslo Djere,Ignacio Buse(WC),score_simulé
+Santiago,Cristian Garin(WC),Juan Pablo Ficovich(Q),score_simulé
+Santiago,Yannick Hanfmann,Facundo Diaz Acosta,score_simulé
+Santiago,Gustavo Heide(Q),Thiago Seyboth Wild,score_simulé
+Santiago,Juan Manuel Cerundolo(1),Orlando Luz(Alt),score_simulé
+Santiago,Gustavo Heide(5),Thiago Agustin Tirante(2),score_simulé
+Santiago,Juan Pablo Ficovich(6),Roman Andres Burruchaga(3),score_simulé
+Santiago,Felipe Meligeni Alves(4),Juan Pablo Varillas(8),score_simulé
+Santiago,Juan Manuel Cerundolo(1),Matias Soto,score_simulé
+Santiago,Thiago Agustin Tirante(2),Pol Martin Tiffon(Alt),score_simulé
+Santiago,Roman Andres Burruchaga(3),Kilian Feldbausch(WC),score_simulé
+Santiago,Felipe Meligeni Alves(4),Bastian Malla(WC),score_simulé
+Santiago,Gustavo Heide(5),Genaro Alberto Olivieri(Alt),score_simulé
+Santiago,Juan Pablo Ficovich(6),Adolfo Daniel Vallejo,score_simulé
+Santiago,Juan Pablo Varillas(8),Emilio Nava,score_simulé
+Santiago,Orlando Luz(Alt),Ryan Seggerman(Alt),score_simulé
+Los Cabos,Denis Shapovalov(3),Aleksandar Kovacevic(7),score_simulé
+Los Cabos,Aleksandar Kovacevic(7),Andrey Rublev(1),score_simulé
+Los Cabos,Denis Shapovalov(3),Adam Walton(8),score_simulé
+Los Cabos,Andrey Rublev(1),Emilio Nava,score_simulé
+Los Cabos,Denis Shapovalov(3),Tristan Schoolkate,score_simulé
+Los Cabos,Aleksandar Kovacevic(7),Juan Pablo Ficovich,score_simulé
+Los Cabos,Adam Walton(8),James Duckworth,score_simulé
+Los Cabos,Andrey Rublev(1),Alex Hernandez(WC),score_simulé
+Los Cabos,James Duckworth,Alejandro Davidovich Fokina(2),score_simulé
+Los Cabos,Denis Shapovalov(3),Govind Nanda(Q),score_simulé
+Los Cabos,Juan Pablo Ficovich,Quentin Halys(4),score_simulé
+Los Cabos,Tristan Schoolkate,Daniel Altmaier(5),score_simulé
+Los Cabos,Emilio Nava,Yunchaokete Bu(6),score_simulé
+Los Cabos,Aleksandar Kovacevic(7),Luis Carlos Alvarez(WC),score_simulé
+Los Cabos,Adam Walton(8),Nishesh Basavareddy,score_simulé
+Los Cabos,Daniel Altmaier(5),Mitchell Krueger,score_simulé
+Los Cabos,Yunchaokete Bu(6),Alan Magadan(Q),score_simulé
+Los Cabos,Adam Walton(8),Rodrigo Pacheco Mendez(WC),score_simulé
+Los Cabos,Luis Carlos Alvarez(WC),James McCabe,score_simulé
+Los Cabos,Nishesh Basavareddy,Nicolas Mejia(Q),score_simulé
+Los Cabos,James Duckworth,Adrian Mannarino,score_simulé
+Los Cabos,Govind Nanda(Q),Colton Smith,score_simulé
+Los Cabos,Tristan Schoolkate,Yibing Wu(Q),score_simulé
+Los Cabos,Aleksandar Kovacevic(7),Hady Habib,score_simulé
+Los Cabos,Juan Pablo Ficovich,Alibek Kachmazov,score_simulé
+Los Cabos,Alex Hernandez(WC),Taro Daniel,score_simulé
+Los Cabos,Emilio Nava,Aleksandar Vukic,score_simulé
+Los Cabos,Alan Magadan(Alt),Mark Lajal(1),score_simulé
+Los Cabos,Nicolas Mejia(5),Murphy Cassone(2),score_simulé
+Los Cabos,Yibing Wu(6),Bernard Tomic(4),score_simulé
+Los Cabos,Govind Nanda(8),Taha Baadi(Alt),score_simulé
+Los Cabos,Mark Lajal(1),Luca Lemaitre(WC),score_simulé
+Los Cabos,Murphy Cassone(2),Evan Zhu(Alt),score_simulé
+Los Cabos,Taha Baadi(Alt),Yasutaka Uchiyama(3),score_simulé
+Los Cabos,Bernard Tomic(4),Elijah Strode(Alt),score_simulé
+Los Cabos,Nicolas Mejia(5),Isaiah Strode(Alt),score_simulé
+Los Cabos,Yibing Wu(6),Braden Shick(Alt),score_simulé
+Los Cabos,Alan Magadan(Alt),Moerani Bouzige(7/Alt),score_simulé
+Los Cabos,Govind Nanda(8),Strong Kirchheimer(WC),score_simulé
+Washington,Alex De Minaur(7),Alejandro Davidovich Fokina(12),score_simulé
+Washington,Alejandro Davidovich Fokina(12),Ben Shelton(4),score_simulé
+Washington,Alex de Minaur(7),Corentin Moutet(LL),score_simulé
+Washington,Alejandro Davidovich Fokina(12),Taylor Fritz(1),score_simulé
+Washington,Ben Shelton(4),Frances Tiafoe(6),score_simulé
+Washington,Alex de Minaur(7),Brandon Nakashima(14),score_simulé
+Washington,Corentin Moutet(LL),Daniil Medvedev(8),score_simulé
+Washington,Taylor Fritz(1),Matteo Arnaldi,score_simulé
+Washington,Ben Shelton(4),Gabriel Diallo(15),score_simulé
+Washington,Frances Tiafoe(6),Flavio Cobolli(9),score_simulé
+Washington,Alex de Minaur(7),Jiri Lehecka(11),score_simulé
+Washington,Daniil Medvedev(8),Yibing Wu(Q),score_simulé
+Washington,Alejandro Davidovich Fokina(12),Learner Tien,score_simulé
+Washington,Brandon Nakashima(14),Cameron Norrie,score_simulé
+Washington,Corentin Moutet(LL),Daniel Evans(WC),score_simulé
+Washington,Taylor Fritz(1),Aleksandar Vukic,score_simulé
+Washington,Learner Tien,Andrey Rublev(5),score_simulé
+Washington,Frances Tiafoe(6),Aleksandar Kovacevic,score_simulé
+Washington,Alex de Minaur(7),Yunchaokete Bu,score_simulé
+Washington,Daniil Medvedev(8),Reilly Opelka,score_simulé
+Washington,Flavio Cobolli(9),Yoshihito Nishioka,score_simulé
+Washington,Yibing Wu(Q),Alexei Popyrin(10),score_simulé
+Washington,Jiri Lehecka(11),Zachary Svajda(Q),score_simulé
+Washington,Alejandro Davidovich Fokina(12),Jaume Munar,score_simulé
+Washington,Matteo Arnaldi,Lorenzo Sonego(16),score_simulé
+Washington,Cameron Norrie,Lorenzo Musetti(2),score_simulé
+Washington,Ben Shelton(4),Mackenzie McDonald(WC),score_simulé
+Washington,Daniel Evans(WC),Alex Michelsen(13),score_simulé
+Washington,Brandon Nakashima(14),Ethan Quinn(WC),score_simulé
+Washington,Gabriel Diallo(15),Fabian Marozsan,score_simulé
+Washington,Corentin Moutet(LL),Alexandre Muller,score_simulé
+Washington,Yunchaokete Bu,David Goffin,score_simulé
+Washington,Aleksandar Kovacevic,Quentin Halys,score_simulé
+Washington,Jaume Munar,Marcos Giron,score_simulé
+Washington,Zachary Svajda(Q),Miomir Kecmanovic,score_simulé
+Washington,Yibing Wu(Q),Gael Monfils,score_simulé
+Washington,Matteo Arnaldi,Daniel Altmaier,score_simulé
+Washington,Daniel Evans(WC),Zizou Bergs,score_simulé
+Washington,Fabian Marozsan,Benjamin Bonzi,score_simulé
+Washington,Mackenzie McDonald(WC),Colton Smith(Q),score_simulé
+Washington,Alexandre Muller,Beibit Zhukayev(Q),score_simulé
+Washington,Yoshihito Nishioka,Jenson Brooksby(PR),score_simulé
+Washington,Cameron Norrie,Billy Harris(Q),score_simulé
+Washington,Reilly Opelka,Murphy Cassone(Q),score_simulé
+Washington,Ethan Quinn(WC),Christopher O'Connell,score_simulé
+Washington,Learner Tien,Emilio Nava(WC),score_simulé
+Washington,Aleksandar Vukic,Giovanni Mpetshi Perricard,score_simulé
+Washington,Yibing Wu,Corentin Moutet(1),score_simulé
+Washington,Murphy Cassone(11),Rinky Hijikata(2),score_simulé
+Washington,Colton Smith(4),Tyler Zink,score_simulé
+Washington,Billy Harris(5),Moerani Bouzige,score_simulé
+Washington,Zachary Svajda(6),Yosuke Watanuki(9),score_simulé
+Washington,Beibit Zhukayev,Andrea Vavassori(Alt),score_simulé
+Washington,Zachary Svajda(6),Bernard Tomic(WC),score_simulé
+Washington,Corentin Moutet(1),Karue Sell,score_simulé
+Washington,Rinky Hijikata(2),Adhithya Ganesan(WC),score_simulé
+Washington,Colton Smith(4),Andrew Fenty(WC),score_simulé
+Washington,Billy Harris(5),Marek Gengel,score_simulé
+Washington,Tyler Zink,Taro Daniel(7),score_simulé
+Washington,Yibing Wu,Mitchell Krueger(8),score_simulé
+Washington,Yosuke Watanuki(9),Jake Fellows(WC),score_simulé
+Washington,Beibit Zhukayev,James McCabe(10),score_simulé
+Washington,Murphy Cassone(11),Thai-Son Kwiatkowski(PR),score_simulé
+Washington,Moerani Bouzige,Govind Nanda(Alt),score_simulé
+Washington,Andrea Vavassori(Alt),Alfredo Perez(Alt),score_simulé
+Brisbane,Jiri Lehecka,Reilly Opelka(PR),score_simulé
+Brisbane,Jiri Lehecka,Grigor Dimitrov(2),score_simulé
+Brisbane,Reilly Opelka(PR),Giovanni Mpetshi Perricard,score_simulé
+Brisbane,Reilly Opelka(PR),Novak Djokovic(1),score_simulé
+Brisbane,Grigor Dimitrov(2),Jordan Thompson(8),score_simulé
+Brisbane,Jiri Lehecka,Nicolas Jarry,score_simulé
+Brisbane,Giovanni Mpetshi Perricard,Jakub Mensik,score_simulé
+Brisbane,Novak Djokovic(1),Gael Monfils,score_simulé
+Brisbane,Giovanni Mpetshi Perricard,Frances Tiafoe(4),score_simulé
+Brisbane,Jakub Mensik,Dusan Lajovic(LL),score_simulé
+Brisbane,Reilly Opelka(PR),Matteo Arnaldi,score_simulé
+Brisbane,Grigor Dimitrov(2),Aleksandar Vukic(WC),score_simulé
+Brisbane,Jordan Thompson(8),Alex Michelsen,score_simulé
+Brisbane,Nicolas Jarry,Benjamin Bonzi(Q),score_simulé
+Brisbane,Jiri Lehecka,Yoshihito Nishioka(Q),score_simulé
+Brisbane,Novak Djokovic(1),Rinky Hijikata(WC),score_simulé
+Brisbane,Frances Tiafoe(4),Adam Walton(WC),score_simulé
+Brisbane,Matteo Arnaldi,Alexei Popyrin(7),score_simulé
+Brisbane,Dusan Lajovic(LL),Arthur Cazaux,score_simulé
+Brisbane,Jakub Mensik,Mikhail Kukushkin(Q),score_simulé
+Brisbane,Gael Monfils,Nishesh Basavareddy(Q),score_simulé
+Brisbane,Giovanni Mpetshi Perricard,Nick Kyrgios(PR),score_simulé
+Brisbane,Reilly Opelka(PR),Federico Agustin Gomez(Q),score_simulé
+Brisbane,Grigor Dimitrov(2),Yannick Hanfmann(Q),score_simulé
+Brisbane,Jiri Lehecka,Holger Rune(3),score_simulé
+Brisbane,Benjamin Bonzi(Q),Alejandro Tabilo(6),score_simulé
+Brisbane,Jordan Thompson(8),Matteo Berrettini,score_simulé
+Brisbane,Nicolas Jarry,Mariano Navone,score_simulé
+Brisbane,Alex Michelsen,Christopher O'Connell,score_simulé
+Brisbane,Yoshihito Nishioka(Q),Arthur Rinderknech,score_simulé
+Brisbane,Aleksandar Vukic(WC),David Goffin,score_simulé
+Brisbane,Yoshihito Nishioka(1),Li Tu,score_simulé
+Brisbane,Benjamin Bonzi(2),Adrian Andreev,score_simulé
+Brisbane,Federico Agustin Gomez(11),Dusan Lajovic(3),score_simulé
+Brisbane,Yannick Hanfmann(5),Richard Gasquet(9),score_simulé
+Brisbane,Nishesh Basavareddy(12),Lucas Pouille(6),score_simulé
+Brisbane,Mikhail Kukushkin(7),Tristan Schoolkate,score_simulé
+Brisbane,Yoshihito Nishioka(1),Alex Bolt,score_simulé
+Brisbane,Benjamin Bonzi(2),James McCabe(WC),score_simulé
+Brisbane,Dusan Lajovic(3),Casey Hoole(WC),score_simulé
+Brisbane,Tristan Schoolkate,James Duckworth(4),score_simulé
+Brisbane,Yannick Hanfmann(5),Jacob Bradshaw(WC),score_simulé
+Brisbane,Lucas Pouille(6),Jason Kubler(PR),score_simulé
+Brisbane,Mikhail Kukushkin(7),Andrea Collarini,score_simulé
+Brisbane,Adrian Andreev,Chun-Hsin Tseng(8),score_simulé
+Brisbane,Richard Gasquet(9),Derek Pham(WC),score_simulé
+Brisbane,Li Tu,Lukas Klein(10),score_simulé
+Brisbane,Federico Agustin Gomez(11),Ugo Blanchet,score_simulé
+Brisbane,Nishesh Basavareddy(12),Borna Gojo(PR),score_simulé
+Umag,Luciano Darderi(2),Carlos Taberner,score_simulé
+Umag,Luciano Darderi(2),Camilo Ugo Carabelli(3),score_simulé
+Umag,Carlos Taberner,Damir Dzumhur(4),score_simulé
+Umag,Luciano Darderi(2),Dino Prizmic(WC),score_simulé
+Umag,Camilo Ugo Carabelli(3),Pablo Llamas Ruiz(Q),score_simulé
+Umag,Damir Dzumhur(4),Titouan Droguet(Q),score_simulé
+Umag,Carlos Taberner,Jesper de Jong,score_simulé
+Umag,Carlos Taberner,Francisco Cerundolo(1),score_simulé
+Umag,Luciano Darderi(2),Chun-Hsin Tseng,score_simulé
+Umag,Damir Dzumhur(4),Stan Wawrinka,score_simulé
+Umag,Jesper de Jong,Mariano Navone(5),score_simulé
+Umag,Titouan Droguet(Q),Vit Kopriva(8),score_simulé
+Umag,Dino Prizmic(WC),Nikoloz Basilashvili,score_simulé
+Umag,Camilo Ugo Carabelli(3),Francesco Passaro,score_simulé
+Umag,Pablo Llamas Ruiz(Q),Terence Atmane,score_simulé
+Umag,Jesper de Jong,Mili Poljicak(WC),score_simulé
+Umag,Dino Prizmic(WC),Elmer Moller,score_simulé
+Umag,Mariano Navone(5),Tomas Barrios Vera,score_simulé
+Umag,Nikoloz Basilashvili,Roberto Carballes Baena(6),score_simulé
+Umag,Pablo Llamas Ruiz(Q),Kamil Majchrzak(7),score_simulé
+Umag,Terence Atmane,Dusan Lajovic,score_simulé
+Umag,Titouan Droguet(Q),Cristian Garin,score_simulé
+Umag,Carlos Taberner,Pierre-Hugues Herbert,score_simulé
+Umag,Chun-Hsin Tseng,Giulio Zeppieri(Q),score_simulé
+Umag,Stan Wawrinka,Alvaro Guillen Meza(Q),score_simulé
+Umag,Vit Kopriva(8),Raphael Collignon,score_simulé
+Umag,Francesco Passaro,Matej Dodig(WC),score_simulé
+Umag,Pablo Llamas Ruiz(PR),Andrea Pellegrino(1),score_simulé
+Umag,Titouan Droguet(7),Vilius Gaubas(2),score_simulé
+Umag,Giulio Zeppieri(PR),Luca Van Assche(8),score_simulé
+Umag,Alvaro Guillen Meza,Luka Mikrut(WC),score_simulé
+Umag,Andrea Pellegrino(1),Vitaliy Sachko,score_simulé
+Umag,Vilius Gaubas(2),Federico Arnaboldi,score_simulé
+Umag,Luka Mikrut(WC),Marco Trungelliti(3),score_simulé
+Umag,Giulio Zeppieri(PR),Federico Coria(4),score_simulé
+Umag,Pablo Llamas Ruiz(PR),Kyrian Jacquet(5),score_simulé
+Umag,Alvaro Guillen Meza,Ugo Blanchet(6),score_simulé
+Umag,Titouan Droguet(7),Niels McDonald(WC),score_simulé
+Umag,Luca Van Assche(8),Marco Cecchinato(Alt),score_simulé
+Halle,Alexander Bublik,Daniil Medvedev(3),score_simulé
+Halle,Daniil Medvedev(3),Alexander Zverev(2),score_simulé
+Halle,Alexander Bublik,Karen Khachanov(8),score_simulé
+Halle,Alexander Zverev(2),Flavio Cobolli,score_simulé
+Halle,Daniil Medvedev(3),Alex Michelsen,score_simulé
+Halle,Alexander Bublik,Tomas Machac(7),score_simulé
+Halle,Karen Khachanov(8),Tomas Martin Etcheverry,score_simulé
+Halle,Alexander Bublik,Jannik Sinner(1),score_simulé
+Halle,Alexander Zverev(2),Lorenzo Sonego,score_simulé
+Halle,Tomas Martin Etcheverry,Andrey Rublev(4),score_simulé
+Halle,Tomas Machac(7),Fabian Marozsan,score_simulé
+Halle,Karen Khachanov(8),Felix Auger-Aliassime,score_simulé
+Halle,Flavio Cobolli,Denis Shapovalov,score_simulé
+Halle,Daniil Medvedev(3),Quentin Halys,score_simulé
+Halle,Alex Michelsen,Stefanos Tsitsipas,score_simulé
+Halle,Alexander Zverev(2),Marcos Giron,score_simulé
+Halle,Karen Khachanov(8),Zizou Bergs,score_simulé
+Halle,Jannik Sinner(1),Yannick Hanfmann(Q),score_simulé
+Halle,Andrey Rublev(4),Sebastian Ofner(Q),score_simulé
+Halle,Alex Michelsen,Francisco Cerundolo(5),score_simulé
+Halle,Denis Shapovalov,Ugo Humbert(6),score_simulé
+Halle,Tomas Machac(7),Jesper de Jong(LL),score_simulé
+Halle,Felix Auger-Aliassime,Laslo Djere(Q),score_simulé
+Halle,Flavio Cobolli,Joao Fonseca(WC),score_simulé
+Halle,Tomas Martin Etcheverry,Pedro Martinez,score_simulé
+Halle,Lorenzo Sonego,Jan-Lennard Struff(WC),score_simulé
+Halle,Daniil Medvedev(3),Daniel Altmaier(WC),score_simulé
+Halle,Alexander Bublik,Alexandre Muller,score_simulé
+Halle,Quentin Halys,Benjamin Bonzi(Q),score_simulé
+Halle,Fabian Marozsan,Miomir Kecmanovic,score_simulé
+Halle,Stefanos Tsitsipas,Luciano Darderi,score_simulé
+Halle,Benjamin Bonzi(1),Li Tu(Alt),score_simulé
+Halle,Laslo Djere(2),Jesper de Jong(6),score_simulé
+Halle,Yannick Hanfmann,Nicolas Jarry,score_simulé
+Halle,Sebastian Ofner,Justin Engel(WC),score_simulé
+Halle,Benjamin Bonzi(1),Patrick Zahraj(WC),score_simulé
+Halle,Laslo Djere(2),Nikoloz Basilashvili,score_simulé
+Halle,Nicolas Jarry,Learner Tien(3),score_simulé
+Halle,Justin Engel(WC),Roman Safiullin(4),score_simulé
+Halle,Yannick Hanfmann,Yoshihito Nishioka(5),score_simulé
+Halle,Jesper de Jong(6),Max Schoenhaus(WC),score_simulé
+Halle,Li Tu(Alt),Ethan Quinn(7),score_simulé
+Halle,Sebastian Ofner,Benjamin Hassan(Alt),score_simulé
+Doha,Andrey Rublev(5),Jack Draper(8),score_simulé
+Doha,Andrey Rublev(5),Felix Auger-Aliassime,score_simulé
+Doha,Jack Draper(8),Jiri Lehecka,score_simulé
+Doha,Jiri Lehecka,Carlos Alcaraz(1),score_simulé
+Doha,Andrey Rublev(5),Alex de Minaur(2),score_simulé
+Doha,Felix Auger-Aliassime,Daniil Medvedev(4),score_simulé
+Doha,Jack Draper(8),Matteo Berrettini,score_simulé
+Doha,Carlos Alcaraz(1),Luca Nardi(Q),score_simulé
+Doha,Alex de Minaur(2),Botic van de Zandschulp(Q),score_simulé
+Doha,Daniil Medvedev(4),Zizou Bergs,score_simulé
+Doha,Andrey Rublev(5),Nuno Borges,score_simulé
+Doha,Jack Draper(8),Christopher O'Connell(Q),score_simulé
+Doha,Felix Auger-Aliassime,Hamad Medjedovic(SE),score_simulé
+Doha,Matteo Berrettini,Tallon Griekspoor,score_simulé
+Doha,Jiri Lehecka,Fabian Marozsan,score_simulé
+Doha,Alex de Minaur(2),Roman Safiullin,score_simulé
+Doha,Matteo Berrettini,Novak Djokovic(3),score_simulé
+Doha,Daniil Medvedev(4),Karen Khachanov,score_simulé
+Doha,Andrey Rublev(5),Alexander Bublik,score_simulé
+Doha,Hamad Medjedovic(SE),Stefanos Tsitsipas(6),score_simulé
+Doha,Felix Auger-Aliassime,Quentin Halys(Q),score_simulé
+Doha,Zizou Bergs,Roberto Bautista Agut,score_simulé
+Doha,Nuno Borges,Otto Virtanen(LL),score_simulé
+Doha,Tallon Griekspoor,Jan-Lennard Struff,score_simulé
+Doha,Luca Nardi(Q),Zhizhen Zhang,score_simulé
+Doha,Botic van de Zandschulp(Q),Abdullah Shelbayh(WC),score_simulé
+Doha,Carlos Alcaraz(1),Marin Cilic(PR),score_simulé
+Doha,Jiri Lehecka,Grigor Dimitrov(7),score_simulé
+Doha,Jack Draper(8),Alexei Popyrin,score_simulé
+Doha,Fabian Marozsan,Aziz Dougaz(WC),score_simulé
+Doha,Christopher O'Connell(Q),Hady Habib(WC),score_simulé
+Doha,Quentin Halys(1),Stan Wawrinka,score_simulé
+Doha,Christopher O'Connell(2),Pavel Kotov(7),score_simulé
+Doha,Luca Nardi(3),Mikhail Kukushkin(8),score_simulé
+Doha,Botic van de Zandschulp(4),Otto Virtanen(5),score_simulé
+Doha,Quentin Halys(1),Mubarak Shannan Zayid(WC),score_simulé
+Doha,Christopher O'Connell(2),Yosuke Watanuki(PR),score_simulé
+Doha,Luca Nardi(3),Yasutaka Uchiyama,score_simulé
+Doha,Botic van de Zandschulp(4),Ergi Kirkin(WC),score_simulé
+Doha,Otto Virtanen(5),Terence Atmane,score_simulé
+Doha,Stan Wawrinka,Arthur Cazaux(6),score_simulé
+Doha,Pavel Kotov(7),Jozef Kovalik,score_simulé
+Doha,Mikhail Kukushkin(8),Daniel Merida(WC),score_simulé
+Bucharest,Flavio Cobolli(3),Sebastian Baez(1),score_simulé
+Bucharest,Sebastian Baez(1),Marton Fucsovics,score_simulé
+Bucharest,Flavio Cobolli(3),Damir Dzumhur,score_simulé
+Bucharest,Sebastian Baez(1),Francisco Comesana,score_simulé
+Bucharest,Damir Dzumhur,Pedro Martinez(2),score_simulé
+Bucharest,Flavio Cobolli(3),Filip Misolic(Q),score_simulé
+Bucharest,Marton Fucsovics,Christopher O'Connell,score_simulé
+Bucharest,Pedro Martinez(2),Stan Wawrinka(WC),score_simulé
+Bucharest,Christopher O'Connell,Nicolas Jarry(4),score_simulé
+Bucharest,Marton Fucsovics,Mariano Navone(7),score_simulé
+Bucharest,Damir Dzumhur,Filip Cristian Jianu(WC),score_simulé
+Bucharest,Sebastian Baez(1),Gabriel Diallo,score_simulé
+Bucharest,Flavio Cobolli(3),Richard Gasquet(WC),score_simulé
+Bucharest,Francisco Comesana,Roberto Bautista Agut(5),score_simulé
+Bucharest,Filip Misolic(Q),Camilo Ugo Carabelli(8),score_simulé
+Bucharest,Roberto Bautista Agut(5),Yunchaokete Bu,score_simulé
+Bucharest,Camilo Ugo Carabelli(8),Radu Albot,score_simulé
+Bucharest,Francisco Comesana,Martin Klizan(Q),score_simulé
+Bucharest,Gabriel Diallo,Chun-Hsin Tseng,score_simulé
+Bucharest,Damir Dzumhur,Valentin Vacherot(Q),score_simulé
+Bucharest,Marton Fucsovics,Luca Nardi,score_simulé
+Bucharest,Filip Misolic(Q),Alexander Shevchenko,score_simulé
+Bucharest,Christopher O'Connell,Dusan Lajovic,score_simulé
+Bucharest,Stan Wawrinka(WC),Timofey Skatov(Q),score_simulé
+Bucharest,Mariano Navone(7),Laslo Djere,score_simulé
+Bucharest,Richard Gasquet(WC),Botic van de Zandschulp,score_simulé
+Bucharest,Filip Cristian Jianu(WC),Nishesh Basavareddy,score_simulé
+Bucharest,Filip Misolic(7/Alt),Ugo Blanchet(3),score_simulé
+Bucharest,Timofey Skatov(4),Radu Albot(5),score_simulé
+Bucharest,Martin Klizan,Sascha Gueymard Wayenburg(8),score_simulé
+Bucharest,Valentin Vacherot,Luca Preda(WC),score_simulé
+Bucharest,Valentin Vacherot,Nikoloz Basilashvili(1),score_simulé
+Bucharest,Martin Klizan,Martin Landaluce(2),score_simulé
+Bucharest,Ugo Blanchet(3),Cezar Cretu(Alt),score_simulé
+Bucharest,Timofey Skatov(4),Oleg Prihodko(Alt),score_simulé
+Bucharest,Radu Albot(5),Stefan Adrian Andreescu(WC),score_simulé
+Bucharest,Luca Preda(WC),Murkel Dellien(6),score_simulé
+Bucharest,Filip Misolic(7/Alt),Matteo Martineau,score_simulé
+Bucharest,Sascha Gueymard Wayenburg(8),Elias Ymer,score_simulé
+Bastad,Luciano Darderi(6),Jesper De Jong,score_simulé
+Bastad,Luciano Darderi(6),Francisco Cerundolo(1),score_simulé
+Bastad,Jesper de Jong,Camilo Ugo Carabelli(5),score_simulé
+Bastad,Francisco Cerundolo(1),Damir Dzumhur(7),score_simulé
+Bastad,Jesper de Jong,Tallon Griekspoor(2),score_simulé
+Bastad,Luciano Darderi(6),Sebastian Baez(4),score_simulé
+Bastad,Camilo Ugo Carabelli(5),Filip Misolic(Q),score_simulé
+Bastad,Francisco Cerundolo(1),Mariano Navone,score_simulé
+Bastad,Filip Misolic(Q),Nuno Borges(3),score_simulé
+Bastad,Camilo Ugo Carabelli(5),Botic van de Zandschulp,score_simulé
+Bastad,Damir Dzumhur(7),Hugo Gaston,score_simulé
+Bastad,Tallon Griekspoor(2),Andrea Pellegrino(Q),score_simulé
+Bastad,Sebastian Baez(4),Nicolai Budkov Kjaer(Q),score_simulé
+Bastad,Luciano Darderi(6),Elias Ymer(WC),score_simulé
+Bastad,Jesper de Jong,Vit Kopriva(8),score_simulé
+Bastad,Filip Misolic(Q),Elmer Moller,score_simulé
+Bastad,Mariano Navone,Tomas Barrios Vera,score_simulé
+Bastad,Camilo Ugo Carabelli(5),Cristian Garin,score_simulé
+Bastad,Damir Dzumhur(7),Sebastian Ofner,score_simulé
+Bastad,Vit Kopriva(8),Hugo Dellien,score_simulé
+Bastad,Nicolai Budkov Kjaer(Q),Thiago Monteiro(Q),score_simulé
+Bastad,Hugo Gaston,Chun-Hsin Tseng,score_simulé
+Bastad,Andrea Pellegrino(Q),Jaime Faria,score_simulé
+Bastad,Botic van de Zandschulp,Mikael Ymer(WC),score_simulé
+Bastad,Elias Ymer(WC),Tristan Boyer,score_simulé
+Bastad,Luciano Darderi(6),Raphael Collignon,score_simulé
+Bastad,Jesper de Jong,William Rejchtman Vinciguerra(WC),score_simulé
+Bastad,Filip Misolic(1),Olle Wallin(WC),score_simulé
+Bastad,Andrea Pellegrino(3),Timofey Skatov(7),score_simulé
+Bastad,Thiago Monteiro(5),Vilius Gaubas(4),score_simulé
+Bastad,Nicolai Budkov Kjaer(Alt),Pablo Llamas Ruiz(PR),score_simulé
+Bastad,Filip Misolic(1),Radu Albot,score_simulé
+Bastad,Nicolai Budkov Kjaer(Alt),Thiago Seyboth Wild(2),score_simulé
+Bastad,Andrea Pellegrino(3),Daniel Michalski,score_simulé
+Bastad,Vilius Gaubas(4),Ludvig Fredrik Hede(WC),score_simulé
+Bastad,Thiago Monteiro(5),Andrej Martin,score_simulé
+Bastad,Pablo Llamas Ruiz(PR),Luca Van Assche(6),score_simulé
+Bastad,Timofey Skatov(7),Sumit Nagal,score_simulé
+Bastad,Olle Wallin(WC),Viktor Durasovic(8),score_simulé
+Barcelona,Holger Rune(6),Carlos Alcaraz(1),score_simulé
+Barcelona,Carlos Alcaraz(1),Arthur Fils(7),score_simulé
+Barcelona,Holger Rune(6),Karen Khachanov,score_simulé
+Barcelona,Carlos Alcaraz(1),Alex de Minaur(5),score_simulé
+Barcelona,Holger Rune(6),Casper Ruud(2),score_simulé
+Barcelona,Arthur Fils(7),Stefanos Tsitsipas(3),score_simulé
+Barcelona,Karen Khachanov,Alejandro Davidovich Fokina,score_simulé
+Barcelona,Carlos Alcaraz(1),Laslo Djere(Q),score_simulé
+Barcelona,Alejandro Davidovich Fokina,Andrey Rublev(4),score_simulé
+Barcelona,Alex de Minaur(5),Jacob Fearnley(LL),score_simulé
+Barcelona,Karen Khachanov,Jaume Munar,score_simulé
+Barcelona,Casper Ruud(2),Hamad Medjedovic(Q),score_simulé
+Barcelona,Stefanos Tsitsipas(3),Sebastian Korda,score_simulé
+Barcelona,Holger Rune(6),Sebastian Baez,score_simulé
+Barcelona,Arthur Fils(7),Pedro Martinez,score_simulé
+Barcelona,Carlos Alcaraz(1),Ethan Quinn(Q),score_simulé
+Barcelona,Casper Ruud(2),Daniel Elahi Galan(Q),score_simulé
+Barcelona,Stefanos Tsitsipas(3),Reilly Opelka(PR),score_simulé
+Barcelona,Alex de Minaur(5),Tomas Martin Etcheverry,score_simulé
+Barcelona,Arthur Fils(7),Pablo Carreno Busta(WC),score_simulé
+Barcelona,Jaume Munar,Frances Tiafoe(9),score_simulé
+Barcelona,Sebastian Baez,Damir Dzumhur(LL),score_simulé
+Barcelona,Alejandro Davidovich Fokina,Stan Wawrinka(WC),score_simulé
+Barcelona,Laslo Djere(Q),Arthur Rinderknech(LL),score_simulé
+Barcelona,Karen Khachanov,Cameron Norrie(Q),score_simulé
+Barcelona,Andrey Rublev(4),Jesper de Jong(Q),score_simulé
+Barcelona,Holger Rune(6),Albert Ramos-Vinolas(WC),score_simulé
+Barcelona,Jacob Fearnley(LL),Roberto Carballes Baena,score_simulé
+Barcelona,Sebastian Korda,Matteo Arnaldi,score_simulé
+Barcelona,Pedro Martinez,Brandon Nakashima,score_simulé
+Barcelona,Hamad Medjedovic(Q),Giovanni Mpetshi Perricard,score_simulé
+Barcelona,Cameron Norrie,Damir Dzumhur(3),score_simulé
+Barcelona,Hamad Medjedovic(6),Gabriel Diallo(11),score_simulé
+Barcelona,Daniel Elahi Galan,Jacob Fearnley(7),score_simulé
+Barcelona,Jesper de Jong,Arthur Rinderknech(8),score_simulé
+Barcelona,Laslo Djere(10),Daniel Rincon(WC),score_simulé
+Barcelona,Ethan Quinn(Alt),Borna Coric,score_simulé
+Barcelona,Daniel Rincon(WC),Benjamin Bonzi(1),score_simulé
+Barcelona,Damir Dzumhur(3),Max Alcala Gurri(WC),score_simulé
+Barcelona,Borna Coric,Mattia Bellucci(4),score_simulé
+Barcelona,Hamad Medjedovic(6),Hugo Dellien,score_simulé
+Barcelona,Jacob Fearnley(7),Leo Borg(WC),score_simulé
+Barcelona,Arthur Rinderknech(8),Jozef Kovalik,score_simulé
+Barcelona,Ethan Quinn(Alt),Corentin Moutet(9),score_simulé
+Barcelona,Laslo Djere(10),Federico Coria,score_simulé
+Barcelona,Gabriel Diallo(11),Martin Landaluce(WC),score_simulé
+Barcelona,Cameron Norrie,Hugo Gaston(12),score_simulé
+Barcelona,Jesper de Jong,Lloyd Harris(Alt),score_simulé
+Barcelona,Daniel Elahi Galan,Nikoloz Basilashvili(Alt),score_simulé
+Acapulco,Tomas Machac(8),Alejandro Davidovich Fokina,score_simulé
+Acapulco,Tomas Machac(8),Brandon Nakashima,score_simulé
+Acapulco,Alejandro Davidovich Fokina,Denis Shapovalov(9),score_simulé
+Acapulco,Tomas Machac(8),Learner Tien(Q),score_simulé
+Acapulco,Denis Shapovalov(9),Marcos Giron,score_simulé
+Acapulco,Alejandro Davidovich Fokina,Rodrigo Pacheco Mendez(WC),score_simulé
+Acapulco,Brandon Nakashima,David Goffin,score_simulé
+Acapulco,Learner Tien(Q),Alexander Zverev(1),score_simulé
+Acapulco,Rodrigo Pacheco Mendez(WC),Casper Ruud(2),score_simulé
+Acapulco,Marcos Giron,Tommy Paul(3),score_simulé
+Acapulco,Brandon Nakashima,Holger Rune(4),score_simulé
+Acapulco,David Goffin,Ben Shelton(5),score_simulé
+Acapulco,Alejandro Davidovich Fokina,Frances Tiafoe(7),score_simulé
+Acapulco,Tomas Machac(8),Daniel Altmaier(WC),score_simulé
+Acapulco,Denis Shapovalov(9),Alex Michelsen,score_simulé
+Acapulco,Alexander Zverev(1),Matteo Arnaldi,score_simulé
+Acapulco,Holger Rune(4),Roberto Carballes Baena,score_simulé
+Acapulco,Frances Tiafoe(7),Alexandre Muller,score_simulé
+Acapulco,Denis Shapovalov(9),Nishesh Basavareddy(Q),score_simulé
+Acapulco,Alejandro Davidovich Fokina,Mattia Bellucci(LL),score_simulé
+Acapulco,Alex Michelsen,Yunchaokete Bu(WC),score_simulé
+Acapulco,Brandon Nakashima,Benjamin Bonzi,score_simulé
+Acapulco,Rodrigo Pacheco Mendez(WC),Aleksandar Vukic,score_simulé
+Acapulco,Casper Ruud(2),Arthur Rinderknech,score_simulé
+Acapulco,Tommy Paul(3),Gabriel Diallo(Q),score_simulé
+Acapulco,Ben Shelton(5),Flavio Cobolli,score_simulé
+Acapulco,Tomas Machac(8),Jakub Mensik,score_simulé
+Acapulco,Daniel Altmaier(WC),Miomir Kecmanovic,score_simulé
+Acapulco,Marcos Giron,Adam Walton(Q),score_simulé
+Acapulco,David Goffin,Rinky Hijikata,score_simulé
+Acapulco,Learner Tien(Q),Cameron Norrie,score_simulé
+Acapulco,Gabriel Diallo(6),Mattia Bellucci(1),score_simulé
+Acapulco,Adam Walton(7),Aleksandar Kovacevic(2),score_simulé
+Acapulco,Learner Tien(4),Dusan Lajovic(5),score_simulé
+Acapulco,Nishesh Basavareddy,Stefan Kozlov(WC),score_simulé
+Acapulco,Mattia Bellucci(1),Christopher Eubanks,score_simulé
+Acapulco,Aleksandar Kovacevic(2),Alan Magadan(WC),score_simulé
+Acapulco,Learner Tien(4),Federico Agustin Gomez(Alt),score_simulé
+Acapulco,Dusan Lajovic(5),Dmitry Popko(Alt),score_simulé
+Acapulco,Gabriel Diallo(6),Rafael De Alba(WC),score_simulé
+Acapulco,Adam Walton(7),Adrian Mannarino,score_simulé
+Acapulco,Nishesh Basavareddy,James Duckworth(8),score_simulé
+Acapulco,Stefan Kozlov(WC),Duarte Vale(Alt),score_simulé
+Geneva,Novak Djokovic(2),Hubert Hurkacz(6),score_simulé
+Geneva,Novak Djokovic(2),Cameron Norrie(Q),score_simulé
+Geneva,Hubert Hurkacz(6),Sebastian Ofner(Q),score_simulé
+Geneva,Hubert Hurkacz(6),Taylor Fritz(1),score_simulé
+Geneva,Novak Djokovic(2),Matteo Arnaldi(8),score_simulé
+Geneva,Sebastian Ofner(Q),Karen Khachanov(4),score_simulé
+Geneva,Cameron Norrie(Q),Alexei Popyrin(5),score_simulé
+Geneva,Taylor Fritz(1),Quentin Halys,score_simulé
+Geneva,Novak Djokovic(2),Marton Fucsovics,score_simulé
+Geneva,Cameron Norrie(Q),Tomas Machac(3),score_simulé
+Geneva,Alexei Popyrin(5),Jacob Fearnley,score_simulé
+Geneva,Hubert Hurkacz(6),Arthur Rinderknech,score_simulé
+Geneva,Matteo Arnaldi(8),Fabian Marozsan,score_simulé
+Geneva,Sebastian Ofner(Q),Nuno Borges,score_simulé
+Geneva,Karen Khachanov(4),Kei Nishikori,score_simulé
+Geneva,Hubert Hurkacz(6),Arthur Cazaux(WC),score_simulé
+Geneva,Fabian Marozsan,Karue Sell(Q),score_simulé
+Geneva,Arthur Rinderknech,Miomir Kecmanovic,score_simulé
+Geneva,Matteo Arnaldi(8),Hugo Gaston,score_simulé
+Geneva,Jacob Fearnley,Dusan Lajovic(WC),score_simulé
+Geneva,Marton Fucsovics,Zizou Bergs,score_simulé
+Geneva,Quentin Halys,Jaume Munar,score_simulé
+Geneva,Kei Nishikori,Learner Tien,score_simulé
+Geneva,Cameron Norrie(Q),Dominic Stricker(WC),score_simulé
+Geneva,Sebastian Ofner(Q),Ivan Gakhov(Q),score_simulé
+Geneva,Alexei Popyrin(5),Nicolas Jarry,score_simulé
+Geneva,Nuno Borges,Alex Michelsen(7),score_simulé
+Geneva,Cameron Norrie(2),Jenson Brooksby(8),score_simulé
+Geneva,Sebastian Ofner(6),Reilly Opelka(3),score_simulé
+Geneva,Ivan Gakhov,Kilian Feldbausch(WC),score_simulé
+Geneva,Karue Sell,Remy Bertola,score_simulé
+Geneva,Remy Bertola,James Duckworth(1),score_simulé
+Geneva,Cameron Norrie(2),Ergi Kirkin,score_simulé
+Geneva,Reilly Opelka(3),Enrico Dalla Valle,score_simulé
+Geneva,Ivan Gakhov,Thiago Monteiro(4),score_simulé
+Geneva,Kilian Feldbausch(WC),Tristan Schoolkate(5),score_simulé
+Geneva,Sebastian Ofner(6),Leo Borg(WC),score_simulé
+Geneva,Karue Sell,Pierre-Hugues Herbert(7),score_simulé
+Geneva,Jenson Brooksby(8),Radu Albot,score_simulé
+Miami,Jakub Mensik,Novak Djokovic(4),score_simulé
+Miami,Jakub Mensik,Taylor Fritz(3),score_simulé
+Miami,Novak Djokovic(4),Grigor Dimitrov(14),score_simulé
+Miami,Taylor Fritz(3),Matteo Berrettini(29),score_simulé
+Miami,Novak Djokovic(4),Sebastian Korda(24),score_simulé
+Miami,Jakub Mensik,Arthur Fils(17),score_simulé
+Miami,Grigor Dimitrov(14),Francisco Cerundolo(23),score_simulé
+Miami,Arthur Fils(17),Alexander Zverev(1),score_simulé
+Miami,Taylor Fritz(3),Adam Walton(LL),score_simulé
+Miami,Novak Djokovic(4),Lorenzo Musetti(15),score_simulé
+Miami,Francisco Cerundolo(23),Casper Ruud(5),score_simulé
+Miami,Matteo Berrettini(29),Alex de Minaur(10),score_simulé
+Miami,Grigor Dimitrov(14),Brandon Nakashima(31),score_simulé
+Miami,Jakub Mensik,Tomas Machac(20),score_simulé
+Miami,Sebastian Korda(24),Gael Monfils,score_simulé
+Miami,Alexander Zverev(1),Jordan Thompson,score_simulé
+Miami,Taylor Fritz(3),Denis Shapovalov(27),score_simulé
+Miami,Arthur Fils(17),Frances Tiafoe(16),score_simulé
+Miami,Tomas Machac(20),Reilly Opelka(PR),score_simulé
+Miami,Matteo Berrettini(29),Zizou Bergs,score_simulé
+Miami,Jakub Mensik,Roman Safiullin,score_simulé
+Miami,Adam Walton(LL),Coleman Wong(WC),score_simulé
+Miami,Novak Djokovic(4),Camilo Ugo Carabelli(LL),score_simulé
+Miami,Casper Ruud(5),Alejandro Tabilo(30),score_simulé
+Miami,Sebastian Korda(24),Stefanos Tsitsipas(9),score_simulé
+Miami,Francisco Cerundolo(23),Tommy Paul(12),score_simulé
+Miami,Grigor Dimitrov(14),Karen Khachanov(22),score_simulé
+Miami,Lorenzo Musetti(15),Felix Auger-Aliassime(18),score_simulé
+Miami,Brandon Nakashima(31),David Goffin,score_simulé
+Miami,Gael Monfils,Jaume Munar,score_simulé
+Miami,Alexander Zverev(1),Jacob Fearnley(Q),score_simulé
+Miami,Taylor Fritz(3),Lorenzo Sonego,score_simulé
+Miami,Jakub Mensik,Jack Draper(6),score_simulé
+Miami,Zizou Bergs,Andrey Rublev(8),score_simulé
+Miami,Alex de Minaur(10),Yunchaokete Bu,score_simulé
+Miami,Reilly Opelka(PR),Holger Rune(11),score_simulé
+Miami,Coleman Wong(WC),Ben Shelton(13),score_simulé
+Miami,Frances Tiafoe(16),Alejandro Davidovich Fokina,score_simulé
+Miami,Arthur Fils(17),Gabriel Diallo(LL),score_simulé
+Miami,Joao Fonseca,Ugo Humbert(19),score_simulé
+Miami,Tomas Machac(20),Matteo Arnaldi,score_simulé
+Miami,Roman Safiullin,Alexei Popyrin(25),score_simulé
+Miami,Denis Shapovalov(27),Thiago Agustin Tirante(Q),score_simulé
+Miami,Jordan Thompson,Giovanni Mpetshi Perricard(28),score_simulé
+Miami,Matteo Berrettini(29),Hugo Gaston(LL),score_simulé
+Miami,Adam Walton(LL),Luciano Darderi,score_simulé
+Miami,David Goffin,Carlos Alcaraz(2),score_simulé
+Miami,Novak Djokovic(4),Rinky Hijikata,score_simulé
+Miami,Casper Ruud(5),Miomir Kecmanovic,score_simulé
+Miami,Jaume Munar,Daniil Medvedev(7),score_simulé
+Miami,Stefanos Tsitsipas(9),Chun-Hsin Tseng(Q),score_simulé
+Miami,Tommy Paul(12),Alexander Bublik,score_simulé
+Miami,Grigor Dimitrov(14),Federico Cina(WC),score_simulé
+Miami,Lorenzo Musetti(15),Quentin Halys,score_simulé
+Miami,Felix Auger-Aliassime(18),Tristan Schoolkate(Q),score_simulé
+Miami,Karen Khachanov(22),Nick Kyrgios(PR),score_simulé
+Miami,Francisco Cerundolo(23),Alexandre Muller,score_simulé
+Miami,Sebastian Korda(24),Eliot Spizzirri(WC),score_simulé
+Miami,Gael Monfils,Jiri Lehecka(26),score_simulé
+Miami,Alejandro Tabilo(30),Corentin Moutet,score_simulé
+Miami,Brandon Nakashima(31),Roberto Carballes Baena,score_simulé
+Miami,Camilo Ugo Carabelli(LL),Alex Michelsen(32),score_simulé
+Miami,Matteo Arnaldi,Yibing Wu(WC),score_simulé
+Miami,Zizou Bergs,Nuno Borges,score_simulé
+Miami,Yunchaokete Bu,Cameron Norrie,score_simulé
+Miami,Luciano Darderi,Pedro Martinez,score_simulé
+Miami,Alejandro Davidovich Fokina,Jan-Lennard Struff,score_simulé
+Miami,Gabriel Diallo(LL),Tomas Martin Etcheverry,score_simulé
+Miami,Jacob Fearnley(Q),Benjamin Bonzi,score_simulé
+Miami,Joao Fonseca,Learner Tien,score_simulé
+Miami,Hugo Gaston(LL),Yoshihito Nishioka,score_simulé
+Miami,Jakub Mensik,Roberto Bautista Agut,score_simulé
+Miami,Reilly Opelka(PR),Christopher Eubanks(WC),score_simulé
+Miami,Roman Safiullin,Jenson Brooksby(PR),score_simulé
+Miami,Lorenzo Sonego,Mariano Navone,score_simulé
+Miami,Jordan Thompson,Marcos Giron,score_simulé
+Miami,Thiago Agustin Tirante(Q),Flavio Cobolli,score_simulé
+Miami,Coleman Wong(WC),Daniel Altmaier,score_simulé
+Miami,Alexander Bublik,Sebastian Baez,score_simulé
+Miami,Roberto Carballes Baena,Christopher O'Connell(Q),score_simulé
+Miami,Federico Cina(WC),Francisco Comesana(Q),score_simulé
+Miami,David Goffin,Aleksandar Vukic,score_simulé
+Miami,Quentin Halys,Thiago Seyboth Wild,score_simulé
+Miami,Rinky Hijikata,Hamad Medjedovic,score_simulé
+Miami,Miomir Kecmanovic,Aleksandar Kovacevic,score_simulé
+Miami,Nick Kyrgios(PR),Mackenzie McDonald(Q),score_simulé
+Miami,Gael Monfils,Fabian Marozsan,score_simulé
+Miami,Corentin Moutet,Alexander Blockx(Q),score_simulé
+Miami,Alexandre Muller,Rei Sakamoto(Q),score_simulé
+Miami,Jaume Munar,Arthur Rinderknech,score_simulé
+Miami,Tristan Schoolkate(Q),Ethan Quinn(Q),score_simulé
+Miami,Eliot Spizzirri(WC),Billy Harris(Q),score_simulé
+Miami,Chun-Hsin Tseng(Q),Mattia Bellucci,score_simulé
+Miami,Camilo Ugo Carabelli(LL),Brandon Holt(Q),score_simulé
+Miami,Ethan Quinn,Camilo Ugo Carabelli(1),score_simulé
+Miami,Francisco Comesana(2),Shintaro Mochizuki,score_simulé
+Miami,Christopher O'Connell(4),Marco Trungelliti,score_simulé
+Miami,Jacob Fearnley(5),Tristan Boyer(20),score_simulé
+Miami,Brandon Holt(17),Gabriel Diallo(6),score_simulé
+Miami,Billy Harris(13),Hugo Gaston(7),score_simulé
+Miami,Tristan Schoolkate(24),Adam Walton(8),score_simulé
+Miami,Rei Sakamoto(WC),James Duckworth(9),score_simulé
+Miami,Thiago Agustin Tirante,Alexander Shevchenko(10),score_simulé
+Miami,Chun-Hsin Tseng(11),Darwin Blanch(WC),score_simulé
+Miami,Mackenzie McDonald(15),Pavel Kotov(12),score_simulé
+Miami,Alexander Blockx,Terence Atmane,score_simulé
+Miami,Camilo Ugo Carabelli(1),Mitchell Krueger,score_simulé
+Miami,Francisco Comesana(2),Michael Mmoh(PR),score_simulé
+Miami,Terence Atmane,Luca Nardi(3),score_simulé
+Miami,Christopher O'Connell(4),Liam Draxl(Alt),score_simulé
+Miami,Jacob Fearnley(5),Thijs Boogaard(WC),score_simulé
+Miami,Gabriel Diallo(6),Yosuke Watanuki(PR),score_simulé
+Miami,Hugo Gaston(7),Hady Habib,score_simulé
+Miami,Adam Walton(8),Mikhail Kukushkin,score_simulé
+Miami,James Duckworth(9),Federico Agustin Gomez,score_simulé
+Miami,Alexander Shevchenko(10),Lukas Klein,score_simulé
+Miami,Chun-Hsin Tseng(11),Alejandro Moro Canas,score_simulé
+Miami,Pavel Kotov(12),Alexis Galarneau,score_simulé
+Miami,Billy Harris(13),Mikael Ymer(WC),score_simulé
+Miami,Thiago Agustin Tirante,Dusan Lajovic(14),score_simulé
+Miami,Mackenzie McDonald(15),Nikoloz Basilashvili,score_simulé
+Miami,Shintaro Mochizuki,Yannick Hanfmann(16),score_simulé
+Miami,Brandon Holt(17),Martin Damm(WC),score_simulé
+Miami,Alexander Blockx,Otto Virtanen(18),score_simulé
+Miami,Darwin Blanch(WC),Taro Daniel(19),score_simulé
+Miami,Tristan Boyer(20),Yasutaka Uchiyama,score_simulé
+Miami,Marco Trungelliti,Alexander Ritschard(21),score_simulé
+Miami,Rei Sakamoto(WC),Kamil Majchrzak(22),score_simulé
+Miami,Ethan Quinn,Adrian Mannarino(23),score_simulé
+Miami,Tristan Schoolkate(24),Stefano Napolitano(PR),score_simulé
+Australian Open,Jannik Sinner(1),Alexander Zverev(2),score_simulé
+Australian Open,Jannik Sinner(1),Ben Shelton(21),score_simulé
+Australian Open,Alexander Zverev(2),Novak Djokovic(7),score_simulé
+Australian Open,Jannik Sinner(1),Alex de Minaur(8),score_simulé
+Australian Open,Ben Shelton(21),Lorenzo Sonego,score_simulé
+Australian Open,Alexander Zverev(2),Tommy Paul(12),score_simulé
+Australian Open,Novak Djokovic(7),Carlos Alcaraz(3),score_simulé
+Australian Open,Jannik Sinner(1),Holger Rune(13),score_simulé
+Australian Open,Alex de Minaur(8),Alex Michelsen,score_simulé
+Australian Open,Ben Shelton(21),Gael Monfils,score_simulé
+Australian Open,Lorenzo Sonego,Learner Tien(Q),score_simulé
+Australian Open,Alexander Zverev(2),Ugo Humbert(14),score_simulé
+Australian Open,Carlos Alcaraz(3),Jack Draper(15),score_simulé
+Australian Open,Novak Djokovic(7),Jiri Lehecka(24),score_simulé
+Australian Open,Tommy Paul(12),Alejandro Davidovich Fokina,score_simulé
+Australian Open,Jannik Sinner(1),Marcos Giron,score_simulé
+Australian Open,Gael Monfils,Taylor Fritz(4),score_simulé
+Australian Open,Alex de Minaur(8),Francisco Cerundolo(31),score_simulé
+Australian Open,Holger Rune(13),Miomir Kecmanovic,score_simulé
+Australian Open,Ben Shelton(21),Lorenzo Musetti(16),score_simulé
+Australian Open,Alex Michelsen,Karen Khachanov(19),score_simulé
+Australian Open,Lorenzo Sonego,Fabian Marozsan,score_simulé
+Australian Open,Learner Tien(Q),Corentin Moutet,score_simulé
+Australian Open,Alexander Zverev(2),Jacob Fearnley,score_simulé
+Australian Open,Carlos Alcaraz(3),Nuno Borges,score_simulé
+Australian Open,Novak Djokovic(7),Tomas Machac(26),score_simulé
+Australian Open,Tommy Paul(12),Roberto Carballes Baena,score_simulé
+Australian Open,Ugo Humbert(14),Arthur Fils(20),score_simulé
+Australian Open,Jack Draper(15),Aleksandar Vukic,score_simulé
+Australian Open,Jiri Lehecka(24),Benjamin Bonzi,score_simulé
+Australian Open,Alejandro Davidovich Fokina,Jakub Mensik,score_simulé
+Australian Open,Jannik Sinner(1),Tristan Schoolkate(WC),score_simulé
+Australian Open,Taylor Fritz(4),Cristian Garin(Q),score_simulé
+Australian Open,Learner Tien(Q),Daniil Medvedev(5),score_simulé
+Australian Open,Alex de Minaur(8),Tristan Boyer(Q),score_simulé
+Australian Open,Holger Rune(13),Matteo Berrettini,score_simulé
+Australian Open,Lorenzo Musetti(16),Denis Shapovalov,score_simulé
+Australian Open,Fabian Marozsan,Frances Tiafoe(17),score_simulé
+Australian Open,Miomir Kecmanovic,Hubert Hurkacz(18),score_simulé
+Australian Open,Karen Khachanov(19),Gabriel Diallo,score_simulé
+Australian Open,Ben Shelton(21),Pablo Carreno Busta,score_simulé
+Australian Open,Francisco Cerundolo(31),Facundo Diaz Acosta,score_simulé
+Australian Open,Marcos Giron,Tomas Martin Etcheverry,score_simulé
+Australian Open,Alex Michelsen,James McCabe(WC),score_simulé
+Australian Open,Gael Monfils,Daniel Altmaier,score_simulé
+Australian Open,Corentin Moutet,Mitchell Krueger(Q),score_simulé
+Australian Open,Lorenzo Sonego,Joao Fonseca(Q),score_simulé
+Australian Open,Alexander Zverev(2),Pedro Martinez,score_simulé
+Australian Open,Carlos Alcaraz(3),Yoshihito Nishioka,score_simulé
+Australian Open,Jakub Mensik,Casper Ruud(6),score_simulé
+Australian Open,Novak Djokovic(7),Jaime Faria(Q),score_simulé
+Australian Open,Tommy Paul(12),Kei Nishikori,score_simulé
+Australian Open,Ugo Humbert(14),Hady Habib(Q),score_simulé
+Australian Open,Jack Draper(15),Thanasi Kokkinakis,score_simulé
+Australian Open,Arthur Fils(20),Quentin Halys,score_simulé
+Australian Open,Aleksandar Vukic,Sebastian Korda(22),score_simulé
+Australian Open,Jiri Lehecka(24),Hugo Gaston,score_simulé
+Australian Open,Tomas Machac(26),Reilly Opelka,score_simulé
+Australian Open,Nuno Borges,Jordan Thompson(27),score_simulé
+Australian Open,Alejandro Davidovich Fokina,Felix Auger-Aliassime(29),score_simulé
+Australian Open,Benjamin Bonzi,Francesco Passaro(LL),score_simulé
+Australian Open,Roberto Carballes Baena,James Duckworth,score_simulé
+Australian Open,Jacob Fearnley,Arthur Cazaux,score_simulé
+Australian Open,Taylor Fritz(4),Jenson Brooksby,score_simulé
+Australian Open,Daniil Medvedev(5),Kasidit Samrej(WC),score_simulé
+Australian Open,Alex de Minaur(8),Botic van de Zandschulp,score_simulé
+Australian Open,Joao Fonseca(Q),Andrey Rublev(9),score_simulé
+Australian Open,Holger Rune(13),Zhizhen Zhang,score_simulé
+Australian Open,Lorenzo Musetti(16),Matteo Arnaldi,score_simulé
+Australian Open,Hubert Hurkacz(18),Tallon Griekspoor,score_simulé
+Australian Open,Karen Khachanov(19),Adrian Mannarino,score_simulé
+Australian Open,Ben Shelton(21),Brandon Nakashima,score_simulé
+Australian Open,Corentin Moutet,Alexei Popyrin(25),score_simulé
+Australian Open,Gael Monfils,Giovanni Mpetshi Perricard(30),score_simulé
+Australian Open,Francisco Cerundolo(31),Alexander Bublik,score_simulé
+Australian Open,Tomas Martin Etcheverry,Flavio Cobolli(32),score_simulé
+Australian Open,Daniel Altmaier,Francisco Comesana,score_simulé
+Australian Open,Matteo Berrettini,Cameron Norrie,score_simulé
+Australian Open,Tristan Boyer(Q),Federico Coria,score_simulé
+Australian Open,Pablo Carreno Busta,Kamil Majchrzak(Q),score_simulé
+Australian Open,Gabriel Diallo,Luca Nardi,score_simulé
+Australian Open,Facundo Diaz Acosta,Zizou Bergs,score_simulé
+Australian Open,Cristian Garin(Q),Borna Coric,score_simulé
+Australian Open,Marcos Giron,Yannick Hanfmann,score_simulé
+Australian Open,Miomir Kecmanovic,Dusan Lajovic,score_simulé
+Australian Open,Mitchell Krueger(Q),Rinky Hijikata,score_simulé
+Australian Open,Denis Shapovalov,Roberto Bautista Agut,score_simulé
+Australian Open,Lorenzo Sonego,Stan Wawrinka(WC),score_simulé
+Australian Open,Learner Tien(Q),Camilo Ugo Carabelli,score_simulé
+Australian Open,Jannik Sinner(1),Nicolas Jarry,score_simulé
+Australian Open,Carlos Alcaraz(3),Alexander Shevchenko,score_simulé
+Australian Open,Novak Djokovic(7),Nishesh Basavareddy(WC),score_simulé
+Australian Open,Francesco Passaro(LL),Grigor Dimitrov(10),score_simulé
+Australian Open,Alex Michelsen,Stefanos Tsitsipas(11),score_simulé
+Australian Open,Tommy Paul(12),Christopher O'Connell,score_simulé
+Australian Open,Jack Draper(15),Mariano Navone,score_simulé
+Australian Open,Frances Tiafoe(17),Arthur Rinderknech,score_simulé
+Australian Open,Sebastian Korda(22),Lukas Klein(Q),score_simulé
+Australian Open,Roberto Carballes Baena,Alejandro Tabilo(23),score_simulé
+Australian Open,Jordan Thompson(27),Dominik Koepfer(Q),score_simulé
+Australian Open,Arthur Cazaux,Sebastian Baez(28),score_simulé
+Australian Open,Felix Auger-Aliassime(29),Jan-Lennard Struff,score_simulé
+Australian Open,Benjamin Bonzi,David Goffin,score_simulé
+Australian Open,Nuno Borges,Alexandre Muller,score_simulé
+Australian Open,Alejandro Davidovich Fokina,Juncheng Shang,score_simulé
+Australian Open,James Duckworth,Dominic Stricker,score_simulé
+Australian Open,Jaime Faria(Q),Pavel Kotov,score_simulé
+Australian Open,Jacob Fearnley,Nick Kyrgios,score_simulé
+Australian Open,Thanasi Kokkinakis,Roman Safiullin,score_simulé
+Australian Open,Fabian Marozsan,Thiago Seyboth Wild,score_simulé
+Australian Open,James McCabe(WC),Martin Landaluce(Q),score_simulé
+Australian Open,Jakub Mensik,Nikoloz Basilashvili(Q),score_simulé
+Australian Open,Yoshihito Nishioka,Aziz Dougaz(Q),score_simulé
+Australian Open,Tristan Schoolkate(WC),Taro Daniel,score_simulé
+Australian Open,Aleksandar Vukic,Damir Dzumhur,score_simulé
+Australian Open,Alexander Zverev(2),Lucas Pouille(WC),score_simulé
+Australian Open,Casper Ruud(6),Jaume Munar,score_simulé
+Australian Open,Ugo Humbert(14),Matteo Gigante(Q),score_simulé
+Australian Open,Arthur Fils(20),Otto Virtanen,score_simulé
+Australian Open,Jiri Lehecka(24),Li Tu(WC),score_simulé
+Australian Open,Tomas Machac(26),Sumit Nagal,score_simulé
+Australian Open,Hugo Gaston,Omar Jasika(WC),score_simulé
+Australian Open,Hady Habib(Q),Yunchaokete Bu,score_simulé
+Australian Open,Quentin Halys,Adam Walton,score_simulé
+Australian Open,Pedro Martinez,Luciano Darderi,score_simulé
+Australian Open,Kei Nishikori,Thiago Monteiro(Q),score_simulé
+Australian Open,Reilly Opelka,Gauthier Onclin(Q),score_simulé
+Australian Open,Dominik Koepfer(1),Blake Ellis(WC),score_simulé
+Australian Open,Tristan Boyer(26),Christopher Eubanks(4),score_simulé
+Australian Open,Thiago Monteiro(6),Kimmer Coppejans,score_simulé
+Australian Open,Joao Fonseca,Thiago Agustin Tirante(12),score_simulé
+Australian Open,Kamil Majchrzak(14),Billy Harris(19),score_simulé
+Australian Open,Learner Tien(16),Jozef Kovalik(21),score_simulé
+Australian Open,Jaime Faria(17),Mark Lajal,score_simulé
+Australian Open,Cristian Garin,Hugo Dellien(18),score_simulé
+Australian Open,Gauthier Onclin,Mackenzie McDonald(25),score_simulé
+Australian Open,Lukas Klein(28),Terence Atmane,score_simulé
+Australian Open,Matteo Gigante(32),Henrique Rocha,score_simulé
+Australian Open,Nikoloz Basilashvili,Francesco Passaro,score_simulé
+Australian Open,Aziz Dougaz,Borna Gojo,score_simulé
+Australian Open,Hady Habib,Clement Chidekh,score_simulé
+Australian Open,Mitchell Krueger,Yasutaka Uchiyama,score_simulé
+Australian Open,Martin Landaluce,Dalibor Svrcina,score_simulé
+Australian Open,Dominik Koepfer(1),Ethan Quinn,score_simulé
+Australian Open,Terence Atmane,Mattia Bellucci(2),score_simulé
+Australian Open,Henrique Rocha,Marton Fucsovics(3),score_simulé
+Australian Open,Christopher Eubanks(4),Alejandro Moro Canas,score_simulé
+Australian Open,Thiago Monteiro(6),Valentin Royer,score_simulé
+Australian Open,Gauthier Onclin,Aleksandar Kovacevic(7),score_simulé
+Australian Open,Thiago Agustin Tirante(12),Titouan Droguet,score_simulé
+Australian Open,Kamil Majchrzak(14),Zachary Svajda,score_simulé
+Australian Open,Learner Tien(16),Juan Pablo Ficovich,score_simulé
+Australian Open,Jaime Faria(17),Dane Sweeny(WC),score_simulé
+Australian Open,Billy Harris(19),Carlos Taberner,score_simulé
+Australian Open,Jozef Kovalik(21),August Holmgren,score_simulé
+Australian Open,Borna Gojo,Vit Kopriva(24),score_simulé
+Australian Open,Mackenzie McDonald(25),Brandon Holt,score_simulé
+Australian Open,Tristan Boyer(26),Tomas Barrios Vera,score_simulé
+Australian Open,Lukas Klein(28),Eliot Spizzirri,score_simulé
+Australian Open,Kimmer Coppejans,Valentin Vacherot(31),score_simulé
+Australian Open,Matteo Gigante(32),Lukas Neumayer,score_simulé
+Australian Open,Nikoloz Basilashvili,Alibek Kachmazov,score_simulé
+Australian Open,Aziz Dougaz,Benjamin Hassan,score_simulé
+Australian Open,Blake Ellis(WC),Yosuke Watanuki,score_simulé
+Australian Open,Joao Fonseca,Coleman Wong,score_simulé
+Australian Open,Mark Lajal,Sho Shimabukuro,score_simulé
+Australian Open,Martin Landaluce,James Trotter,score_simulé
+Australian Open,Francesco Passaro,Javier Barranco Cosano,score_simulé
+Australian Open,Dalibor Svrcina,Khumoyun Sultanov,score_simulé
+Australian Open,Cristian Garin,Laslo Djere(10),score_simulé
+Australian Open,Hady Habib,Chun-Hsin Tseng(13),score_simulé
+Australian Open,Hugo Dellien(18),Maks Kasnikowski,score_simulé
+Australian Open,Clement Chidekh,Jerome Kym(27),score_simulé
+Australian Open,Mitchell Krueger,Duje Ajdukovic,score_simulé
+Australian Open,Yasutaka Uchiyama,Adolfo Daniel Vallejo,score_simulé
+Australian Open,Dominik Koepfer(1),Ignacio Buse,score_simulé
+Australian Open,Mattia Bellucci(2),Pavle Marinkov(WC),score_simulé
+Australian Open,Marton Fucsovics(3),Oriol Roca Batalla,score_simulé
+Australian Open,Thiago Monteiro(6),Jason Kubler,score_simulé
+Australian Open,Aziz Dougaz,Jesper de Jong(8),score_simulé
+Australian Open,Mark Lajal,Mikhail Kukushkin(9),score_simulé
+Australian Open,Thiago Agustin Tirante(12),Jurij Rodionov,score_simulé
+Australian Open,Kamil Majchrzak(14),Marco Trungelliti,score_simulé
+Australian Open,Jaime Faria(17),Gijs Brouwer,score_simulé
+Australian Open,Billy Harris(19),Yuta Shimizu,score_simulé
+Australian Open,Jozef Kovalik(21),Bernard Tomic,score_simulé
+Australian Open,Alibek Kachmazov,Shintaro Mochizuki(22),score_simulé
+Australian Open,Vit Kopriva(24),Constant Lestienne,score_simulé
+Australian Open,Tristan Boyer(26),Rei Sakamoto(WC),score_simulé
+Australian Open,Lukas Klein(28),Alexis Galarneau,score_simulé
+Australian Open,Joao Fonseca,Federico Agustin Gomez(29),score_simulé
+Australian Open,Yosuke Watanuki,Juan Manuel Cerundolo(30),score_simulé
+Australian Open,Valentin Vacherot(31),Marc-Andrea Huesler,score_simulé
+Australian Open,Terence Atmane,Matthew Dellavedova(WC),score_simulé
+Australian Open,Tomas Barrios Vera,Emilio Nava,score_simulé
+Australian Open,Nikoloz Basilashvili,Cruz Hewitt(WC),score_simulé
+Australian Open,Kimmer Coppejans,Matteo Martineau,score_simulé
+Australian Open,Titouan Droguet,Jan Choinski,score_simulé
+Australian Open,Blake Ellis(WC),Antoine Escoffier,score_simulé
+Australian Open,Borna Gojo,Timofey Skatov,score_simulé
+Australian Open,Benjamin Hassan,Nicolas Mejia,score_simulé
+Australian Open,August Holmgren,Hayden Jones(WC),score_simulé
+Australian Open,Ethan Quinn,Calvin Hemery,score_simulé
+Australian Open,Henrique Rocha,Henri Squire,score_simulé
+Australian Open,Valentin Royer,Marc Polmans(WC),score_simulé
+Australian Open,Sho Shimabukuro,Radu Albot,score_simulé
+Australian Open,Eliot Spizzirri,Alexander Blockx,score_simulé
+Australian Open,Zachary Svajda,Enzo Couacaud,score_simulé
+Australian Open,Dane Sweeny(WC),Pierre-Hugues Herbert,score_simulé
+Australian Open,Carlos Taberner,Edward Winter(WC),score_simulé
+Australian Open,Coleman Wong,Dmitry Popko,score_simulé
+Australian Open,Christopher Eubanks(4),Hugo Grenier,score_simulé
+Australian Open,Aleksandar Kovacevic(7),Andrea Collarini,score_simulé
+Australian Open,Laslo Djere(10),Gustavo Heide,score_simulé
+Australian Open,Yasutaka Uchiyama,Harold Mayot(11),score_simulé
+Australian Open,Chun-Hsin Tseng(13),August Holmgren,score_simulé
+Australian Open,Martin Landaluce,Raphael Collignon(15),score_simulé
+Australian Open,Learner Tien(16),Gregoire Barrere,score_simulé
+Australian Open,Hugo Dellien(18),Maximilian Marterer,score_simulé
+Australian Open,Khumoyun Sultanov,Daniel Elahi Galan(20),score_simulé
+Australian Open,Duje Ajdukovic,Richard Gasquet(23),score_simulé
+Australian Open,Mackenzie McDonald(25),Alex Bolt,score_simulé
+Australian Open,Jerome Kym(27),Tim van Rijthoven,score_simulé
+Australian Open,Matteo Gigante(32),Nick Hardt,score_simulé
+Australian Open,Javier Barranco Cosano,Facundo Mena,score_simulé
+Australian Open,Clement Chidekh,Felipe Meligeni Alves,score_simulé
+Australian Open,Juan Pablo Ficovich,Paul Jubb,score_simulé
+Australian Open,Cristian Garin,Murkel Dellien,score_simulé
+Australian Open,Hady Habib,Patrick Kypson,score_simulé
+Australian Open,Brandon Holt,Gianluca Mager,score_simulé
+Australian Open,Maks Kasnikowski,Vilius Gaubas,score_simulé
+Australian Open,Mitchell Krueger,Filip Cristian Jianu,score_simulé
+Australian Open,Alejandro Moro Canas,Juan Pablo Varillas,score_simulé
+Australian Open,Lukas Neumayer,Elmer Moller,score_simulé
+Australian Open,Gauthier Onclin,Roman Andres Burruchaga,score_simulé
+Australian Open,Francesco Passaro,Giulio Zeppieri,score_simulé
+Australian Open,Dalibor Svrcina,Ugo Blanchet,score_simulé
+Australian Open,James Trotter,Daniel Evans,score_simulé
+Australian Open,Adolfo Daniel Vallejo,Adrian Andreev,score_simulé
+Auckland,Gael Monfils,Zizou Bergs(Q),score_simulé
+Auckland,Zizou Bergs(Q),Nuno Borges(7),score_simulé
+Auckland,Gael Monfils,Nishesh Basavareddy(Q),score_simulé
+Auckland,Nuno Borges(7),Jakub Mensik,score_simulé
+Auckland,Nishesh Basavareddy(Q),Alex Michelsen(8),score_simulé
+Auckland,Zizou Bergs(Q),Roberto Carballes Baena,score_simulé
+Auckland,Gael Monfils,Facundo Diaz Acosta(LL),score_simulé
+Auckland,Jakub Mensik,Ben Shelton(1),score_simulé
+Auckland,Nishesh Basavareddy(Q),Alejandro Tabilo(2),score_simulé
+Auckland,Facundo Diaz Acosta(LL),Sebastian Baez(3),score_simulé
+Auckland,Roberto Carballes Baena,Francisco Cerundolo(4),score_simulé
+Auckland,Nuno Borges(7),Mariano Navone,score_simulé
+Auckland,Alex Michelsen(8),Lorenzo Sonego,score_simulé
+Auckland,Zizou Bergs(Q),Luca Nardi(Q),score_simulé
+Auckland,Gael Monfils,Jan-Lennard Struff,score_simulé
+Auckland,Luca Nardi(Q),Flavio Cobolli(6),score_simulé
+Auckland,Nishesh Basavareddy(Q),Francisco Comesana(LL),score_simulé
+Auckland,Facundo Diaz Acosta(LL),Cameron Norrie,score_simulé
+Auckland,Jakub Mensik,Pablo Carreno Busta(LL),score_simulé
+Auckland,Gael Monfils,Pedro Martinez,score_simulé
+Auckland,Mariano Navone,Adrian Mannarino(LL),score_simulé
+Auckland,Lorenzo Sonego,Gabriel Diallo(WC),score_simulé
+Auckland,Jan-Lennard Struff,Yunchaokete Bu,score_simulé
+Auckland,Nuno Borges(7),Luciano Darderi,score_simulé
+Auckland,Alex Michelsen(8),Sumit Nagal(Q),score_simulé
+Auckland,Zizou Bergs(Q),Isaac Becroft(WC),score_simulé
+Auckland,Roberto Carballes Baena,Daniel Altmaier(LL),score_simulé
+Auckland,Sumit Nagal(8),Adrian Mannarino(1),score_simulé
+Auckland,Zizou Bergs(2),Francisco Comesana(5),score_simulé
+Auckland,Luca Nardi(7),Facundo Diaz Acosta(3),score_simulé
+Auckland,Nishesh Basavareddy,Daniel Altmaier(6),score_simulé
+Auckland,Adrian Mannarino(1),Dominic Stricker(PR),score_simulé
+Auckland,Zizou Bergs(2),Pablo Carreno Busta,score_simulé
+Auckland,Facundo Diaz Acosta(3),Ajeet Rai(WC),score_simulé
+Auckland,Nishesh Basavareddy,Botic van de Zandschulp(4),score_simulé
+Auckland,Francisco Comesana(5),Maxime Janvier(Alt),score_simulé
+Auckland,Daniel Altmaier(6),Charles Broom(Alt),score_simulé
+Auckland,Luca Nardi(7),Daniel Masur,score_simulé
+Auckland,Sumit Nagal(8),Alexander Klintcharov(WC),score_simulé
+Mallorca,Tallon Griekspoor(4),Corentin Moutet,score_simulé
+Mallorca,Tallon Griekspoor(4),Felix Auger-Aliassime(2),score_simulé
+Mallorca,Corentin Moutet,Alex Michelsen(3),score_simulé
+Mallorca,Felix Auger-Aliassime(2),Hamad Medjedovic,score_simulé
+Mallorca,Alex Michelsen(3),Roberto Bautista Agut(7),score_simulé
+Mallorca,Tallon Griekspoor(4),Gabriel Diallo(6),score_simulé
+Mallorca,Corentin Moutet,Learner Tien,score_simulé
+Mallorca,Learner Tien,Ben Shelton(1),score_simulé
+Mallorca,Alex Michelsen(3),Brandon Holt(Q),score_simulé
+Mallorca,Roberto Bautista Agut(7),Bernard Tomic(Q),score_simulé
+Mallorca,Corentin Moutet,Daniel Altmaier(8),score_simulé
+Mallorca,Felix Auger-Aliassime(2),Arthur Rinderknech,score_simulé
+Mallorca,Tallon Griekspoor(4),Ethan Quinn(Q),score_simulé
+Mallorca,Gabriel Diallo(6),Laslo Djere,score_simulé
+Mallorca,Hamad Medjedovic,Roman Safiullin,score_simulé
+Mallorca,Roberto Bautista Agut(7),Tomas Martin Etcheverry,score_simulé
+Mallorca,Brandon Holt(Q),Benjamin Bonzi,score_simulé
+Mallorca,Bernard Tomic(Q),Rinky Hijikata(WC),score_simulé
+Mallorca,Roman Safiullin,Alexandre Muller(5),score_simulé
+Mallorca,Gabriel Diallo(6),Jaume Munar,score_simulé
+Mallorca,Hamad Medjedovic,Nishesh Basavareddy(Q),score_simulé
+Mallorca,Corentin Moutet,Pedro Martinez,score_simulé
+Mallorca,Ethan Quinn(Q),Camilo Ugo Carabelli,score_simulé
+Mallorca,Arthur Rinderknech,Damir Dzumhur,score_simulé
+Mallorca,Learner Tien,Justin Engel(WC),score_simulé
+Mallorca,Daniel Altmaier(8),Fabio Fognini(WC),score_simulé
+Mallorca,Laslo Djere,Yunchaokete Bu,score_simulé
+Mallorca,Bernard Tomic,Aleksandar Kovacevic(1),score_simulé
+Mallorca,Ethan Quinn(7),Vit Kopriva(2),score_simulé
+Mallorca,Nishesh Basavareddy,Mariano Navone(4),score_simulé
+Mallorca,Brandon Holt,Elias Ymer,score_simulé
+Mallorca,Aleksandar Kovacevic(1),Sascha Gueymard Wayenburg,score_simulé
+Mallorca,Vit Kopriva(2),Petros Tsitsipas(WC),score_simulé
+Mallorca,Brandon Holt,Adam Walton(3),score_simulé
+Mallorca,Mariano Navone(4),Sebastian Ofner,score_simulé
+Mallorca,Nishesh Basavareddy,Botic van de Zandschulp(5),score_simulé
+Mallorca,Bernard Tomic,Jesper de Jong(6),score_simulé
+Mallorca,Ethan Quinn(7),Oliver Crawford(WC),score_simulé
+Mallorca,Elias Ymer,Alexander Shevchenko(8),score_simulé
+Adelaide,Felix Auger-Aliassime(5),Sebastian Korda(2),score_simulé
+Adelaide,Felix Auger-Aliassime(5),Tommy Paul(1),score_simulé
+Adelaide,Sebastian Korda(2),Miomir Kecmanovic,score_simulé
+Adelaide,Tommy Paul(1),Rinky Hijikata(LL),score_simulé
+Adelaide,Sebastian Korda(2),Thanasi Kokkinakis(WC),score_simulé
+Adelaide,Felix Auger-Aliassime(5),Marcos Giron,score_simulé
+Adelaide,Miomir Kecmanovic,Benjamin Bonzi(Q),score_simulé
+Adelaide,Tommy Paul(1),Manuel Guinard(LL),score_simulé
+Adelaide,Sebastian Korda(2),Alejandro Davidovich Fokina,score_simulé
+Adelaide,Felix Auger-Aliassime(5),Arthur Cazaux,score_simulé
+Adelaide,Rinky Hijikata(LL),Brandon Nakashima(7),score_simulé
+Adelaide,Thanasi Kokkinakis(WC),Tomas Martin Etcheverry(8),score_simulé
+Adelaide,Benjamin Bonzi(Q),Li Tu(WC),score_simulé
+Adelaide,Marcos Giron,Denis Shapovalov,score_simulé
+Adelaide,Miomir Kecmanovic,Christopher O'Connell,score_simulé
+Adelaide,Miomir Kecmanovic,Alexander Bublik(6),score_simulé
+Adelaide,Brandon Nakashima(7),Yannick Hanfmann(Q),score_simulé
+Adelaide,Tomas Martin Etcheverry(8),Tristan Schoolkate(WC),score_simulé
+Adelaide,Arthur Cazaux,Adam Walton(Q),score_simulé
+Adelaide,Marcos Giron,Aleksandar Vukic,score_simulé
+Adelaide,Manuel Guinard(LL),Roman Safiullin,score_simulé
+Adelaide,Rinky Hijikata(LL),David Goffin,score_simulé
+Adelaide,Li Tu(WC),James Duckworth(Q),score_simulé
+Adelaide,Denis Shapovalov,Zhizhen Zhang(9),score_simulé
+Adelaide,Alejandro Davidovich Fokina,Roberto Bautista Agut,score_simulé
+Adelaide,Thanasi Kokkinakis(WC),Yoshihito Nishioka,score_simulé
+Adelaide,Christopher O'Connell,Arthur Rinderknech,score_simulé
+Adelaide,Adam Walton,Rinky Hijikata(3),score_simulé
+Adelaide,Benjamin Bonzi(4),James McCabe(WC),score_simulé
+Adelaide,James Duckworth(7),Jacob Bradshaw(WC),score_simulé
+Adelaide,Yannick Hanfmann,Manuel Guinard(Alt),score_simulé
+Adelaide,Jacob Bradshaw(WC),Quentin Halys(2),score_simulé
+Adelaide,Rinky Hijikata(3),Omar Jasika(Alt),score_simulé
+Adelaide,Benjamin Bonzi(4),Fabio Fognini,score_simulé
+Adelaide,Yannick Hanfmann,Hugo Gaston(5),score_simulé
+Adelaide,Adam Walton,Dusan Lajovic(6),score_simulé
+Adelaide,James Duckworth(7),Pavel Kotov,score_simulé
+Adelaide,James McCabe(WC),Damir Dzumhur(8),score_simulé
+Adelaide,Manuel Guinard(Alt),Taro Daniel,score_simulé
+Toronto,Matteo Arnaldi(32),Tristan Schoolkate(Q),score_simulé
+Toronto,Alexander Zverev(1),Adam Walton,score_simulé
+Toronto,Lorenzo Musetti(3),James Duckworth(Q),score_simulé
+Toronto,Holger Rune(5),Giovanni Mpetshi Perricard,score_simulé
+Toronto,Casper Ruud(8),Roman Safiullin,score_simulé
+Toronto,Daniil Medvedev(10),Dalibor Svrcina(LL),score_simulé
+Toronto,Karen Khachanov(11),Juan Pablo Ficovich(Q),score_simulé
+Toronto,Francisco Cerundolo(14),Jaume Munar,score_simulé
+Toronto,Reilly Opelka,Tomas Machac(16),score_simulé
+Toronto,Alexei Popyrin(18),Nicolas Arseneault(WC),score_simulé
+Toronto,Learner Tien,Denis Shapovalov(22),score_simulé
+Toronto,Tomas Martin Etcheverry,Tallon Griekspoor(24),score_simulé
+Toronto,Alex Michelsen(26),Tomas Barrios Vera(Q),score_simulé
+Toronto,Alexandre Muller(29),Miomir Kecmanovic,score_simulé
+Toronto,Nuno Borges(30),Facundo Bagnis(Q),score_simulé
+Toronto,Emilio Nava(Q),Terence Atmane,score_simulé
+Toronto,Corentin Moutet,Jenson Brooksby(PR),score_simulé
+Toronto,Tristan Boyer(Q),Aleksandar Kovacevic,score_simulé
+Toronto,Yunchaokete Bu,Vit Kopriva,score_simulé
+Toronto,Roberto Carballes Baena,Camilo Ugo Carabelli,score_simulé
+Toronto,Pablo Carreno Busta,Liam Draxl(WC),score_simulé
+Toronto,Francisco Comesana,Damir Dzumhur,score_simulé
+Toronto,Alexis Galarneau(WC),Arthur Rinderknech,score_simulé
+Toronto,Hugo Gaston,Mattia Bellucci,score_simulé
+Toronto,Matteo Gigante(WC),Borna Coric,score_simulé
+Toronto,Adrian Mannarino(Q),Marcos Giron,score_simulé
+Toronto,Fabian Marozsan,Hugo Dellien,score_simulé
+Toronto,Mackenzie McDonald,David Goffin,score_simulé
+Toronto,Jaume Munar,Dan Martin(Q),score_simulé
+Toronto,Christopher O'Connell,Chun-Hsin Tseng(LL),score_simulé
+Toronto,Ethan Quinn,Yoshihito Nishioka,score_simulé
+Toronto,Tristan Schoolkate(Q),Joao Fonseca,score_simulé
+Toronto,Dalibor Svrcina(LL),Alexander Blockx(Q),score_simulé
+Toronto,Aleksandar Vukic,Pedro Martinez,score_simulé
+Toronto,Yosuke Watanuki(Q),Daniel Altmaier,score_simulé
+Toronto,Nicolas Arseneault(WC),Valentin Royer(Q),score_simulé
+Toronto,Facundo Bagnis(Q),Vasek Pospisil(WC),score_simulé
+Toronto,Tomas Barrios Vera(Q),Gael Monfils,score_simulé
+Toronto,James Duckworth(Q),Juncheng Shang,score_simulé
+Toronto,Tomas Martin Etcheverry,Pierre-Hugues Herbert(Q),score_simulé
+Toronto,Juan Pablo Ficovich(Q),Jacob Fearnley,score_simulé
+Toronto,Miomir Kecmanovic,Quentin Halys,score_simulé
+Toronto,Giovanni Mpetshi Perricard,Shintaro Mochizuki(Q),score_simulé
+Toronto,Emilio Nava(Q),Zizou Bergs,score_simulé
+Toronto,Reilly Opelka,Sebastian Ofner(PR),score_simulé
+Toronto,Roman Safiullin,Ugo Blanchet(Q),score_simulé
+Toronto,Learner Tien,Colton Smith(Q),score_simulé
+Toronto,Adam Walton,Benjamin Bonzi,score_simulé
+Toronto,Adrian Mannarino(1),Juan Carlos Aguilar(28/WC),score_simulé
+Toronto,Ugo Blanchet(24),Chun-Hsin Tseng(2),score_simulé
+Toronto,Tristan Schoolkate(3),Govind Nanda(27),score_simulé
+Toronto,James Duckworth(4),Justin Boulais(31/WC),score_simulé
+Toronto,Valentin Royer(5),Alvin Nicholas Tudorica(29/WC),score_simulé
+Toronto,Emilio Nava(6),Mitchell Krueger(19),score_simulé
+Toronto,Yosuke Watanuki(17),Dalibor Svrcina(7),score_simulé
+Toronto,Alexander Blockx(8),Duje Ajdukovic(26),score_simulé
+Toronto,Shintaro Mochizuki(9),Yasutaka Uchiyama(25),score_simulé
+Toronto,Tristan Boyer(10),James Trotter(22),score_simulé
+Toronto,Facundo Bagnis(32/PR),Terence Atmane(11),score_simulé
+Toronto,Juan Pablo Ficovich(12),Kyrian Jacquet(18),score_simulé
+Toronto,Colton Smith(13),Patrick Kypson(23),score_simulé
+Toronto,Pierre-Hugues Herbert(14),Li Tu(20),score_simulé
+Toronto,Tomas Barrios Vera(15),Coleman Wong(21),score_simulé
+Toronto,Dan Martin(30/WC),Taro Daniel(16),score_simulé
+Rotterdam,Carlos Alcaraz(1),Alex de Minaur(3),score_simulé
+Rotterdam,Carlos Alcaraz(1),Hubert Hurkacz(8),score_simulé
+Rotterdam,Alex de Minaur(3),Mattia Bellucci(Q),score_simulé
+Rotterdam,Carlos Alcaraz(1),Pedro Martinez,score_simulé
+Rotterdam,Alex de Minaur(3),Daniel Altmaier(LL),score_simulé
+Rotterdam,Hubert Hurkacz(8),Andrey Rublev(4),score_simulé
+Rotterdam,Mattia Bellucci(Q),Stefanos Tsitsipas(6/WC),score_simulé
+Rotterdam,Carlos Alcaraz(1),Andrea Vavassori(Q),score_simulé
+Rotterdam,Alex de Minaur(3),Jakub Mensik,score_simulé
+Rotterdam,Andrey Rublev(4),Fabian Marozsan,score_simulé
+Rotterdam,Pedro Martinez,Holger Rune(5),score_simulé
+Rotterdam,Stefanos Tsitsipas(6/WC),Tallon Griekspoor,score_simulé
+Rotterdam,Daniel Altmaier(LL),Arthur Fils(7),score_simulé
+Rotterdam,Mattia Bellucci(Q),Daniil Medvedev(2),score_simulé
+Rotterdam,Hubert Hurkacz(8),Jiri Lehecka,score_simulé
+Rotterdam,Arthur Fils(7),Constant Lestienne(Q),score_simulé
+Rotterdam,Daniel Altmaier(LL),Aleksandar Kovacevic(SE),score_simulé
+Rotterdam,Tallon Griekspoor,Matteo Berrettini,score_simulé
+Rotterdam,Fabian Marozsan,Jan-Lennard Struff,score_simulé
+Rotterdam,Andrea Vavassori(Q),Felix Auger-Aliassime,score_simulé
+Rotterdam,Carlos Alcaraz(1),Botic van de Zandschulp(WC),score_simulé
+Rotterdam,Alex de Minaur(3),David Goffin,score_simulé
+Rotterdam,Andrey Rublev(4),Zhizhen Zhang,score_simulé
+Rotterdam,Holger Rune(5),Lorenzo Sonego,score_simulé
+Rotterdam,Jiri Lehecka,Alexei Popyrin,score_simulé
+Rotterdam,Pedro Martinez,Roberto Bautista Agut,score_simulé
+Rotterdam,Jakub Mensik,Alexander Bublik,score_simulé
+Rotterdam,Daniil Medvedev(2),Stan Wawrinka(WC),score_simulé
+Rotterdam,Stefanos Tsitsipas(6/WC),Harold Mayot(Q),score_simulé
+Rotterdam,Hubert Hurkacz(8),Flavio Cobolli,score_simulé
+Rotterdam,Mattia Bellucci(Q),Mees Rottgering(WC),score_simulé
+Rotterdam,Constant Lestienne(7),Daniel Altmaier(2),score_simulé
+Rotterdam,Mattia Bellucci(3),Gijs Brouwer(8/WC),score_simulé
+Rotterdam,Harold Mayot(5),Mikhail Kukushkin(4),score_simulé
+Rotterdam,Andrea Vavassori,Geoffrey Blancaneaux,score_simulé
+Rotterdam,Daniel Altmaier(2),Carlos Sanchez Jover(Alt),score_simulé
+Rotterdam,Mattia Bellucci(3),Thijs Boogaard(WC),score_simulé
+Rotterdam,Mikhail Kukushkin(4),Jelle Sels(WC),score_simulé
+Rotterdam,Harold Mayot(5),Michael Vrbensky(Alt),score_simulé
+Rotterdam,Geoffrey Blancaneaux,Daniel Evans(6),score_simulé
+Rotterdam,Constant Lestienne(7),Ryan Nijboer(Alt),score_simulé
+Rotterdam,Gijs Brouwer(8/WC),Max Houkes(Alt),score_simulé
+Rotterdam,Andrea Vavassori,Niels Visker(Alt),score_simulé
+Delray Beach,Miomir Kecmanovic(7),Alejandro Davidovich Fokina(8),score_simulé
+Delray Beach,Miomir Kecmanovic(7),Alex Michelsen(3),score_simulé
+Delray Beach,Alejandro Davidovich Fokina(8),Matteo Arnaldi(4),score_simulé
+Delray Beach,Alejandro Davidovich Fokina(8),Taylor Fritz(1),score_simulé
+Delray Beach,Alex Michelsen(3),Cameron Norrie,score_simulé
+Delray Beach,Matteo Arnaldi(4),Brandon Nakashima(6),score_simulé
+Delray Beach,Miomir Kecmanovic(7),Marcos Giron(5),score_simulé
+Delray Beach,Taylor Fritz(1),Yunchaokete Bu,score_simulé
+Delray Beach,Matteo Arnaldi(4),Learner Tien(WC),score_simulé
+Delray Beach,Brandon Nakashima(6),Reilly Opelka(WC),score_simulé
+Delray Beach,Alejandro Davidovich Fokina(8),Mackenzie McDonald(WC),score_simulé
+Delray Beach,Alex Michelsen(3),Michael Mmoh(Q),score_simulé
+Delray Beach,Marcos Giron(5),Ethan Quinn(LL),score_simulé
+Delray Beach,Miomir Kecmanovic(7),Yoshihito Nishioka,score_simulé
+Delray Beach,Cameron Norrie,Arthur Rinderknech(9),score_simulé
+Delray Beach,Learner Tien(WC),Adam Walton,score_simulé
+Delray Beach,Alejandro Davidovich Fokina(8),Taro Daniel(LL),score_simulé
+Delray Beach,Arthur Rinderknech(9),Dmitry Popko(LL),score_simulé
+Delray Beach,Yunchaokete Bu,Rinky Hijikata,score_simulé
+Delray Beach,Mackenzie McDonald(WC),Kei Nishikori,score_simulé
+Delray Beach,Yoshihito Nishioka,Aleksandar Vukic,score_simulé
+Delray Beach,Reilly Opelka(WC),Christopher Eubanks,score_simulé
+Delray Beach,Brandon Nakashima(6),James Trotter(Q),score_simulé
+Delray Beach,Miomir Kecmanovic(7),Borna Gojo,score_simulé
+Delray Beach,Michael Mmoh(Q),Alexander Shevchenko,score_simulé
+Delray Beach,Cameron Norrie,Zachary Svajda(Q),score_simulé
+Delray Beach,Ethan Quinn(LL),Tristan Boyer(Q),score_simulé
+Delray Beach,Tristan Boyer(1),Murphy Cassone(Alt),score_simulé
+Delray Beach,James Trotter(8),Taro Daniel(2),score_simulé
+Delray Beach,Zachary Svajda(7),Ethan Quinn,score_simulé
+Delray Beach,Michael Mmoh(WC),Dmitry Popko,score_simulé
+Delray Beach,Tristan Boyer(1),J.J. Wolf(WC),score_simulé
+Delray Beach,Taro Daniel(2),Liam Draxl(Alt),score_simulé
+Delray Beach,Dmitry Popko,Federico Agustin Gomez(3),score_simulé
+Delray Beach,Ethan Quinn,Tomas Barrios Vera(4),score_simulé
+Delray Beach,Murphy Cassone(Alt),Mitchell Krueger(5),score_simulé
+Delray Beach,Michael Mmoh(WC),Radu Albot(6),score_simulé
+Delray Beach,Zachary Svajda(7),Stefan Kozlov(Alt),score_simulé
+Delray Beach,James Trotter(8),Ryan Seggerman(Alt),score_simulé
+S Hertogenbosch,Gabriel Diallo,Zizou Bergs,score_simulé
+S Hertogenbosch,Gabriel Diallo,Ugo Humbert(2),score_simulé
+S Hertogenbosch,Zizou Bergs,Reilly Opelka(LL),score_simulé
+S Hertogenbosch,Reilly Opelka(LL),Daniil Medvedev(1),score_simulé
+S Hertogenbosch,Ugo Humbert(2),Nuno Borges(7),score_simulé
+S Hertogenbosch,Gabriel Diallo,Karen Khachanov(3),score_simulé
+S Hertogenbosch,Zizou Bergs,Mark Lajal(Q),score_simulé
+S Hertogenbosch,Daniil Medvedev(1),Adrian Mannarino(LL),score_simulé
+S Hertogenbosch,Ugo Humbert(2),Daniel Evans(Q),score_simulé
+S Hertogenbosch,Zizou Bergs,Alexei Popyrin(4),score_simulé
+S Hertogenbosch,Mark Lajal(Q),Hubert Hurkacz(5),score_simulé
+S Hertogenbosch,Reilly Opelka(LL),Nicolas Jarry,score_simulé
+S Hertogenbosch,Karen Khachanov(3),Mackenzie McDonald(Q),score_simulé
+S Hertogenbosch,Gabriel Diallo,Jordan Thompson(6),score_simulé
+S Hertogenbosch,Nuno Borges,Otto Virtanen(WC),score_simulé
+S Hertogenbosch,Hubert Hurkacz(5),Roberto Bautista Agut,score_simulé
+S Hertogenbosch,Daniel Evans(Q),Rinky Hijikata,score_simulé
+S Hertogenbosch,Mark Lajal(Q),Laslo Djere,score_simulé
+S Hertogenbosch,Adrian Mannarino(LL),Christopher O'Connell,score_simulé
+S Hertogenbosch,Zizou Bergs,Alexander Blockx(Q),score_simulé
+S Hertogenbosch,Mackenzie McDonald(Q),Mattia Bellucci,score_simulé
+S Hertogenbosch,Reilly Opelka(LL),Jesper de Jong(WC),score_simulé
+S Hertogenbosch,Otto Virtanen(WC),Tomas Martin Etcheverry,score_simulé
+S Hertogenbosch,Jordan Thompson(6),Aleksandar Kovacevic,score_simulé
+S Hertogenbosch,Nuno Borges(7),Nishesh Basavareddy(NG),score_simulé
+S Hertogenbosch,Nicolas Jarry,Luciano Darderi(8),score_simulé
+S Hertogenbosch,Gabriel Diallo,Aleksandar Vukic,score_simulé
+S Hertogenbosch,Mark Lajal(8),Reilly Opelka(2),score_simulé
+S Hertogenbosch,Mackenzie McDonald(3),Thijs Boogaard(WC),score_simulé
+S Hertogenbosch,Alexander Blockx(5),Adrian Mannarino(4),score_simulé
+S Hertogenbosch,Daniel Evans,Mees Rottgering(WC),score_simulé
+S Hertogenbosch,Reilly Opelka(2),Denis Yevseyev,score_simulé
+S Hertogenbosch,Mackenzie McDonald(3),Ryan Peniston,score_simulé
+S Hertogenbosch,Adrian Mannarino(4),Daniel Dutra da Silva(Alt),score_simulé
+S Hertogenbosch,Alexander Blockx(5),Max Houkes,score_simulé
+S Hertogenbosch,Thijs Boogaard(WC),James McCabe(6),score_simulé
+S Hertogenbosch,Mark Lajal(8),Corentin Denolly,score_simulé
+S Hertogenbosch,Daniel Evans,Adam Walton(1),score_simulé
+S Hertogenbosch,Mees Rottgering(WC),Jelle Sels(Alt),score_simulé
+Buenos Aires,Joao Fonseca,Francisco Cerundolo(5),score_simulé
+Buenos Aires,Francisco Cerundolo(5),Pedro Martinez,score_simulé
+Buenos Aires,Joao Fonseca,Laslo Djere(Q),score_simulé
+Buenos Aires,Francisco Cerundolo(5),Alexander Zverev(1),score_simulé
+Buenos Aires,Laslo Djere(Q),Thiago Seyboth Wild,score_simulé
+Buenos Aires,Joao Fonseca,Mariano Navone,score_simulé
+Buenos Aires,Pedro Martinez,Lorenzo Musetti,score_simulé
+Buenos Aires,Mariano Navone,Holger Rune(2),score_simulé
+Buenos Aires,Lorenzo Musetti(3),Corentin Moutet,score_simulé
+Buenos Aires,Joao Fonseca,Federico Coria(LL),score_simulé
+Buenos Aires,Pedro Martinez,Diego Schwartzman(WC),score_simulé
+Buenos Aires,Alexander Zverev(1),Dusan Lajovic,score_simulé
+Buenos Aires,Laslo Djere(Q),Alejandro Tabilo(4),score_simulé
+Buenos Aires,Francisco Cerundolo(5),Juan Manuel Cerundolo(Q),score_simulé
+Buenos Aires,Thiago Seyboth Wild,Sebastian Baez(6),score_simulé
+Buenos Aires,Diego Schwartzman(WC),Nicolas Jarry(7),score_simulé
+Buenos Aires,Joao Fonseca,Tomas Martin Etcheverry(8),score_simulé
+Buenos Aires,Federico Coria(LL),Hugo Gaston,score_simulé
+Buenos Aires,Corentin Moutet,Sumit Nagal(LL),score_simulé
+Buenos Aires,Francisco Cerundolo(5),Luciano Darderi,score_simulé
+Buenos Aires,Sebastian Baez(6),Camilo Ugo Carabelli(WC),score_simulé
+Buenos Aires,Juan Manuel Cerundolo(Q),Roman Andres Burruchaga(Q),score_simulé
+Buenos Aires,Pedro Martinez,Damir Dzumhur,score_simulé
+Buenos Aires,Laslo Djere(Q),Alexandre Muller,score_simulé
+Buenos Aires,Dusan Lajovic,Roberto Carballes Baena,score_simulé
+Buenos Aires,Mariano Navone,Francisco Comesana(WC),score_simulé
+Buenos Aires,Thiago Seyboth Wild,Facundo Diaz Acosta,score_simulé
+Buenos Aires,Francesco Passaro(1),Juan Bautista Torres(WC),score_simulé
+Buenos Aires,Laslo Djere(6),Federico Coria(3),score_simulé
+Buenos Aires,Juan Manuel Cerundolo,Sumit Nagal(4),score_simulé
+Buenos Aires,Roman Andres Burruchaga(Alt),Felipe Meligeni Alves(Alt),score_simulé
+Buenos Aires,Francesco Passaro(1),Daniel Elahi Galan,score_simulé
+Buenos Aires,Felipe Meligeni Alves(Alt),Thiago Monteiro(2),score_simulé
+Buenos Aires,Federico Coria(3),Thiago Agustin Tirante,score_simulé
+Buenos Aires,Sumit Nagal(4),Juan Pablo Ficovich(WC),score_simulé
+Buenos Aires,Juan Manuel Cerundolo,Jaime Faria(5),score_simulé
+Buenos Aires,Laslo Djere(6),Marco Trungelliti(Alt),score_simulé
+Buenos Aires,Juan Bautista Torres(WC),Chun-Hsin Tseng(8),score_simulé
+Buenos Aires,Roman Andres Burruchaga(Alt),Gustavo Heide(Alt),score_simulé
+Indian Wells,Jack Draper(13),Holger Rune(12),score_simulé
+Indian Wells,Jack Draper(13),Carlos Alcaraz(2),score_simulé
+Indian Wells,Holger Rune(12),Daniil Medvedev(5),score_simulé
+Indian Wells,Carlos Alcaraz(2),Francisco Cerundolo(25),score_simulé
+Indian Wells,Daniil Medvedev(5),Arthur Fils(20),score_simulé
+Indian Wells,Jack Draper(13),Ben Shelton(11),score_simulé
+Indian Wells,Holger Rune(12),Tallon Griekspoor,score_simulé
+Indian Wells,Carlos Alcaraz(2),Grigor Dimitrov(14),score_simulé
+Indian Wells,Jack Draper(13),Taylor Fritz(3),score_simulé
+Indian Wells,Francisco Cerundolo(25),Alex de Minaur(9),score_simulé
+Indian Wells,Ben Shelton(11),Brandon Nakashima(32),score_simulé
+Indian Wells,Daniil Medvedev(5),Tommy Paul(10),score_simulé
+Indian Wells,Holger Rune(12),Stefanos Tsitsipas(8),score_simulé
+Indian Wells,Arthur Fils(20),Marcos Giron,score_simulé
+Indian Wells,Tallon Griekspoor,Yosuke Watanuki(Q),score_simulé
+Indian Wells,Carlos Alcaraz(2),Denis Shapovalov(27),score_simulé
+Indian Wells,Taylor Fritz(3),Alejandro Tabilo(30),score_simulé
+Indian Wells,Alex de Minaur(9),Hubert Hurkacz(21),score_simulé
+Indian Wells,Ben Shelton(11),Karen Khachanov(22),score_simulé
+Indian Wells,Jack Draper(13),Jenson Brooksby(PR),score_simulé
+Indian Wells,Grigor Dimitrov(14),Gael Monfils,score_simulé
+Indian Wells,Francisco Cerundolo(25),Botic van de Zandschulp(LL),score_simulé
+Indian Wells,Brandon Nakashima(32),Matteo Arnaldi,score_simulé
+Indian Wells,Daniil Medvedev(5),Alex Michelsen(31),score_simulé
+Indian Wells,Stefanos Tsitsipas(8),Matteo Berrettini(28),score_simulé
+Indian Wells,Tommy Paul(10),Cameron Norrie,score_simulé
+Indian Wells,Holger Rune(12),Ugo Humbert(18),score_simulé
+Indian Wells,Arthur Fils(20),Lorenzo Musetti(15),score_simulé
+Indian Wells,Yosuke Watanuki(Q),Frances Tiafoe(16),score_simulé
+Indian Wells,Marcos Giron,Alexei Popyrin(26),score_simulé
+Indian Wells,Tallon Griekspoor,Giovanni Mpetshi Perricard(29),score_simulé
+Indian Wells,Carlos Alcaraz(2),Quentin Halys,score_simulé
+Indian Wells,Taylor Fritz(3),Matteo Gigante(Q),score_simulé
+Indian Wells,Botic van de Zandschulp(LL),Novak Djokovic(6),score_simulé
+Indian Wells,Matteo Arnaldi,Andrey Rublev(7),score_simulé
+Indian Wells,Alex de Minaur(9),David Goffin,score_simulé
+Indian Wells,Ben Shelton(11),Mariano Navone,score_simulé
+Indian Wells,Jack Draper(13),Joao Fonseca(WC),score_simulé
+Indian Wells,Grigor Dimitrov(14),Nuno Borges,score_simulé
+Indian Wells,Jenson Brooksby(PR),Felix Auger-Aliassime(17),score_simulé
+Indian Wells,Hubert Hurkacz(21),Hugo Gaston(Q),score_simulé
+Indian Wells,Karen Khachanov(22),Jakub Mensik,score_simulé
+Indian Wells,Gael Monfils,Sebastian Korda(24),score_simulé
+Indian Wells,Francisco Cerundolo(25),Mackenzie McDonald(WC),score_simulé
+Indian Wells,Denis Shapovalov(27),Adam Walton(Q),score_simulé
+Indian Wells,Alejandro Tabilo(30),Dusan Lajovic,score_simulé
+Indian Wells,Brandon Nakashima(32),Rinky Hijikata,score_simulé
+Indian Wells,Tallon Griekspoor,Alexander Zverev(1),score_simulé
+Indian Wells,Marcos Giron,Casper Ruud(4),score_simulé
+Indian Wells,Daniil Medvedev(5),Yunchaokete Bu,score_simulé
+Indian Wells,Stefanos Tsitsipas(8),Thiago Seyboth Wild,score_simulé
+Indian Wells,Tommy Paul(10),Tristan Boyer(WC),score_simulé
+Indian Wells,Holger Rune(12),Corentin Moutet,score_simulé
+Indian Wells,Lorenzo Musetti(15),Roman Safiullin,score_simulé
+Indian Wells,Frances Tiafoe(16),Damir Dzumhur(Q),score_simulé
+Indian Wells,Ugo Humbert(18),Kei Nishikori,score_simulé
+Indian Wells,Yosuke Watanuki(Q),Tomas Machac(19),score_simulé
+Indian Wells,Arthur Fils(20),Gabriel Diallo(LL),score_simulé
+Indian Wells,Cameron Norrie,Jiri Lehecka(23),score_simulé
+Indian Wells,Alexei Popyrin(26),Zizou Bergs,score_simulé
+Indian Wells,Matteo Berrettini(28),Christopher O'Connell,score_simulé
+Indian Wells,Giovanni Mpetshi Perricard(29),Fabian Marozsan,score_simulé
+Indian Wells,Alex Michelsen(31),Colton Smith(Q),score_simulé
+Indian Wells,Matteo Arnaldi,Aleksandar Kovacevic,score_simulé
+Indian Wells,Nuno Borges,Arthur Rinderknech,score_simulé
+Indian Wells,Jenson Brooksby(PR),Benjamin Bonzi,score_simulé
+Indian Wells,Joao Fonseca(WC),Jacob Fearnley,score_simulé
+Indian Wells,Hugo Gaston(Q),Luciano Darderi,score_simulé
+Indian Wells,Matteo Gigante(Q),Sebastian Baez,score_simulé
+Indian Wells,David Goffin,Lorenzo Sonego,score_simulé
+Indian Wells,Quentin Halys,Pablo Carreno Busta(Q),score_simulé
+Indian Wells,Rinky Hijikata,Alexander Shevchenko,score_simulé
+Indian Wells,Dusan Lajovic,Li Tu(Q),score_simulé
+Indian Wells,Mackenzie McDonald(WC),Alejandro Davidovich Fokina,score_simulé
+Indian Wells,Jakub Mensik,Tomas Martin Etcheverry,score_simulé
+Indian Wells,Gael Monfils,Jan-Lennard Struff,score_simulé
+Indian Wells,Mariano Navone,Learner Tien,score_simulé
+Indian Wells,Botic van de Zandschulp(LL),Nick Kyrgios(PR),score_simulé
+Indian Wells,Adam Walton(Q),Giulio Zeppieri(Q),score_simulé
+Indian Wells,Zizou Bergs,Ethan Quinn(Q),score_simulé
+Indian Wells,Tristan Boyer(WC),Aleksandar Vukic,score_simulé
+Indian Wells,Yunchaokete Bu,Nishesh Basavareddy(WC),score_simulé
+Indian Wells,Gabriel Diallo(LL),Zhizhen Zhang,score_simulé
+Indian Wells,Damir Dzumhur(Q),Roberto Bautista Agut,score_simulé
+Indian Wells,Marcos Giron,Nikoloz Basilashvili(Q),score_simulé
+Indian Wells,Tallon Griekspoor,Miomir Kecmanovic,score_simulé
+Indian Wells,Fabian Marozsan,Pedro Martinez,score_simulé
+Indian Wells,Corentin Moutet,Jordan Thompson,score_simulé
+Indian Wells,Kei Nishikori,Jaume Munar,score_simulé
+Indian Wells,Cameron Norrie,Luca Nardi,score_simulé
+Indian Wells,Christopher O'Connell,Roberto Carballes Baena,score_simulé
+Indian Wells,Roman Safiullin,Reilly Opelka(WC),score_simulé
+Indian Wells,Thiago Seyboth Wild,Alexandre Muller,score_simulé
+Indian Wells,Colton Smith(Q),Flavio Cobolli,score_simulé
+Indian Wells,Yosuke Watanuki(Q),Alexander Bublik,score_simulé
+Indian Wells,Matteo Gigante,Botic van de Zandschulp(3),score_simulé
+Indian Wells,Ethan Quinn,Gabriel Diallo(4),score_simulé
+Indian Wells,Damir Dzumhur(5),Radu Albot,score_simulé
+Indian Wells,Hugo Gaston(6),Eliot Spizzirri(WC),score_simulé
+Indian Wells,Li Tu,James Duckworth(8),score_simulé
+Indian Wells,Adam Walton(9),Michael Mmoh(PR),score_simulé
+Indian Wells,Colton Smith(WC),Pavel Kotov(13),score_simulé
+Indian Wells,Pablo Carreno Busta(15),Alexis Galarneau,score_simulé
+Indian Wells,Kamil Majchrzak(16),Cristian Garin,score_simulé
+Indian Wells,Giulio Zeppieri(PR),Mikhail Kukushkin(23),score_simulé
+Indian Wells,Nikoloz Basilashvili,Yasutaka Uchiyama,score_simulé
+Indian Wells,Yosuke Watanuki(PR),Rudy Quan(WC),score_simulé
+Indian Wells,Yosuke Watanuki(PR),Mattia Bellucci(1),score_simulé
+Indian Wells,Cristian Garin,Daniel Altmaier(2),score_simulé
+Indian Wells,Botic van de Zandschulp(3),Lukas Klein,score_simulé
+Indian Wells,Gabriel Diallo(4),Hady Habib,score_simulé
+Indian Wells,Damir Dzumhur(5),Brandon Holt,score_simulé
+Indian Wells,Hugo Gaston(6),James Trotter,score_simulé
+Indian Wells,Colton Smith(WC),Fabio Fognini(7),score_simulé
+Indian Wells,James Duckworth(8),Terence Atmane,score_simulé
+Indian Wells,Adam Walton(9),Constant Lestienne,score_simulé
+Indian Wells,Giulio Zeppieri(PR),Chun-Hsin Tseng(10),score_simulé
+Indian Wells,Alexis Galarneau,Arthur Cazaux(11),score_simulé
+Indian Wells,Nikoloz Basilashvili,Christopher Eubanks(12),score_simulé
+Indian Wells,Pavel Kotov(13),Coleman Wong,score_simulé
+Indian Wells,Michael Mmoh(PR),Billy Harris(14),score_simulé
+Indian Wells,Pablo Carreno Busta(15),Zachary Svajda,score_simulé
+Indian Wells,Kamil Majchrzak(16),Trevor Svajda(WC),score_simulé
+Indian Wells,Radu Albot,Taro Daniel(17),score_simulé
+Indian Wells,Yasutaka Uchiyama,Jozef Kovalik(18),score_simulé
+Indian Wells,Li Tu,Adrian Mannarino(19),score_simulé
+Indian Wells,Ethan Quinn,Tristan Schoolkate(20),score_simulé
+Indian Wells,Rudy Quan(WC),Federico Agustin Gomez(21),score_simulé
+Indian Wells,Matteo Gigante,Mitchell Krueger(22),score_simulé
+Indian Wells,Mikhail Kukushkin(23),Theo Papamalamis(WC),score_simulé
+Indian Wells,Eliot Spizzirri(WC),Lloyd Harris(24),score_simulé
+Marrakech,Luciano Darderi(7),Tallon Griekspoor(1),score_simulé
+Marrakech,Tallon Griekspoor(1),Kamil Majchrzak(Q),score_simulé
+Marrakech,Luciano Darderi(7),Roberto Carballes Baena(5),score_simulé
+Marrakech,Tallon Griekspoor(1),Mattia Bellucci(8),score_simulé
+Marrakech,Kamil Majchrzak(Q),Alexandre Muller(3),score_simulé
+Marrakech,Roberto Carballes Baena(5),Nuno Borges(4),score_simulé
+Marrakech,Luciano Darderi(7),Vit Kopriva,score_simulé
+Marrakech,Tallon Griekspoor(1),Pablo Carreno Busta,score_simulé
+Marrakech,Vit Kopriva,Lorenzo Sonego(2),score_simulé
+Marrakech,Luciano Darderi(7),Hugo Gaston,score_simulé
+Marrakech,Mattia Bellucci(8),Pierre-Hugues Herbert(Q),score_simulé
+Marrakech,Alexandre Muller(3),Hugo Dellien,score_simulé
+Marrakech,Nuno Borges(4),Raphael Collignon,score_simulé
+Marrakech,Roberto Carballes Baena(5),Otto Virtanen,score_simulé
+Marrakech,Kamil Majchrzak(Q),Jesper de Jong,score_simulé
+Marrakech,Luciano Darderi(7),Tristan Boyer,score_simulé
+Marrakech,Vit Kopriva,Borna Gojo(PR),score_simulé
+Marrakech,Kamil Majchrzak(Q),Jaume Munar(6),score_simulé
+Marrakech,Mattia Bellucci(8),Pavel Kotov,score_simulé
+Marrakech,Pablo Carreno Busta,Younes Lalami Laaroussi(WC),score_simulé
+Marrakech,Jesper de Jong,Elliot Benchetrit(WC),score_simulé
+Marrakech,Hugo Gaston,Juan Manuel Cerundolo(Q),score_simulé
+Marrakech,Pierre-Hugues Herbert(Q),Federico Coria(Q),score_simulé
+Marrakech,Otto Virtanen,Daniel Altmaier,score_simulé
+Marrakech,Roberto Carballes Baena(5),Taha Baadi(WC),score_simulé
+Marrakech,Raphael Collignon,Fabio Fognini,score_simulé
+Marrakech,Hugo Dellien,Aleksandar Vukic,score_simulé
+Marrakech,Kamil Majchrzak(1),Sumit Nagal(5),score_simulé
+Marrakech,Federico Coria(2),Calvin Hemery,score_simulé
+Marrakech,Juan Manuel Cerundolo(3),Titouan Droguet,score_simulé
+Marrakech,Pierre-Hugues Herbert(7),Harold Mayot(4),score_simulé
+Marrakech,Kamil Majchrzak(1),Marco Trungelliti,score_simulé
+Marrakech,Federico Coria(2),Giulio Zeppieri(PR),score_simulé
+Marrakech,Juan Manuel Cerundolo(3),Karim Bennani(WC),score_simulé
+Marrakech,Harold Mayot(4),Aslan Karatsev(Alt),score_simulé
+Marrakech,Sumit Nagal(5),Amine Jamji(WC),score_simulé
+Marrakech,Pierre-Hugues Herbert(7),Henrique Rocha,score_simulé
+Marrakech,Calvin Hemery,Alejandro Moro Canas(8),score_simulé
+Marrakech,Titouan Droguet,Manuel Guinard(Alt),score_simulé
+Madrid,Casper Ruud(14),Jack Draper(5),score_simulé
+Madrid,Jack Draper(5),Lorenzo Musetti(10),score_simulé
+Madrid,Casper Ruud(14),Francisco Cerundolo(20),score_simulé
+Madrid,Jack Draper(5),Matteo Arnaldi,score_simulé
+Madrid,Casper Ruud(14),Daniil Medvedev(9),score_simulé
+Madrid,Lorenzo Musetti(10),Gabriel Diallo(LL),score_simulé
+Madrid,Francisco Cerundolo(20),Jakub Mensik(22),score_simulé
+Madrid,Jack Draper(5),Tommy Paul(11),score_simulé
+Madrid,Lorenzo Musetti(10),Alex de Minaur(6),score_simulé
+Madrid,Gabriel Diallo(LL),Grigor Dimitrov(15),score_simulé
+Madrid,Matteo Arnaldi,Frances Tiafoe(16),score_simulé
+Madrid,Francisco Cerundolo(20),Alexander Zverev(1),score_simulé
+Madrid,Casper Ruud(14),Taylor Fritz(3),score_simulé
+Madrid,Daniil Medvedev(9),Brandon Nakashima(31),score_simulé
+Madrid,Jakub Mensik(22),Alexander Bublik,score_simulé
+Madrid,Jack Draper(5),Matteo Berrettini(30),score_simulé
+Madrid,Alex de Minaur(6),Denis Shapovalov(29),score_simulé
+Madrid,Lorenzo Musetti(10),Stefanos Tsitsipas(17),score_simulé
+Madrid,Tommy Paul(11),Karen Khachanov(24),score_simulé
+Madrid,Frances Tiafoe(16),Alexandre Muller,score_simulé
+Madrid,Gabriel Diallo(LL),Cameron Norrie,score_simulé
+Madrid,Grigor Dimitrov(15),Jacob Fearnley(Q),score_simulé
+Madrid,Matteo Arnaldi,Damir Dzumhur,score_simulé
+Madrid,Alexander Zverev(1),Alejandro Davidovich Fokina(28),score_simulé
+Madrid,Taylor Fritz(3),Benjamin Bonzi,score_simulé
+Madrid,Alexander Bublik,Andrey Rublev(7),score_simulé
+Madrid,Daniil Medvedev(9),Juan Manuel Cerundolo(Q),score_simulé
+Madrid,Jakub Mensik(22),Ben Shelton(12),score_simulé
+Madrid,Casper Ruud(14),Sebastian Korda(23),score_simulé
+Madrid,Francisco Cerundolo(20),Francisco Comesana,score_simulé
+Madrid,Brandon Nakashima(31),Flavio Cobolli,score_simulé
+Madrid,Matteo Arnaldi,Novak Djokovic(4),score_simulé
+Madrid,Jack Draper(5),Tallon Griekspoor,score_simulé
+Madrid,Alex de Minaur(6),Lorenzo Sonego,score_simulé
+Madrid,Lorenzo Musetti(10),Tomas Martin Etcheverry,score_simulé
+Madrid,Tommy Paul(11),Joao Fonseca,score_simulé
+Madrid,Grigor Dimitrov(15),Nicolas Jarry,score_simulé
+Madrid,Frances Tiafoe(16),Luciano Darderi,score_simulé
+Madrid,Stefanos Tsitsipas(17),Jan-Lennard Struff,score_simulé
+Madrid,Jacob Fearnley(Q),Tomas Machac(19),score_simulé
+Madrid,Alexandre Muller,Ugo Humbert(21),score_simulé
+Madrid,Karen Khachanov(24),Reilly Opelka(PR),score_simulé
+Madrid,Cameron Norrie,Jiri Lehecka(26),score_simulé
+Madrid,Denis Shapovalov(29),Kei Nishikori,score_simulé
+Madrid,Matteo Berrettini(30),Marcos Giron,score_simulé
+Madrid,Damir Dzumhur,Sebastian Baez(32),score_simulé
+Madrid,Gabriel Diallo(LL),Kamil Majchrzak(LL),score_simulé
+Madrid,Alexander Zverev(1),Roberto Bautista Agut,score_simulé
+Madrid,Taylor Fritz(3),Christopher O'Connell,score_simulé
+Madrid,Andrey Rublev(7),Gael Monfils,score_simulé
+Madrid,Flavio Cobolli,Holger Rune(8),score_simulé
+Madrid,Daniil Medvedev(9),Laslo Djere,score_simulé
+Madrid,Ben Shelton(12),Mariano Navone,score_simulé
+Madrid,Francisco Comesana,Arthur Fils(13),score_simulé
+Madrid,Casper Ruud(14),Arthur Rinderknech,score_simulé
+Madrid,Juan Manuel Cerundolo(Q),Felix Auger-Aliassime(18),score_simulé
+Madrid,Francisco Cerundolo(20),Harold Mayot(Q),score_simulé
+Madrid,Jakub Mensik(22),Ethan Quinn(Q),score_simulé
+Madrid,Sebastian Korda(23),Federico Cina(WC),score_simulé
+Madrid,Alexander Bublik,Alexei Popyrin(25),score_simulé
+Madrid,Benjamin Bonzi,Hubert Hurkacz(27),score_simulé
+Madrid,Alejandro Davidovich Fokina(28),Nuno Borges,score_simulé
+Madrid,Brandon Nakashima(31),Sebastian Ofner(PR),score_simulé
+Madrid,Matteo Arnaldi,Borna Coric(Q),score_simulé
+Madrid,Luciano Darderi,Quentin Halys,score_simulé
+Madrid,Gabriel Diallo(LL),Zizou Bergs,score_simulé
+Madrid,Damir Dzumhur,Mattia Bellucci,score_simulé
+Madrid,Tomas Martin Etcheverry,Hamad Medjedovic,score_simulé
+Madrid,Jacob Fearnley(Q),Yunchaokete Bu,score_simulé
+Madrid,Joao Fonseca,Elmer Moller(Q),score_simulé
+Madrid,Marcos Giron,Learner Tien,score_simulé
+Madrid,Tallon Griekspoor,Vit Kopriva(Q),score_simulé
+Madrid,Nicolas Jarry,Daniel Altmaier(Q),score_simulé
+Madrid,Alexandre Muller,David Goffin,score_simulé
+Madrid,Kei Nishikori,Aleksandar Vukic,score_simulé
+Madrid,Cameron Norrie,Martin Landaluce(WC),score_simulé
+Madrid,Reilly Opelka(PR),Rinky Hijikata(LL),score_simulé
+Madrid,Lorenzo Sonego,Miomir Kecmanovic,score_simulé
+Madrid,Jan-Lennard Struff,Botic van de Zandschulp(LL),score_simulé
+Madrid,Roberto Bautista Agut,Jaume Munar,score_simulé
+Madrid,Benjamin Bonzi,Marin Cilic(WC),score_simulé
+Madrid,Nuno Borges,Pablo Carreno Busta(WC),score_simulé
+Madrid,Alexander Bublik,Alex Michelsen,score_simulé
+Madrid,Juan Manuel Cerundolo(Q),Aleksandar Kovacevic,score_simulé
+Madrid,Federico Cina(WC),Coleman Wong(WC),score_simulé
+Madrid,Flavio Cobolli,Fabian Marozsan,score_simulé
+Madrid,Francisco Comesana,Pedro Martinez,score_simulé
+Madrid,Laslo Djere,Fabio Fognini(Q),score_simulé
+Madrid,Harold Mayot(Q),Corentin Moutet,score_simulé
+Madrid,Gael Monfils,Borna Gojo(Q),score_simulé
+Madrid,Mariano Navone,Giovanni Mpetshi Perricard,score_simulé
+Madrid,Christopher O'Connell,Camilo Ugo Carabelli,score_simulé
+Madrid,Sebastian Ofner(PR),Hugo Gaston(Q),score_simulé
+Madrid,Ethan Quinn(Q),Dusan Lajovic(Q),score_simulé
+Madrid,Arthur Rinderknech,Roman Safiullin,score_simulé
+Madrid,Daniel Altmaier(1),Daniel Elahi Galan(24),score_simulé
+Madrid,Jacob Fearnley(2),Hugo Dellien(14),score_simulé
+Madrid,Borna Coric(20),Gabriel Diallo(3),score_simulé
+Madrid,Hugo Gaston(4),Luca Nardi(15),score_simulé
+Madrid,Fabio Fognini(22),Rinky Hijikata(5),score_simulé
+Madrid,Juan Manuel Cerundolo,Botic van de Zandschulp(6),score_simulé
+Madrid,Elmer Moller,Kamil Majchrzak(8),score_simulé
+Madrid,Ethan Quinn,Thiago Monteiro(9),score_simulé
+Madrid,Vit Kopriva(11),Valentin Royer(23),score_simulé
+Madrid,Dusan Lajovic(12),Cristian Garin,score_simulé
+Madrid,Borna Gojo(PR),Jerome Kym,score_simulé
+Madrid,Harold Mayot,Tristan Boyer,score_simulé
+Madrid,Daniel Altmaier(1),Luca Van Assche(WC),score_simulé
+Madrid,Jacob Fearnley(2),Pavel Kotov,score_simulé
+Madrid,Gabriel Diallo(3),Nicolas Moreno De Alboran,score_simulé
+Madrid,Hugo Gaston(4),Yannick Hanfmann,score_simulé
+Madrid,Rinky Hijikata(5),Lloyd Harris,score_simulé
+Madrid,Botic van de Zandschulp(6),Moise Kouame(WC),score_simulé
+Madrid,Borna Gojo(PR),Marton Fucsovics(7),score_simulé
+Madrid,Kamil Majchrzak(8),Darwin Blanch(WC),score_simulé
+Madrid,Thiago Monteiro(9),Mitchell Krueger,score_simulé
+Madrid,Tristan Boyer,Jesper de Jong(10),score_simulé
+Madrid,Vit Kopriva(11),Roman Andres Burruchaga,score_simulé
+Madrid,Dusan Lajovic(12),Thiago Agustin Tirante,score_simulé
+Madrid,Jerome Kym,Mackenzie McDonald(13),score_simulé
+Madrid,Hugo Dellien(14),Adrian Mannarino,score_simulé
+Madrid,Luca Nardi(15),Manas Dhamne(WC),score_simulé
+Madrid,Cristian Garin,Chun-Hsin Tseng(16),score_simulé
+Madrid,Harold Mayot,Alexander Shevchenko(17),score_simulé
+Madrid,Ethan Quinn,Billy Harris(18),score_simulé
+Madrid,Elmer Moller,Nishesh Basavareddy(19),score_simulé
+Madrid,Borna Coric(20),Otto Virtanen,score_simulé
+Madrid,Juan Manuel Cerundolo,Thiago Seyboth Wild(21),score_simulé
+Madrid,Fabio Fognini(22),Alexander Ritschard,score_simulé
+Madrid,Valentin Royer(23),Taro Daniel,score_simulé
+Madrid,Daniel Elahi Galan(24),Diego Dedura(WC),score_simulé
