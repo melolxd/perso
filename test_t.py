@@ -1,472 +1,387 @@
-import time
-import os
-import re
-import pandas as pd
+# -*- coding: utf-8 -*-
+"""
+ATP Scraper – Saison 2025  (v5 – 01-08-2025)
+--------------------------------------------
+• Découvre et scrape les 44 tournois ATP 2025 (tableau principal + qualifs)
+• Récupère la feuille “Stats-Centre” quand dispo
+• Gère automatiquement les challenges Cloudflare / hCaptcha
+• Génère le CSV global  atp_matches_2025_ALL.csv
+"""
+
+###############################################################################
+# Imports
+###############################################################################
+import re, time, random, traceback
 from datetime import datetime
-import traceback
+from pathlib import Path
+
+import pandas as pd
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
-import random # Importer le module pour les pauses aléatoires
+from selenium.common.exceptions import TimeoutException, InvalidArgumentException
 
-# =============================================================================
-# FONCTION 2 : Le Plongeur (Mise à jour pour gérer Cloudflare)
-# =============================================================================
+###############################################################################
+# Paramètres
+###############################################################################
+YEAR            = 2025
+OUTPUT_CSV      = f"atp_matches_{YEAR}_ALL.csv"
+SKIP_QUALIFYING = False          # ← on garde les qualifs
+MAX_MATCHES     = None           # ← None = pas de limite, scrape complet
 
-def get_detailed_stats(stats_url, driver):
-    match_id = stats_url.split('/')[-2]
-    print(f"      -> Plongée pour les stats : {match_id}")
-    stats_dict = {}
-    
-    max_retries = 3
-    retry_count = 0
-    
-    while retry_count < max_retries:
+###############################################################################
+# Helpers généraux
+###############################################################################
+def parse_stat_value(text: str, idx: int = 0) -> int:
+    nums = re.findall(r"\d+", text or "0")
+    return int(nums[idx]) if len(nums) > idx else 0
+
+def smart_wait(driver, tmin=2.0, tmax=5.0):
+    time.sleep(random.uniform(tmin, tmax))
+    if random.random() < 0.3:             # micro-mouvement souris
         try:
-            driver.get(stats_url)
-            time.sleep(random.uniform(2, 4))  # Pause initiale
-            
-            # *** GESTION CLOUDFLARE AMÉLIORÉE ***
-            cloudflare_handled = False
-            cloudflare_attempts = 0
-            max_cloudflare_attempts = 5
-            
-            while cloudflare_attempts < max_cloudflare_attempts:
-                try:
-                    # Vérifier si on est dans une page de challenge Cloudflare
-                    page_title = driver.title.lower()
-                    page_source = driver.page_source.lower()
-                    
-                    # Indicateurs de présence de Cloudflare
-                    cloudflare_indicators = [
-                        'just a moment' in page_title,
-                        'checking your browser' in page_source,
-                        'cloudflare' in page_source,
-                        'challenge-running' in page_source,
-                        'cf-spinner-allow' in page_source
-                    ]
-                    
-                    if any(cloudflare_indicators):
-                        print(f"        -> Challenge Cloudflare détecté (tentative {cloudflare_attempts + 1})")
-                        
-                        # Attendre que la page se charge complètement
-                        time.sleep(random.uniform(3, 6))
-                        
-                        # Méthode 1: Chercher l'iframe de challenge
-                        try:
-                            iframe_selectors = [
-                                "iframe[src*='challenges.cloudflare.com']",
-                                "iframe[title*='Widget containing']",
-                                "iframe[data-hcaptcha-widget-id]",
-                                "iframe#cf-chl-widget"
-                            ]
-                            
-                            iframe_found = False
-                            for selector in iframe_selectors:
-                                try:
-                                    iframe_locator = (By.CSS_SELECTOR, selector)
-                                    WebDriverWait(driver, 5).until(
-                                        EC.frame_to_be_available_and_switch_to_it(iframe_locator)
-                                    )
-                                    iframe_found = True
-                                    print(f"        -> Iframe trouvée avec sélecteur: {selector}")
-                                    break
-                                except TimeoutException:
-                                    continue
-                            
-                            if iframe_found:
-                                # Chercher et cliquer la checkbox dans l'iframe
-                                checkbox_selectors = [
-                                    "input[type='checkbox']",
-                                    "label input",
-                                    ".cb-i",
-                                    "#challenge-form input[type='checkbox']"
-                                ]
-                                
-                                checkbox_clicked = False
-                                for cb_selector in checkbox_selectors:
-                                    try:
-                                        checkbox = WebDriverWait(driver, 8).until(
-                                            EC.element_to_be_clickable((By.CSS_SELECTOR, cb_selector))
-                                        )
-                                        
-                                        # Essayer plusieurs méthodes de clic
-                                        try:
-                                            checkbox.click()
-                                        except:
-                                            driver.execute_script("arguments[0].click();", checkbox)
-                                        
-                                        print(f"        -> Checkbox cliquée avec succès: {cb_selector}")
-                                        checkbox_clicked = True
-                                        break
-                                    except:
-                                        continue
-                                
-                                # Revenir au contenu principal
-                                driver.switch_to.default_content()
-                                
-                                if checkbox_clicked:
-                                    # Attendre que le challenge soit résolu
-                                    wait_time = random.uniform(8, 15)
-                                    print(f"        -> Attente de {wait_time:.1f}s pour la validation...")
-                                    time.sleep(wait_time)
-                                    cloudflare_handled = True
-                                    break
-                                else:
-                                    print("        -> Impossible de cliquer la checkbox")
-                            else:
-                                # Méthode 2: Attente passive pour challenge automatique
-                                print("        -> Pas d'iframe trouvée, attente passive...")
-                                time.sleep(random.uniform(10, 15))
-                        
-                        except Exception as e:
-                            print(f"        -> Erreur dans la gestion de l'iframe: {e}")
-                            driver.switch_to.default_content()  # Sécurité
-                        
-                        # Méthode 3: Attendre que la page change
-                        try:
-                            WebDriverWait(driver, 15).until(
-                                lambda d: 'just a moment' not in d.title.lower() and 
-                                         'checking your browser' not in d.page_source.lower()
-                            )
-                            print("        -> Page changée, challenge probablement résolu")
-                            cloudflare_handled = True
-                            break
-                        except TimeoutException:
-                            print("        -> Timeout en attendant la résolution du challenge")
-                    
-                    else:
-                        # Pas de challenge détecté
-                        cloudflare_handled = True
-                        break
-                
-                except Exception as e:
-                    print(f"        -> Erreur lors de la vérification Cloudflare: {e}")
-                    driver.switch_to.default_content()
-                
-                cloudflare_attempts += 1
-                if cloudflare_attempts < max_cloudflare_attempts:
-                    time.sleep(random.uniform(5, 10))
-            
-            if not cloudflare_handled:
-                print("        -> Impossible de résoudre le challenge Cloudflare")
-                retry_count += 1
-                if retry_count < max_retries:
-                    print(f"        -> Nouvelle tentative ({retry_count + 1}/{max_retries}) dans 30s...")
-                    time.sleep(30)
-                    continue
-                else:
-                    return {}
-            
-            # *** EXTRACTION DES STATS ***
-            try:
-                # Attendre que la page des stats soit chargée
-                WebDriverWait(driver, 20).until(
-                    EC.any_of(
-                        EC.presence_of_element_located((By.ID, "MatchStats")),
-                        EC.presence_of_element_located((By.CLASS_NAME, "statTileWrapper"))
-                    )
-                )
-                
-                soup = BeautifulSoup(driver.page_source, 'html.parser')
-                
-                stats_container = soup.find('div', id='MatchStats')
-                if not stats_container:
-                    print("        -> ERREUR: Conteneur de stats principal 'MatchStats' non trouvé.")
-                    return {}
-
-                stat_tiles = stats_container.find_all('div', class_='statTileWrapper')
-                
-                if not stat_tiles:
-                    print("        -> ERREUR: Aucune tuile de stats trouvée.")
-                    return {}
-
-                for tile in stat_tiles:
-                    stat_name_elem = tile.find('div', class_='labelWrappper')
-                    if not stat_name_elem: 
-                        continue
-                    stat_name = stat_name_elem.get_text(strip=True)
-
-                    p1_val_elem = tile.select_one('.p1Stats .non-speed')
-                    p2_val_elem = tile.select_one('.p2Stats .non-speed')
-
-                    if p1_val_elem and p2_val_elem:
-                        p1_val = p1_val_elem.get_text(strip=True)
-                        p2_val = p2_val_elem.get_text(strip=True)
-                        stats_dict[stat_name] = (p1_val, p2_val)
-                
-                if stats_dict:
-                    print(f"        -> {len(stats_dict)} statistiques extraites avec succès")
-                    return stats_dict
-                else:
-                    print("        -> Aucune statistique extraite")
-                    return {}
-                
-            except TimeoutException:
-                print("        -> Timeout lors du chargement de la section stats")
-                retry_count += 1
-                if retry_count < max_retries:
-                    print(f"        -> Nouvelle tentative ({retry_count + 1}/{max_retries})...")
-                    time.sleep(random.uniform(10, 20))
-                    continue
-                else:
-                    return {}
-        
-        except Exception as e:
-            print(f"        -> Erreur générale lors de la plongée [{match_id}]: {str(e)}")
-            retry_count += 1
-            if retry_count < max_retries:
-                print(f"        -> Nouvelle tentative ({retry_count + 1}/{max_retries})...")
-                time.sleep(random.uniform(15, 30))
-                continue
-            else:
-                return {}
-    
-    print(f"        -> Échec définitif après {max_retries} tentatives pour [{match_id}]")
-    return {}
-
-# =============================================================================
-# Fonction d'Aide (Ne change pas)
-# =============================================================================
-def parse_stat_value(text, index=0):
-    if not text:
-        return 0
-    numbers = re.findall(r'\d+', text)
-    if numbers and len(numbers) > index:
-        return int(numbers[index])
-    return 0
-    
-# =============================================================================
-# FONCTION 3 : L'Ouvrier et Transformateur (Mise à jour avec pause aléatoire)
-# =============================================================================
-def scrape_and_process_tournament(tourney_info, year, driver):
-    tourney_name = tourney_info['name'].replace('-', ' ').title()
-    tourney_id = tourney_info['id']
-    url = f"https://www.atptour.com/en/scores/archive/{tourney_info['name']}/{tourney_id}/{year}/results"
-    
-    print(f"\n  Scraping de : {tourney_name} ({year})")
-    try:
-        driver.get(url)
-        try:
-            cookie_button_locator = (By.ID, "onetrust-accept-btn-handler")
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located(cookie_button_locator)
-            )
-            time.sleep(1.5) 
-            button = driver.find_element(By.ID, "onetrust-accept-btn-handler")
-            driver.execute_script("arguments[0].click();", button)
-            print("    -> Cookies acceptés via JavaScript.")
-            time.sleep(1.5)
+            ActionChains(driver).move_by_offset(random.randint(-10,10),
+                                                random.randint(-10,10)).perform()
         except Exception:
-            print("    -> Pas de bandeau de cookies trouvé ou erreur lors du clic.")
-        
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, "atp_scores-results")))
-        print("    -> Page de résultats chargée.")
+            pass
 
-        soup = BeautifulSoup(driver.page_source, 'html.parser')
-        
-        # Le reste du parsing initial reste le même
-        # ...
-        date_location_div = soup.find('div', class_='date-location')
-        tourney_date, surface, draw_size, tourney_level = "", "Hard", 32, "A"
-        if date_location_div:
-            date_span = date_location_div.find_all('span')[1]
-            full_date_string = date_span.get_text(strip=True).split(',')[0]
-            start_day_str = full_date_string.split('-')[0].strip()
-            month_str = ''.join(filter(str.isalpha, full_date_string))
-            tourney_date_str = f"{start_day_str} {month_str}"
-            tourney_date = datetime.strptime(f"{tourney_date_str} {year}", "%d %b %Y").strftime('%Y%m%d')
-        
-        all_formatted_matches = []
-        match_blocks = soup.select('div.atp_scores-results div.match')
-        match_num_counter = len(match_blocks) + 1
-        
-        print(f"    -> {len(match_blocks)} blocs de match trouvés.")
+###############################################################################
+# Cloudflare / hCaptcha helper
+###############################################################################
 
-        for match_block in match_blocks:
-            # Ajout d'une pause aléatoire pour paraître plus humain
-            time.sleep(random.uniform(1.5, 3.5))
+def safe_get(driver, url, max_attempts=3):
+    """
+    driver.get(url) + résolution du challenge Cloudflare.
+    On NE teste plus le mot « cloudflare » présent dans les scripts d’analytics,
+    seulement les marqueurs du challenge.
+    """
+    challenge_keys = [
+        "just a moment",
+        "checking your browser",
+        "challenge-running",
+        "cf-spinner-allow",
+    ]
 
-            match_num_counter -= 1
-            note_text = (match_block.find('div', class_='match-notes') or BeautifulSoup('', 'html.parser')).get_text().lower()
-            if 'walkover' in note_text: 
-                print(f"      -> Match {match_num_counter} ignoré (walkover).")
-                continue
+    for attempt in range(1, max_attempts + 1):
+        driver.get(url)
+        time.sleep(random.uniform(2, 4))
 
-            # ... (Le reste du parsing des infos du match reste identique)
-            # ...
-            header = match_block.find('div', 'match-header').find('span').get_text(strip=True)
-            round_name_map = {"Final": "F", "Semifinals": "SF", "Quarterfinals": "QF", "Round of 16": "R16", "Round of 32": "R32", "2nd Round Qualifying": "Q2", "1st Round Qualifying": "Q1"}
-            round_code = round_name_map.get(header.split('.')[0].strip(), "Unknown")
-            try: 
-                time_str = match_block.select_one('.match-header span:last-of-type').get_text(strip=True)
-                h, m, s = map(int, time_str.split(':'))
-                minutes = h * 60 + m
-            except: minutes = 0
-            stats_items = match_block.find_all('div', 'stats-item')
-            if len(stats_items) < 2: continue
-            winner_info = stats_items[0].find('div', 'player-info')
-            loser_info = stats_items[1].find('div', 'player-info')
-            winner_name = winner_info.find('div', 'name').find('a').get_text(strip=True)
-            winner_id = (winner_info.find('a')['href'].split('/')[3])
-            winner_ioc = (winner_info.find('svg', 'atp-flag').find('use')['href'].split('-')[-1].upper())
-            loser_name = loser_info.find('div', 'name').find('a').get_text(strip=True)
-            loser_id = (loser_info.find('a')['href'].split('/')[3])
-            loser_ioc = (loser_info.find('svg', 'atp-flag').find('use')['href'].split('-')[-1].upper())
-            winner_seed, winner_entry = ((winner_info.find('div', 'name').find('span') or BeautifulSoup('', 'html.parser')).get_text(strip=True).strip('()'), '')
-            if winner_seed.upper() in ['WC', 'Q', 'LL']: winner_entry, winner_seed = winner_seed.upper(), ''
-            loser_seed, loser_entry = ((loser_info.find('div', 'name').find('span') or BeautifulSoup('', 'html.parser')).get_text(strip=True).strip('()'), '')
-            if loser_seed.upper() in ['WC', 'Q', 'LL']: loser_entry, loser_seed = loser_seed.upper(), ''
-            score_text_container = match_block.find('div', 'match-notes')
-            score = " ".join(score_text_container.get_text(strip=True).replace("Game Set and Match", "").split(".")[1].strip().split()) if score_text_container else "N/A"
-            if "wins the match" in score: score = score.split("wins the match")[1].strip()
+        # -------- boucle interne : la page est-elle encore en challenge ? ----
+        for _ in range(5):                       # 5 sous-essais
+            page = driver.page_source.lower()
 
-            match_data = {'tourney_id': f"{year}-{tourney_id}", 'tourney_name': tourney_name, 'surface': surface, 'draw_size': draw_size, 'tourney_level': tourney_level, 'tourney_date': tourney_date, 'match_num': match_num_counter, 'winner_id': winner_id, 'winner_seed': winner_seed, 'winner_entry': winner_entry, 'winner_name': winner_name, 'winner_hand': 'R', 'winner_ht': 0, 'winner_ioc': winner_ioc, 'winner_age': 0.0, 'loser_id': loser_id, 'loser_seed': loser_seed, 'loser_entry': loser_entry, 'loser_name': loser_name, 'loser_hand': 'R', 'loser_ht': 0, 'loser_ioc': loser_ioc, 'loser_age': 0.0, 'score': score, 'best_of': 3, 'round': round_code, 'minutes': minutes}
-            
-            stats_dict = {}
-            stats_link_tag = match_block.find('a', href=re.compile(r'/en/scores/stats-centre/archive/'))
-            if stats_link_tag:
-                stats_url = 'https://www.atptour.com' + stats_link_tag['href']
-                stats_dict = get_detailed_stats(stats_url, driver)
-            else:
-                 print(f"      -> Pas de lien de stats trouvé pour le match {match_num_counter}.")
-            
-            w_val, l_val = stats_dict.get('Aces', ('0', '0'))
-            match_data['w_ace'] = parse_stat_value(w_val)
-            match_data['l_ace'] = parse_stat_value(l_val)
-            w_val, l_val = stats_dict.get('Double Faults', ('0', '0'))
-            match_data['w_df'] = parse_stat_value(w_val)
-            match_data['l_df'] = parse_stat_value(l_val)
-            w_val, l_val = stats_dict.get('First serve', ('0/0', '0/0'))
-            match_data['w_1stIn'] = parse_stat_value(w_val, 0)
-            match_data['w_svpt'] = parse_stat_value(w_val, 1)
-            match_data['l_1stIn'] = parse_stat_value(l_val, 0)
-            match_data['l_svpt'] = parse_stat_value(l_val, 1)
-            w_val, l_val = stats_dict.get('1st serve points won', ('0/0', '0/0'))
-            match_data['w_1stWon'] = parse_stat_value(w_val, 0)
-            match_data['l_1stWon'] = parse_stat_value(l_val, 0)
-            w_val, l_val = stats_dict.get('2nd serve points won', ('0/0', '0/0'))
-            match_data['w_2ndWon'] = parse_stat_value(w_val, 0)
-            match_data['l_2ndWon'] = parse_stat_value(l_val, 0)
-            w_val, l_val = stats_dict.get('Break Points Saved', ('0/0', '0/0'))
-            match_data['w_bpSaved'] = parse_stat_value(w_val, 0)
-            match_data['w_bpFaced'] = parse_stat_value(w_val, 1)
-            match_data['l_bpSaved'] = parse_stat_value(l_val, 0)
-            match_data['l_bpFaced'] = parse_stat_value(l_val, 1)
-            w_val, l_val = stats_dict.get('Service Games Played', ('0', '0'))
-            match_data['w_SvGms'] = parse_stat_value(w_val)
-            match_data['l_SvGms'] = parse_stat_value(l_val)
-            match_data.update({f'{prefix}_{stat}': 0.0 for prefix in ['winner', 'loser'] for stat in ['rank', 'rank_points']})
-            all_formatted_matches.append(match_data)
-        
-        print(f"    -> {len(all_formatted_matches)} matchs valides extraits et traités.")
-        return all_formatted_matches
-        
-    except Exception as e:
-        print(f"  -- ERREUR CRITIQUE lors du traitement de {tourney_name}.")
-        traceback.print_exc()
+            # Page OK ?
+            if all(k not in page for k in challenge_keys):
+                return True                      # plus de challenge → on sort
+
+            print(f"        ↻ Cloudflare (try {attempt})…")
+            try:
+                # Chercher un iframe hCaptcha/reCAPTCHA
+                iframe = driver.find_element(
+                    By.CSS_SELECTOR,
+                    ("iframe[src*='challenges.cloudflare.com'],"
+                     "iframe[title*='Widget containing'],"
+                     "iframe[data-hcaptcha-widget-id]")
+                )
+                driver.switch_to.frame(iframe)
+
+                # Cliquer la checkbox
+                checkbox = WebDriverWait(driver, 8).until(
+                    EC.element_to_be_clickable(
+                        (By.CSS_SELECTOR, "input[type='checkbox'], div[role='checkbox']"))
+                )
+                ActionChains(driver).move_to_element(checkbox).click().perform()
+                print("        ☑️  Checkbox cliquée")
+            except Exception:
+                pass
+            finally:
+                driver.switch_to.default_content()
+
+            time.sleep(random.uniform(6, 10))     # attendre la validation
+
+        # Encore bloqué ? on ré-essaie avec un nouveau driver.get
+        time.sleep(random.uniform(15, 25))
+
+    print("        ❌ Cloudflare non résolu après plusieurs essais")
+    return False
+
+###############################################################################
+# Driver furtif
+###############################################################################
+def setup_stealth_browser():
+    opts = uc.ChromeOptions()
+    opts.add_argument("--start-maximized")
+    opts.add_argument("--disable-blink-features=AutomationControlled")
+    try:
+        opts.add_experimental_option("useAutomationExtension", False)
+    except InvalidArgumentException:
+        pass
+    opts.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/124.0.0.0 Safari/537.36")
+    try:
+        drv = uc.Chrome(options=opts, use_subprocess=True)
+    except InvalidArgumentException:
+        print("[WARN] options avancées refusées – relance basique …")
+        drv = uc.Chrome()
+    drv.execute_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
+    drv.execute_script("Object.defineProperty(navigator,'plugins',{get:()=>[1,2,3]})")
+    drv.execute_script("Object.defineProperty(navigator,'languages',{get:()=>['en-US','en']})")
+    drv.execute_script("window.chrome={ runtime:{} }")
+    return drv
+
+###############################################################################
+# Découverte des tournois
+###############################################################################
+def get_tournaments_list(year:int, driver):
+    url = f"https://www.atptour.com/en/scores/results-archive?year={year}"
+    if not safe_get(driver, url):
+        raise RuntimeError("Archive page bloquée par Cloudflare")
+    WebDriverWait(driver,20).until(
+        EC.presence_of_all_elements_located((By.LINK_TEXT,"Results")))
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    tourneys, seen = [], set()
+    for a in soup.find_all("a", string="Results"):
+        parts = a.get("href","").strip("/").split("/")
+        if len(parts)>=6:
+            key = (parts[3], parts[4])
+            if key not in seen:
+                seen.add(key)
+                tourneys.append({"name": parts[3], "id": parts[4]})
+    return sorted(tourneys, key=lambda d: d["name"])
+
+###############################################################################
+# Stats-Centre
+###############################################################################
+def get_detailed_stats(url, driver):
+    """
+    Renvoie (stats_dict, reason)
+      • stats_dict : {} si vide / bloqué
+      • reason     : '' (succès) | 'blocked' | 'empty'
+    """
+    if not safe_get(driver, url):
+        return {}, "blocked"           # challenge non résolu
+
+    try:
+        WebDriverWait(driver, 20).until(
+            EC.any_of(
+                EC.presence_of_element_located((By.ID, "MatchStats")),
+                EC.presence_of_element_located((By.CLASS_NAME, "statTileWrapper")))
+        )
+    except TimeoutException:
+        return {}, "blocked"           # time-out → supposé bloqué
+
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    cont = soup.find("div", id="MatchStats")
+    if not cont:
+        return {}, "empty"             # page vide (ATP n’a rien publié)
+
+    stats = {}
+    for tile in cont.find_all("div", "statTileWrapper"):
+        label = tile.find("div", "labelWrappper")
+        if not label:
+            continue
+        p1 = tile.select_one(".p1Stats .non-speed")
+        p2 = tile.select_one(".p2Stats .non-speed")
+        if p1 and p2:
+            stats[label.get_text(strip=True)] = (
+                p1.get_text(strip=True),
+                p2.get_text(strip=True),
+            )
+    return stats, ""                   # succès
+
+###############################################################################
+# Codes de ronde
+###############################################################################
+ROUND_MAP = {
+    "Final":"F","Semifinals":"SF","Quarterfinals":"QF",
+    "Round of 16":"R16","Round of 32":"R32","Round of 64":"R64","Round of 128":"R128",
+    "First Round":"R32","Second Round":"R16","Third Round":"R8",
+    "Qualifying – First Round":"Q1","Qualifying – Second Round":"Q2",
+    "Qualifying – Third Round":"Q3","Qualifying – Final":"Q3",
+}
+
+###############################################################################
+# Scraper un tournoi entier
+###############################################################################
+def scrape_tournament(t, year, driver):
+    slug, tid = t["name"], t["id"]
+    name = slug.replace("-", " ").title()
+    url = f"https://www.atptour.com/en/scores/archive/{slug}/{tid}/{year}/results"
+    print(f"\n→ {name} {year}")
+
+    if not safe_get(driver, url):
+        print("   bloqué par Cloudflare – skip")
         return []
 
-def setup_stealth_browser():
-    """Configuration avancée pour minimiser la détection Cloudflare"""
-    
-    options = uc.ChromeOptions()
-    
-    # Options de base
-    options.add_argument("--start-maximized")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option('useAutomationExtension', False)
-    
-    # Headers et User-Agent réalistes
-    options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-    
-    # Options pour réduire la détection
-    options.add_argument("--disable-extensions-file-access-check")
-    options.add_argument("--disable-extensions-http-throttling")
-    options.add_argument("--disable-extensions-except")
-    options.add_argument("--disable-plugins-discovery")
-    options.add_argument("--disable-preconnect")
-    
-    # Simulation d'un navigateur normal
-    options.add_argument("--enable-features=NetworkService,NetworkServiceLogging")
-    options.add_argument("--disable-features=TranslateUI")
-    options.add_argument("--disable-ipc-flooding-protection")
-    
-    # Mémoire et performance
-    options.add_argument("--max_old_space_size=4096")
-    options.add_argument("--disable-dev-shm-usage")
-    
     try:
-        driver = uc.Chrome(
-            options=options, 
-            use_subprocess=True,
-            version_main=None  # Utilise la version détectée automatiquement
-        )
-        
-        # Scripts pour masquer l'automatisation
-        driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-        driver.execute_script("Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]})")
-        driver.execute_script("Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']})")
-        driver.execute_script("window.chrome = { runtime: {} }")
-        
-        return driver
-        
-    except Exception as e:
-        print(f"Erreur lors de l'initialisation du navigateur: {e}")
-        # Fallback avec configuration basique
-        return uc.Chrome(options=options, use_subprocess=True)
+        WebDriverWait(driver,20).until(
+            EC.presence_of_element_located((By.CLASS_NAME,"atp_scores-results")))
+    except TimeoutException:
+        print("   page indisponible – skip")
+        return []
 
-# Fonction d'attente intelligente
-def smart_wait(driver, min_time=2, max_time=5):
-    """Attente avec variation aléatoire pour simuler un comportement humain"""
-    wait_time = random.uniform(min_time, max_time)
-    time.sleep(wait_time)
-    
-    # Parfois, faire un petit mouvement de souris pour simuler l'activité
-    if random.random() < 0.3:  # 30% de chance
+    soup = BeautifulSoup(driver.page_source,"html.parser")
+
+    # date & surface
+    tourney_date, surface = "", "Hard"
+    date_loc = soup.find("div","date-location")
+    if date_loc:
+        spans=[s.get_text(strip=True) for s in date_loc.find_all("span")]
+        if len(spans)>=3:
+            surface = spans[-1].split()[-1].title()
+        raw = spans[0].split('–')[0].split('-')[0].strip()
         try:
-            from selenium.webdriver.common.action_chains import ActionChains
-            action = ActionChains(driver)
-            action.move_by_offset(random.randint(-10, 10), random.randint(-10, 10))
-            action.perform()
-        except:
-            pass  # Ignorer si ça échoue
+            d,m = raw.split()
+            tourney_date = datetime.strptime(f"{d} {m} {year}", "%d %b %Y").strftime("%Y%m%d")
+        except ValueError:
+            pass
 
-if __name__ == "__main__":
-    TARGET_TOURNAMENT_INFO = {'name': 'adelaide', 'id': '8998'}
-    YEAR_TO_SCRAPE = 2025
-    driver = None
-    try:
-        print("--- Initialisation du navigateur FURTIF ---")
-        options = uc.ChromeOptions()
-        options.add_argument("--start-maximized")
-        driver = uc.Chrome(options=options, use_subprocess=True)
-        
-        processed_matches = scrape_and_process_tournament(TARGET_TOURNAMENT_INFO, YEAR_TO_SCRAPE, driver)
-        print("\n--- Scraping terminé ---")
-        
-        if processed_matches:
-            header = ['tourney_id', 'tourney_name', 'surface', 'draw_size', 'tourney_level', 'tourney_date', 'match_num', 'winner_id', 'winner_seed', 'winner_entry', 'winner_name', 'winner_hand', 'winner_ht', 'winner_ioc', 'winner_age', 'loser_id', 'loser_seed', 'loser_entry', 'loser_name', 'loser_hand', 'loser_ht', 'loser_ioc', 'loser_age', 'score', 'best_of', 'round', 'minutes', 'w_ace', 'w_df', 'w_svpt', 'w_1stIn', 'w_1stWon', 'w_2ndWon', 'w_SvGms', 'w_bpSaved', 'w_bpFaced', 'l_ace', 'l_df', 'l_svpt', 'l_1stIn', 'l_1stWon', 'l_2ndWon', 'l_SvGms', 'l_bpSaved', 'l_bpFaced', 'winner_rank', 'winner_rank_points', 'loser_rank', 'loser_rank_points']
-            df_final = pd.DataFrame(processed_matches, columns=header).fillna(0)
-            
-            int_cols = ['minutes', 'w_ace', 'w_df', 'w_svpt', 'w_1stIn', 'w_1stWon', 'w_2ndWon', 'w_SvGms', 'w_bpSaved', 'w_bpFaced', 'l_ace', 'l_df', 'l_svpt', 'l_1stIn', 'l_1stWon', 'l_2ndWon', 'l_SvGms', 'l_bpSaved', 'l_bpFaced']
-            for col in int_cols:
-                if col in df_final.columns:
-                    df_final[col] = df_final[col].astype(int)
+    blocks = soup.select("div.atp_scores-results div.match")
+    print(f"   {len(blocks)} matches trouvés")
+    match_num = len(blocks)+1
+    data=[]
 
-            filename = f"atp_matches_{YEAR_TO_SCRAPE}_{TARGET_TOURNAMENT_INFO['name'].upper()}_COMPLET.csv"
-            df_final.to_csv(filename, index=False, encoding='utf-8-sig')
-            print(f"\nFichier '{filename}' créé avec succès, contenant les statistiques détaillées.")
+    for blk in blocks:
+        smart_wait(driver,1.5,3.5)
+        match_num-=1
+
+        header_raw = blk.find("div","match-header").find("span").get_text(strip=True)
+        header_clean = re.split(r'\s*[-–—]\s*', header_raw)[0].rstrip('.').strip()
+        if SKIP_QUALIFYING and "qualifying" in header_clean.lower():
+            continue
+        rnd = ROUND_MAP.get(header_clean, "Unknown")
+
+        # durée
+        try:
+            hms = blk.select_one(".match-header span:last-of-type").get_text(strip=True)
+            h,m,_ = map(int,hms.split(":")); minutes = h*60+m
+        except Exception: minutes = 0
+
+        s_items = blk.find_all("div","stats-item")
+        if len(s_items)<2: continue
+
+        def player(tag):
+            info = tag.find("div","player-info")
+            name = info.find("div","name").find("a").get_text(strip=True)
+            pid  = info.find("a")["href"].split("/")[3]
+            ioc  = info.find("svg","atp-flag").find("use")["href"].split("-")[-1].upper()
+            extra= (info.find("div","name").find("span") or BeautifulSoup("","html.parser")).get_text(strip=True).strip("()")
+            seed, entry = ("","")
+            if extra.upper() in {"WC","Q","LL"}: entry=extra.upper()
+            else: seed=extra
+            return name,pid,ioc,seed,entry
+
+        w_n,w_id,w_ioc,w_seed,w_entry = player(s_items[0])
+        l_n,l_id,l_ioc,l_seed,l_entry = player(s_items[1])
+
+        score_txt = (blk.find("div","match-notes") or BeautifulSoup("","html.parser")).get_text(strip=True)\
+                    .replace("Game Set and Match","")
+        score = score_txt.split("wins the match")[-1].strip() if "wins the match" in score_txt else score_txt or "N/A"
+
+        print(f"      [{match_num:02}] {w_n} def. {l_n} ({rnd}) … ", end="")
+
+        match = {
+            "tourney_id":f"{year}-{tid}","tourney_name":name,"surface":surface,"draw_size":32,
+            "tourney_level":"A","tourney_date":tourney_date,"match_num":match_num,
+            "winner_id":w_id,"winner_seed":w_seed,"winner_entry":w_entry,"winner_name":w_n,
+            "winner_hand":"R","winner_ht":0,"winner_ioc":w_ioc,"winner_age":0.0,
+            "loser_id":l_id,"loser_seed":l_seed,"loser_entry":l_entry,"loser_name":l_n,
+            "loser_hand":"R","loser_ht":0,"loser_ioc":l_ioc,"loser_age":0.0,
+            "score":score,"best_of":3,"round":rnd,"minutes":minutes,
+        }
+
+                # ── Stats-Centre ───────────────────────────────────────────────
+        tag = blk.find("a", href=re.compile(r"/en/scores/stats-centre/archive/"))
+        if tag:
+            stats, why = get_detailed_stats("https://www.atptour.com" + tag["href"], driver)
         else:
-            print("Échec : Aucun match n'a pu être scrapé.")
+            stats, why = {}, "no_link"
+
+        # Journalisation détaillée
+        if   why == "":        print("stats ✔")
+        elif why == "empty":   print("stats ✘  (page vide – ATP n’a rien publié)")
+        elif why == "blocked": print("stats ✘  (bloqué Cloudflare)")
+        elif why == "no_link": print("stats ✘  (aucun lien Stats-Centre)")
+        else:                  print("stats ✘  (?)")
+
+
+        def single(k, lab):
+            w,l = stats.get(lab,("0","0"))
+            match[f"w_{k}"]=parse_stat_value(w)
+            match[f"l_{k}"]=parse_stat_value(l)
+        def ratio(pref, lab):
+            w,l = stats.get(lab,("0/0","0/0"))
+            match[f"w_{pref}In"]=parse_stat_value(w,0)
+            match[f"w_{pref}Tot"]=parse_stat_value(w,1)
+            match[f"l_{pref}In"]=parse_stat_value(l,0)
+            match[f"l_{pref}Tot"]=parse_stat_value(l,1)
+
+        single("ace","Aces"); single("df","Double Faults")
+        ratio("sv","First serve")
+        single("1stWon","1st serve points won"); single("2ndWon","2nd serve points won")
+        ratio("bp","Break Points Saved"); single("SvGms","Service Games Played")
+
+        for p in ("winner","loser"):
+            match[f"{p}_rank"]=0; match[f"{p}_rank_points"]=0
+        data.append(match)
+
+        # arrêt test éventuel
+        if MAX_MATCHES and len(data)>=MAX_MATCHES:
+            break
+
+    print(f"   {len(data)} matches valides")
+    return data
+
+###############################################################################
+# Main
+###############################################################################
+if __name__=="__main__":
+    header=[
+        "tourney_id","tourney_name","surface","draw_size","tourney_level","tourney_date","match_num",
+        "winner_id","winner_seed","winner_entry","winner_name","winner_hand","winner_ht","winner_ioc","winner_age",
+        "loser_id","loser_seed","loser_entry","loser_name","loser_hand","loser_ht","loser_ioc","loser_age",
+        "score","best_of","round","minutes",
+        "w_ace","w_df","w_svIn","w_svTot","w_1stWon","w_2ndWon","w_SvGms","w_bpIn","w_bpTot",
+        "l_ace","l_df","l_svIn","l_svTot","l_1stWon","l_2ndWon","l_SvGms","l_bpIn","l_bpTot",
+        "winner_rank","winner_rank_points","loser_rank","loser_rank_points",
+    ]
+    int_cols=[c for c in header if c.startswith(("w_","l_","minutes"))]
+
+    driver=None
+    try:
+        print("=== Initialisation navigateur furtif ===")
+        driver = setup_stealth_browser()
+
+        tourneys = get_tournaments_list(YEAR, driver)
+        print(f"{len(tourneys)} tournois détectés pour {YEAR}")
+
+        all_matches=[]
+        for t in tourneys:
+            try:
+                all_matches.extend(scrape_tournament(t, YEAR, driver))
+                if MAX_MATCHES and len(all_matches)>=MAX_MATCHES:
+                    print(f"\n[TEST] limite {MAX_MATCHES} matches → sortie")
+                    break
+                smart_wait(driver,4,8)
+            except Exception:
+                print(f"[WARN] tournoi {t['name']} échoué"); traceback.print_exc()
+
+        if not all_matches:
+            raise RuntimeError("Aucun match collecté")
+
+        df = pd.DataFrame(all_matches, columns=header).fillna(0)
+        for col in int_cols:
+            if col in df.columns:
+                df[col] = df[col].astype(int)
+        df.to_csv(Path(__file__).with_name(OUTPUT_CSV), index=False, encoding="utf-8-sig")
+        print(f"\n✅ CSV global créé : {OUTPUT_CSV}  ({len(df)} lignes)")
+
     except Exception as e:
-        print(f"Une erreur majeure est survenue dans le bloc principal : {e}")
-        traceback.print_exc()
+        print(f"[ERREUR] {e}"); traceback.print_exc()
     finally:
         if driver:
-            driver.quit()
-            print("\nNavigateur fermé. Opération terminée.")
+            driver.quit(); print("\nNavigateur fermé – fin.")
