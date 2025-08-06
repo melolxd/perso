@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prédictions Tennis ATP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body { background-color: #212529; color: white; }
+      .card { background-color: #343a40; border-color: #495057; margin-bottom: 1.5rem; }
+      .progress-bar.bg-p1 { background-color: #28a745 !important; } /* Vert pour P1 */
+      .progress-bar.bg-p2 { background-color: #17a2b8 !important; } /* Cyan pour P2 */
+      .table { color: #dee2e6; }
+      .table-dark { --bs-table-bg: #495057; }
+      .text-p1 { color: #28a745; font-weight: bold; } /* Vert */
+      .text-p2 { color: #dc3545; font-weight: bold; } /* Rouge/Rose pour le 'perdant' de la stat */
+    </style>
+  </head>
+  <body>
+    <div class="container my-4">
+      <div class="text-center mb-4">
+        <h1 class="display-4">Prédictions Tennis ATP du Jour</h1>
+        <p class="lead">Probabilités basées sur un modèle LightGBM entraîné sur des données historiques.</p>
+      </div>
+
+      {% if matches %} {% for match in matches %}
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <strong>{{ match.tournament }}</strong> - {{ match.surface }}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ match.player1 }} vs {{ match.player2 }}</h5>
+
+          <!-- Barres de probabilité -->
+          <div>
+            <strong
+              >{{ match.player1 }}:
+              <span class="text-p1"
+                >{{ "%.2f"|format(match.p1_proba * 100) }}%</span
+              ></strong
+            >
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar bg-p1"
+                role="progressbar"
+                style="width: {{ match.p1_proba * 100 }}%"
+              ></div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <strong
+              >{{ match.player2 }}:
+              <span class="text-p1"
+                >{{ "%.2f"|format(match.p2_proba * 100) }}%</span
+              ></strong
+            >
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar bg-p2"
+                role="progressbar"
+                style="width: {{ match.p2_proba * 100 }}%"
+              ></div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h6>Analyse détaillée des caractéristiques :</h6>
+            <table class="table table-dark table-sm table-striped">
+              <thead>
+                <tr>
+                  <th>Caractéristique</th>
+                  <th>{{ match.player1 }}</th>
+                  <th>{{ match.player2 }}</th>
+                  <th>Avantage</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for feature_key, values in match.details.items() %}
+                <tr>
+                  <td>{{ feature_key.replace('_', ' ').replace('pct', '%').title() }}</td>
+                  <td>{{ "%.2f"|format(values.p1) if values.p1 is number else 'N/A' }}</td>
+                  <td>{{ "%.2f"|format(values.p2) if values.p2 is number else 'N/A' }}</td>
+                  <td>
+                    {# ### MODIFICATION MAJEURE ICI ### #}
+                    {# On définit les features où 'plus bas c'est mieux' #}
+                    {% set lower_is_better = ['rank', 'df_rate'] %}
+
+                    {% if feature_key in lower_is_better %}
+                        {# Pour le rang et le taux de double faute, le plus petit est le meilleur #}
+                        {% if values.p1 < values.p2 %}
+                            <span class="text-p1">{{ match.player1 }}</span>
+                        {% else %}
+                            <span class="text-p2">{{ match.player2 }}</span>
+                        {% endif %}
+                    {% else %}
+                        {# Pour toutes les autres stats, le plus haut est le meilleur #}
+                        {% if values.p1 > values.p2 %}
+                             <span class="text-p1">{{ match.player1 }}</span>
+                        {% else %}
+                            <span class="text-p2">{{ match.player2 }}</span>
+                        {% endif %}
+                    {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endfor %} {% else %}
+      <div class="alert alert-info text-center">Aucun match trouvé.</div>
+      {% endif %}
+    </div>
+  </body>
+</html>

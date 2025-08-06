@@ -27,7 +27,7 @@ from selenium.common.exceptions import TimeoutException, InvalidArgumentExceptio
 # Paramètres
 ###############################################################################
 YEAR            = 2025
-OUTPUT_CSV      = f"atp_matches_{YEAR}_ALL.csv"
+OUTPUT_CSV      = f"atp_matches_{YEAR}.csv"
 SKIP_QUALIFYING = False
 MAX_MATCHES     = None # Mettre à None pour un scrape complet
 
