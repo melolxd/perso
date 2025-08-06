@@ -1,113 +1,136 @@
-# app.py
+# ----------  app.py  -------------------------------------------------
+import uuid, json, pathlib, re, unicodedata
+from flask import Flask, render_template, request, redirect, url_for, jsonify
+import pandas as pd, joblib, numpy as np
+import config                     # ton fichier config.py (chemins, features…)
 
-import pandas as pd
-import joblib
-import warnings
-from flask import Flask, render_template
-import requests
-from bs4 import BeautifulSoup
-import unicodedata
-
-import config
-
-warnings.filterwarnings("ignore", category=UserWarning)
-
+# --------------------------------------------------------------------
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "change-me"
 
-# --- CHARGEMENT DES ARTEFACTS (ne change pas) ---
-try:
-    model = joblib.load(config.MODEL_PATH)
-    training_columns = joblib.load(config.COLUMNS_PATH)
-    player_db = pd.read_pickle(config.PLAYER_DB_PATH)
-    print("Modèle, colonnes et base de données joueurs chargés.")
-except FileNotFoundError:
-    print("ERREUR : Fichiers du modèle non trouvés. Exécutez train.py d'abord.")
-    exit()
+# ------------ Modèle, colonnes, base joueurs ------------------------
+model         = joblib.load(config.MODEL_PATH)
+training_cols = joblib.load(config.COLUMNS_PATH)
+player_db     = pd.read_pickle(config.PLAYER_DB_PATH)
 
-# --- FONCTIONS UTILES (ne changent pas) ---
-def normalize_name(name):
-    return ''.join(c for c in unicodedata.normalize('NFD', name) if unicodedata.category(c) != 'Mn').lower()
+# ------------ Listes d’auto-complétion ------------------------------
+player_names = sorted(player_db['name'].unique())
 
-def get_player_stats(player_name):
-    normalized_name = normalize_name(player_name)
+# ➊ liste statique minimaliste (mets ce que tu veux) :
+tour_names = [  # exemples
+   "Australian Open", "Roland-Garros", "Wimbledon", "US Open",
+   "Toronto", "Cincinnati", "Paris-Bercy", "Monte-Carlo",
+   "Indian Wells", "Miami", "Madrid", "Rome"
+]
+
+# ------------ Persistance JSON --------------------------------------
+STORE = pathlib.Path("predictions.json")
+
+def load_predictions():
+    if STORE.exists():
+        return json.loads(STORE.read_text(encoding="utf-8"))
+    return {}
+
+def save_predictions(data: dict):
+    STORE.write_text(json.dumps(data, ensure_ascii=False, indent=2),
+                     encoding="utf-8")
+
+predictions = load_predictions()        # dict {uid: {...}}
+
+# ------------ Helpers ------------------------------------------------
+def normalize_name(n: str) -> str:
+    n = ''.join(c for c in unicodedata.normalize('NFD', n)
+                if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[^a-zA-Z]', '', n).lower()
+
+def get_player_stats(name: str) -> pd.Series:
+    if 'norm' not in player_db.columns:
+        player_db['norm'] = player_db['name'].apply(normalize_name)
     try:
-        if 'normalized_name' not in player_db.columns:
-            player_db['normalized_name'] = player_db['name'].apply(normalize_name)
-        player_series = player_db[player_db['normalized_name'] == normalized_name].iloc[0]
-        return player_series
-    except (IndexError, KeyError):
-        print(f"Avertissement : Joueur '{player_name}' non trouvé. Utilisation de stats par défaut.")
-        default_stats = {'name': player_name, 'rank': 500, 'age': 27, 'ht': 185, 'hand': 'R', 'form': 0.5, 'ace_rate': 0.4, 'df_rate': 0.2, 'first_serve_in_pct': 0.6, 'first_serve_win_pct': 0.7, 'second_serve_win_pct': 0.5, 'bp_saved_pct': 0.6, 'service_games_win_pct': 0.8}
-        return pd.Series(default_stats)
+        return player_db[player_db['norm'] == normalize_name(name)].iloc[0]
+    except IndexError:
+        # valeur de secours
+        d = {f: .5 for f in config.BASE_FEATURES if 'pct' in f or 'rate' in f}
+        d.update({'rank': 150., 'age': 27., 'ht': 185., 'hand': 'R', 'form': .5})
+        return pd.Series(d)
 
-def predict_match_details(player1_name, player2_name, surface):
-    p1_stats = get_player_stats(player1_name)
-    p2_stats = get_player_stats(player2_name)
-    match_data = {}
-    details = {}
+def default_val(f):
+    return 0.5 if any(k in f for k in ('pct', 'rate', 'form')) else 150.
 
-    features_to_calc = config.BASE_FEATURES + ['form']
-    for feature in features_to_calc:
-        p1_key = f'rolling_{feature}' if feature not in ['rank', 'age', 'ht', 'return_points_win_pct'] else feature
-        p2_key = f'rolling_{feature}' if feature not in ['rank', 'age', 'ht', 'return_points_win_pct'] else feature
-        
-        # Gestion des valeurs par défaut pour les joueurs non trouvés
-        default_val = 0.5 if 'pct' in feature or 'rate' in feature or 'form' in feature else 200
-        p1_val = p1_stats.get(p1_key, default_val)
-        p2_val = p2_stats.get(p2_key, default_val)
+def predict(p1: str, p2: str, surface: str) -> float:
+    p1s, p2s = get_player_stats(p1), get_player_stats(p2)
+    row = {}
+    for feat in config.BASE_FEATURES + ['form']:
+        row[f'{feat}_diff'] = p1s.get(feat, default_val(feat)) - \
+                              p2s.get(feat, default_val(feat))
+    row.update({'p1_hand': p1s.get('hand', 'R'),
+                'p2_hand': p2s.get('hand', 'R'),
+                'surface': surface})
+    X = pd.DataFrame([row])
+    X = pd.get_dummies(X, columns=config.CATEGORICAL_FEATURES, dummy_na=True)
+    X = X.reindex(columns=training_cols, fill_value=0)
+    return model.predict_proba(X)[0, 1]                # proba victoire p1
 
-        diff = p1_val - p2_val
-        match_data[f'{feature}_diff'] = diff
-        details[feature] = {'p1': p1_val, 'p2': p2_val, 'diff': diff}
-        
-    match_data['p1_hand'] = p1_stats.get('hand', 'R')
-    match_data['p2_hand'] = p2_stats.get('hand', 'R')
-    match_data['surface'] = surface
-    
-    match_df = pd.DataFrame([match_data])
-    match_df_encoded = pd.get_dummies(match_df, columns=config.CATEGORICAL_FEATURES, dummy_na=True)
-    match_df_aligned = match_df_encoded.reindex(columns=training_columns, fill_value=0)
-    
-    probability = model.predict_proba(match_df_aligned)[:, 1][0]
-    
+def compute_stats(preds: dict):
+    decided  = [p for p in preds.values() if p["status"] != "pending"]
+    n_good   = sum(p["status"] == "success" for p in decided)
+    n_total  = len(decided)
+    hit_rate = round(100 * n_good / n_total, 2) if n_total else None
     return {
-        'player1': player1_name,
-        'player2': player2_name,
-        'surface': surface,
-        'p1_proba': probability,
-        'p2_proba': 1 - probability,
-        'details': details
+        "decided": n_total,
+        "good":    n_good,
+        "bad":     n_total - n_good,
+        "hit":     hit_rate            # None si aucune décision
     }
+# ------------ Routes -------------------------------------------------
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "POST":
+        p1   = request.form["player1"].strip()
+        p2   = request.form["player2"].strip()
+        surf = request.form["surface"]
+        tourn= request.form["tournament"].strip() or "?"
+        prob = round(predict(p1, p2, surf) * 100, 2)
 
-# --- DÉFINITION DE LA PAGE WEB PRINCIPALE (MODIFIÉE) ---
-@app.route('/')
-def home():
-    """Page d'accueil qui affiche les prédictions d'une liste de matchs manuelle."""
-    
-    ### MODIFICATION ICI ###
-    # Au lieu de scraper, on définit nous-mêmes la liste des matchs à afficher.
-    # Vous pouvez changer/ajouter/supprimer des matchs dans cette liste !
-    
-    matches_to_predict = [
-        {'p1': 'Taylor Fritz', 'p2': 'Ben Shelton', 'surface': 'Hard', 'tournament': 'Tournoi de Toronto'},
-        {'p1': 'Alexander Zverev', 'p2': 'Karen Khachanov', 'surface': 'Hard', 'tournament': 'Tournoi de Toronto'},
-    ]
-    
-    print(f"Prédiction pour {len(matches_to_predict)} matchs définis manuellement.")
-    
-    predictions = []
-    for match in matches_to_predict:
-        try:
-            prediction_details = predict_match_details(match['p1'], match['p2'], match['surface'])
-            prediction_details['tournament'] = match['tournament']
-            predictions.append(prediction_details)
-        except Exception as e:
-            print(f"Erreur lors de la prédiction pour {match['p1']} vs {match['p2']}: {e}")
+        uid = str(uuid.uuid4())
+        predictions[uid] = {"p1": p1, "p2": p2, "surface": surf,
+                            "tournament": tourn, "prob": prob,
+                            "status": "pending"}
+        save_predictions(predictions)
+        return redirect(url_for("index"))
 
-    # Envoyer les prédictions à la page HTML
-    return render_template('index.html', matches=predictions)
+    return render_template("index.html",
+                           preds=predictions,
+                           players=player_names,
+                           tours=tour_names)
 
+@app.route("/history")
+def history():
+    stats = compute_stats(predictions)
+    # on trie par date d’ajout (facultatif)
+    ordered = dict(sorted(predictions.items(),
+                          key=lambda kv: kv[1].get("timestamp", 0),
+                          reverse=True))
+    return render_template("history.html",
+                           preds=ordered,
+                           stats=stats)
 
-# --- DÉMARRAGE DE L'APPLICATION (ne change pas) ---
+@app.post("/update/<uid>")
+def update(uid):
+    status = request.json.get("status")
+    if uid in predictions and status in ("success", "fail"):
+        predictions[uid]["status"] = status
+        save_predictions(predictions)
+        return jsonify(ok=True)
+    return jsonify(ok=False), 404
+
+@app.post("/delete/<uid>")
+def delete(uid):
+    if uid in predictions:
+        predictions.pop(uid)
+        save_predictions(predictions)
+        return jsonify(ok=True)
+    return jsonify(ok=False), 404
+# --------------------------------------------------------------------
 if __name__ == "__main__":
     app.run(debug=True)

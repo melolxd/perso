@@ -1,0 +1,49 @@
+/* Définition des variables de couleur pour le thème */
+:root {
+  --app-bg: #0f1116;
+  --app-text: #cfd3ec;
+  --app-card-bg: #181b23;
+  --app-card-border: #2c3140;
+  --app-green: #52ff90;
+  --app-red: #ff4d67;
+  --app-grey: #6c757d;
+  --app-yellow: #ffc107;
+}
+
+body {
+  background-color: var(--app-bg);
+  color: var(--app-text);
+}
+
+/* Classes de couleur utilitaires */
+.text-success { color: var(--app-green) !important; }
+.text-danger  { color: var(--app-red) !important; }
+.text-pending { color: var(--app-grey) !important; }
+.text-player1 { color: var(--app-yellow) !important; }
+
+/* Amélioration du style des cartes */
+.card {
+  background-color: var(--app-card-bg);
+  border-color: var(--app-card-border);
+}
+
+/* Surcharge Bootstrap pour les tables */
+.table {
+  --bs-table-bg: var(--app-card-bg);
+  --bs-table-border-color: var(--app-card-border);
+  --bs-table-striped-bg: #1c202a;
+}
+
+/* Effet de survol sur les lignes du tableau */
+.table-hover tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+.table-hover tbody tr:hover {
+  background-color: #252a36;
+}
+
+/* Style des boutons d'action */
+.action-buttons .btn {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+}
