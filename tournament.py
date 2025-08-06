@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-ATP Scraper – Saison 2025  (v7.3 - Reprise Automatique + Nettoyage)
+ATP Scraper – Saison 2025  (v7.4 - Reprise Automatique + Forçage + Nettoyage)
 --------------------------------------------------------------------
 • Gère les 3 formats de page de stats (y compris celui des Grands Chelems)
 • Reprend automatiquement le scraping là où il s'est arrêté
+• Permet de forcer le rescraping de tournois spécifiques
 • Ajoute une étape de nettoyage pour supprimer les matchs aux stats vides et corriger les erreurs
 """
 
@@ -30,6 +31,9 @@ YEAR            = 2025
 OUTPUT_CSV      = f"atp_matches_{YEAR}_ALL.csv"
 SKIP_QUALIFYING = False
 MAX_MATCHES     = None # Mettre à None pour un scrape complet
+
+# NOUVEAU PARAMÈTRE POUR FORCER LE RESCRAPE
+FORCE_RESCRAPE_IDS = ["2025-421"] # Mettez ici les 'tourney_id' à rescraper (ex: ["2025-421", "2025-500"])
 
 ###############################################################################
 # Helpers généraux
@@ -128,7 +132,6 @@ def get_detailed_stats(url, driver):
             )
         )
     except TimeoutException:
-        # Si la page est vide, on vérifie si c'est un forfait pour ne pas le marquer comme une erreur
         page_source = driver.page_source
         if "walkover" in page_source.lower() or "retired" in page_source.lower():
             return {}, "walkover_or_retired"
@@ -351,6 +354,18 @@ if __name__=="__main__":
             print(f"Fichier CSV existant trouvé : {OUTPUT_CSV}")
             try:
                 df_existing = pd.read_csv(output_path, dtype={'tourney_id': str})
+                
+                # --- DÉBUT DE LA LOGIQUE DE FORÇAGE ---
+                # On retire les tournois à forcer du DataFrame existant AVANT de continuer
+                if not df_existing.empty and FORCE_RESCRAPE_IDS:
+                    initial_rows_count = len(df_existing)
+                    df_existing = df_existing[~df_existing['tourney_id'].isin(FORCE_RESCRAPE_IDS)]
+                    removed_rows_count = initial_rows_count - len(df_existing)
+                    if removed_rows_count > 0:
+                        print(f"INFO : Forçage du rescrape pour : {', '.join(FORCE_RESCRAPE_IDS)}")
+                        print(f"      Suppression de {removed_rows_count} anciennes lignes correspondantes.")
+                # --- FIN DE LA LOGIQUE DE FORÇAGE ---
+
                 if not df_existing.empty:
                     completed_tourney_ids = set(df_existing['tourney_id'].unique())
                     existing_matches_df = df_existing
@@ -362,10 +377,17 @@ if __name__=="__main__":
         tourneys = get_tournaments_list(YEAR, driver)
         print(f"\n{len(tourneys)} tournois détectés pour {YEAR}")
 
-        tourneys_to_scrape = [
-            t for t in tourneys if f"{YEAR}-{t['id']}" not in completed_tourney_ids
-        ]
-        print(f"{len(tourneys_to_scrape)} nouveaux tournois à scraper.")
+        # NOUVELLE LOGIQUE AMÉLIORÉE
+        if FORCE_RESCRAPE_IDS:
+            print(f"INFO : Mode 'Forçage' actif. Seuls les {len(FORCE_RESCRAPE_IDS)} tournoi(s) spécifié(s) seront scrapé(s).")
+            tourneys_to_scrape = [
+                t for t in tourneys if f"{YEAR}-{t['id']}" in FORCE_RESCRAPE_IDS
+            ]
+        else:
+            tourneys_to_scrape = [
+                t for t in tourneys if f"{YEAR}-{t['id']}" not in completed_tourney_ids
+            ]
+            print(f"{len(tourneys_to_scrape)} nouveaux tournois à scraper.")
 
         all_new_matches=[]
         for t in tourneys_to_scrape:
@@ -389,7 +411,6 @@ if __name__=="__main__":
         initial_rows = len(df_final)
 
         # 1. Suppression des matchs avec stats totalement manquantes (score 'N/A')
-        # Ne supprime pas les forfaits (W/O) ou abandons (RET)
         missing_stats_mask = (df_final['score'] == 'N/A') & (df_final['minutes'] == 0)
         lignes_a_supprimer = df_final[missing_stats_mask]
         
@@ -399,13 +420,8 @@ if __name__=="__main__":
 
         # 2. Correction des surfaces de tournois connues pour être incorrectes
         surface_corrections = {
-            "2025-500": "Grass",
-            "2025-314": "Clay",
-            "2025-319": "Clay",
-            "2025-717": "Clay",
-            "2025-375": "Hard",
-            "2025-499": "Hard",
-            "2025-311": "Grass"
+            "2025-500": "Grass", "2025-314": "Clay", "2025-319": "Clay", "2025-717": "Clay",
+            "2025-375": "Hard", "2025-499": "Hard", "2025-311": "Grass"
         }
         df_final['surface'] = df_final.apply(
             lambda row: surface_corrections.get(row['tourney_id'], row['surface']),
@@ -416,10 +432,9 @@ if __name__=="__main__":
         # 3. Nettoyage des formats de score invalides (ceux qui sont du texte pur)
         def nettoyer_score(score_str):
             score_str = str(score_str)
-            # Garde les scores normaux, les forfaits et les abandons
-            if re.search(r'\d-\d', score_str) or 'RET' in score_str or 'Walkover' in score_str:
+            if re.search(r'\d-\d', score_str) or 'RET' in score_str.upper() or 'W/O' in score_str.upper() or 'WALKOVER' in score_str.upper():
                 return score_str
-            return None # Marque les autres comme invalides pour suppression
+            return None 
 
         df_final['score'] = df_final['score'].apply(nettoyer_score)
         invalid_scores_mask = df_final['score'].isna()
@@ -430,7 +445,6 @@ if __name__=="__main__":
         
         # --- FIN DE LA SECTION DE NETTOYAGE ---
 
-        # S'assurer que les colonnes sont dans le bon ordre et que les types sont corrects
         df_final = df_final[header] 
         for col in int_cols:
             if col in df_final.columns:
@@ -438,7 +452,7 @@ if __name__=="__main__":
         
         df_final.to_csv(output_path, index=False, encoding="utf-8-sig")
         final_rows = len(df_final)
-        print(f"\n✅ CSV global mis à jour : {OUTPUT_CSV}  ({final_rows} lignes, {initial_rows - final_rows} lignes problématiques supprimées)")
+        print(f"\n✅ CSV global mis à jour : {OUTPUT_CSV}  ({final_rows} lignes, {initial_rows - final_rows} lignes problématiques supprimées/corrigées)")
 
     except Exception as e:
         print(f"\n[ERREUR] {e}"); traceback.print_exc()
