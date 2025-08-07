@@ -1,49 +1,112 @@
-/* Définition des variables de couleur pour le thème */
+/* === VARIABLES & THÈME GLOBAL === */
 :root {
-  --app-bg: #0f1116;
-  --app-text: #cfd3ec;
-  --app-card-bg: #181b23;
-  --app-card-border: #2c3140;
-  --app-green: #52ff90;
-  --app-red: #ff4d67;
-  --app-grey: #6c757d;
-  --app-yellow: #ffc107;
+  --bg-color: #02041b;
+  --primary-glow: #00e5ff; /* Cyan néon */
+  --secondary-glow: #f500ff; /* Magenta néon */
+  --text-color: #c9d1ec;
+  --glass-bg: rgba(10, 25, 60, 0.5);
+  --glass-border: rgba(0, 229, 255, 0.2);
+  --success-color: #00ff9b;
+  --fail-color: #ff2d55;
+  --pending-color: #5d6f8f;
+  --font-title: 'Oxanium', sans-serif;
+  --font-data: 'Share Tech Mono', monospace;
 }
 
 body {
-  background-color: var(--app-bg);
-  color: var(--app-text);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-data);
+  margin: 0;
+  padding: 2rem;
+  overflow-x: hidden;
 }
 
-/* Classes de couleur utilitaires */
-.text-success { color: var(--app-green) !important; }
-.text-danger  { color: var(--app-red) !important; }
-.text-pending { color: var(--app-grey) !important; }
-.text-player1 { color: var(--app-yellow) !important; }
-
-/* Amélioration du style des cartes */
-.card {
-  background-color: var(--app-card-bg);
-  border-color: var(--app-card-border);
+#background-canvas {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
 }
 
-/* Surcharge Bootstrap pour les tables */
-.table {
-  --bs-table-bg: var(--app-card-bg);
-  --bs-table-border-color: var(--app-card-border);
-  --bs-table-striped-bg: #1c202a;
-}
+.container { max-width: 1200px; margin: 0 auto; }
 
-/* Effet de survol sur les lignes du tableau */
-.table-hover tbody tr {
-    transition: background-color 0.2s ease-in-out;
-}
-.table-hover tbody tr:hover {
-  background-color: #252a36;
-}
+/* === HEADER & NAVIGATION === */
+.main-header { text-align: center; margin-bottom: 4rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 1.5rem; }
+#main-title { font-family: var(--font-title); font-size: 2.5rem; font-weight: 700; text-transform: uppercase; color: #fff; text-shadow: 0 0 10px var(--primary-glow), 0 0 20px var(--primary-glow); }
+#main-title::after { content: '_'; animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.main-header nav a { font-family: var(--font-data); color: var(--text-color); text-decoration: none; margin: 0 1rem; transition: all 0.3s ease; padding: 0.5rem; }
+.main-header nav a:hover { color: #fff; background-color: var(--glass-border); text-shadow: 0 0 8px var(--primary-glow); }
 
-/* Style des boutons d'action */
-.action-buttons .btn {
-  padding: 0.2rem 0.5rem;
-  font-size: 0.9rem;
+/* === CARTE "GLASSMORPHISM" & TITRES === */
+.glass-card { background: var(--glass-bg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--glass-border); margin-bottom: 2rem; clip-path: polygon(0 15px, 15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px)); padding: 2rem; animation: fadeIn 0.8s ease forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.card-title { font-family: var(--font-title); text-transform: uppercase; font-size: 1.5rem; font-weight: 400; margin-bottom: 1.5rem; color: #fff; text-shadow: 0 0 5px var(--secondary-glow); }
+
+/* === FORMULAIRE & AJOUTS DYNAMIQUES === */
+.prediction-form .row {
+  display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; position: relative;
+  padding-right: 35px; /* Espace pour le bouton de suppression de ligne */
+  margin-bottom: 1rem; /* Espace entre les lignes */
 }
+.form-group { flex: 1; min-width: 150px; }
+.form-label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.form-control-futuristic { background: transparent; border: none; border-bottom: 1px solid var(--pending-color); color: var(--text-color); width: 100%; padding: 0.5rem 0.2rem; font-family: var(--font-data); transition: border-color 0.3s ease; }
+.form-control-futuristic:focus { outline: none; border-bottom-color: var(--primary-glow); }
+.form-submit-row { margin-top: 1.5rem; text-align: right; }
+.form-submit-row .action-btn-success { padding: 0.75rem 1.5rem; width: auto; }
+
+.action-btn-add {
+  position: absolute; bottom: 1.5rem; left: 2rem; background: transparent;
+  border: 1px solid var(--primary-glow); color: var(--primary-glow);
+  width: 45px; height: 45px; border-radius: 50%; font-size: 1.5rem;
+  cursor: pointer; display: flex; justify-content: center; align-items: center;
+  transition: all 0.3s ease;
+}
+.action-btn-add:hover { background-color: var(--primary-glow); color: var(--bg-color); transform: scale(1.1) rotate(90deg); box-shadow: 0 0 10px var(--primary-glow); }
+
+.action-btn-remove-row {
+  position: absolute; top: 50%; right: -10px; transform: translateY(-50%);
+  background: none; border: none; color: var(--fail-color);
+  font-size: 1.5rem; cursor: pointer; opacity: 0.5;
+  transition: all 0.3s ease; padding: 5px;
+}
+.action-btn-remove-row:hover { opacity: 1; transform: translateY(-50%) scale(1.1); }
+
+/* === TABLEAU DE DONNÉES === */
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th, .data-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--glass-border); vertical-align: middle; }
+.data-table th { font-family: var(--font-title); text-transform: uppercase; font-weight: 400; font-size: 0.9rem; }
+.data-table tbody tr { transition: background-color 0.3s ease; }
+.data-table tbody tr:hover { background-color: rgba(0, 229, 255, 0.08); }
+.data-table .player-1 { color: var(--primary-glow); font-weight: bold; }
+.sortable-header { cursor: pointer; transition: color 0.3s ease, text-shadow 0.3s ease; }
+.sortable-header:hover { color: #fff; text-shadow: 0 0 8px var(--primary-glow); }
+.sortable-header i { font-size: 0.8rem; margin-left: 0.5rem; opacity: 0.7; }
+
+/* === STATUTS (SUCCESS, FAIL, PENDING) === */
+.status-cell { font-weight: bold; }
+.status-success { color: var(--success-color); }
+.status-fail { color: var(--fail-color); }
+.status-pending { color: var(--pending-color); }
+
+/* === BOUTONS D'ACTION === */
+.action-buttons button { background: transparent; border: 1px solid; color: var(--text-color); padding: 0.4rem 0.6rem; margin: 0 0.2rem; font-family: var(--font-data); cursor: pointer; transition: all 0.3s ease; }
+.action-btn-success { border-color: var(--success-color); }
+.action-btn-success:hover { background-color: var(--success-color); color: #000; text-shadow: 0 0 8px #fff; }
+.action-btn-fail { border-color: var(--fail-color); }
+.action-btn-fail:hover { background-color: var(--fail-color); color: #000; text-shadow: 0 0 8px #fff; }
+.action-btn-delete { border-color: var(--pending-color); }
+.action-btn-delete:hover { background-color: var(--secondary-glow); color: #fff; border-color: var(--secondary-glow); }
+
+/* === [GADGET] JAUGE DE PROBABILITÉ EN SVG === */
+.gauge-container { position: relative; width: 70px; height: 70px; display: grid; place-items: center; margin: 0 auto; }
+.gauge-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.gauge-background { fill: none; stroke: var(--pending-color); stroke-width: 2.8; opacity: 0.3; }
+.gauge-meter { fill: none; stroke: var(--primary-glow); stroke-width: 2.8; stroke-linecap: round; transition: stroke-dashoffset 1.5s cubic-bezier(0.23, 1, 0.32, 1); animation: fill_gauge 1.5s cubic-bezier(0.23, 1, 0.32, 1) 0.5s forwards; }
+@keyframes fill_gauge { from { stroke-dashoffset: 100; } }
+.gauge-text { position: absolute; font-size: 1.1rem; font-weight: bold; color: #fff; }
+
+/* === [GADGET] DONUT CHART POUR L'HISTORIQUE === */
+#stats-chart { --p-success:0; --p-fail:0; width:200px; height:200px; margin:1rem auto; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction:column; background:conic-gradient( var(--success-color) calc(var(--p-success) * 1%),  var(--fail-color) 0 calc(var(--p-fail) * 1%), transparent 0); animation:chart_anim 1s forwards; transition:all 1s; }
+@keyframes chart_anim { from { --p-success: 0; --p-fail: 0; } }
+#stats-chart .chart-center-text { font-family: var(--font-title); font-size: 2.5rem; color: #fff; font-weight: 700; }
+#stats-chart .chart-subtext { font-size: 0.9rem; }

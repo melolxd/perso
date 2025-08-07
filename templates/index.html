@@ -1,90 +1,84 @@
 {% extends 'base.html' %}
-
-{% block title %}Pronostics – ATP Predictor{% endblock %}
-
+{% block title %}Terminal de Prédiction{% endblock %}
 {% block content %}
-<div class="text-center">
-  <h1 class="mb-2">🟢 ATP Predictor</h1>
-  <p class="text-body-secondary mb-4">Pronostics sur les matchs de tennis ATP.</p>
-</div>
 
-<!-- --- Formulaire --- -->
-<div class="card mb-5">
-  <div class="card-header">
-    Nouveau pronostic
-  </div>
-  <div class="card-body">
-    <form class="row g-3 align-items-end" method="POST">
-      <!-- Datalists for autocompletion -->
-      <datalist id="playerList">
-        {% for n in players %}<option value="{{n}}">{% endfor %}</option>
-      </datalist>
-      <datalist id="tournList">
-        {% for t in tours %}<option value="{{t}}">{% endfor %}</option>
-      </datalist>
+<!-- --- Formulaire de prédiction --- -->
+<!-- Style ajouté : position relative pour positionner le bouton '+' et marge basse pour lui faire de la place -->
+<div class="glass-card" style="position: relative; padding-bottom: 5rem;">
+  <h2 class="card-title">Nouveau Signal // Entrer les paramètres du match</h2>
 
-      <div class="col-md-3">
-        <label for="player1" class="form-label">Joueur 1</label>
-        <input name="player1" id="player1" class="form-control" list="playerList" placeholder="ex: Djokovic" autocomplete="off" required>
+  <form class="prediction-form" method="POST">
+    <datalist id="playerList">
+        {% for n in players %}<option value="{{n}}">{% endfor %}
+    </datalist>
+    <datalist id="tournList">
+        {% for t in tours %}<option value="{{t}}">{% endfor %}
+    </datalist>
+
+    <!-- Conteneur pour les lignes de match dynamiques -->
+    <div id="prediction-rows-container">
+      <!-- Ceci est la première ligne (le modèle) -->
+      <div class="row">
+        <div class="form-group"><label class="form-label">JOUEUR_01</label><input name="player1" class="form-control-futuristic" list="playerList" required></div>
+        <div class="form-group"><label class="form-label">JOUEUR_02</label><input name="player2" class="form-control-futuristic" list="playerList" required></div>
+        <div class="form-group"><label class="form-label">SURFACE</label><select name="surface" class="form-control-futuristic"><option>Hard</option><option>Clay</option><option>Grass</option></select></div>
+        <div class="form-group"><label class="form-label">TOURNOI_ID</label><input name="tournament" class="form-control-futuristic" list="tournList"></div>
       </div>
-      <div class="col-md-3">
-        <label for="player2" class="form-label">Joueur 2</label>
-        <input name="player2" id="player2" class="form-control" list="playerList" placeholder="ex: Alcaraz" autocomplete="off" required>
-      </div>
-      <div class="col-md-2">
-        <label for="surface" class="form-label">Surface</label>
-        <select name="surface" id="surface" class="form-select">
-          <option>Hard</option>
-          <option>Clay</option>
-          <option>Grass</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label for="tournament" class="form-label">Tournoi</label>
-        <input name="tournament" id="tournament" class="form-control" list="tournList" placeholder="ex: Roland Garros" autocomplete="off">
-      </div>
-      <div class="col-md-1 d-grid">
-        <button type="submit" class="btn btn-success">Prédire</button>
-      </div>
-    </form>
-  </div>
+    </div>
+    
+    <!-- Bouton de soumission global pour tout le formulaire -->
+    <div class="form-submit-row">
+      <button type="submit" class="action-btn-success">Prédire Tous les Matchs</button>
+    </div>
+  </form>
+
+  <!-- NOUVEAU : Bouton pour ajouter une ligne de match -->
+  <button id="add-match-btn" class="action-btn-add" title="Ajouter un autre match">
+      <i class="bi bi-plus-lg"></i>
+  </button>
 </div>
 
 <!-- --- Tableau des pronostics --- -->
-<div class="card">
-  <div class="card-header d-flex justify-content-between align-items-center">
-    <span>Pronostics en cours</span>
-    <a href="{{ url_for('history') }}" class="btn btn-outline-info btn-sm">Voir l’historique <i class="bi bi-clock-history"></i></a>
-  </div>
-  <div class="table-responsive">
-    <table class="table table-dark table-hover table-bordered align-middle mb-0">
-      <thead>
-        <tr>
-          <th>Tournoi</th>
-          <th>Match</th>
-          <th>Surface</th>
-          <th class="text-center">% J1</th>
-          <th>Résultat</th>
-          <th class="text-center" style="width: 130px;">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for uid, p in preds.items() %}
-        <tr id="{{uid}}">
-          <td>{{p.tournament}}</td>
-          <td><span class="text-player1">{{p.p1}}</span> vs {{p.p2}}</td>
-          <td>{{p.surface}}</td>
-          <td class="text-center fw-bold">{{p.prob}} %</td>
-          <td class="status-cell {{'text-success' if p.status=='success' else 'text-danger' if p.status=='fail' else 'text-pending'}} fw-bold">{{ p.status | capitalize }}</td>
-          <td class="text-center action-buttons">
-            <button class="btn btn-outline-success" onclick="mark('{{uid}}', 'success')" title="Victoire prédite"><i class="bi bi-check-circle"></i></button>
-            <button class="btn btn-outline-danger" onclick="mark('{{uid}}', 'fail')" title="Défaite prédite"><i class="bi bi-x-circle"></i></button>
-            <button class="btn btn-outline-secondary ms-2 btn-delete" onclick="removeRow('{{uid}}')" title="Supprimer"><i class="bi bi-trash3"></i></button>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
+<div class="glass-card">
+    <h2 class="card-title">Flux des prédictions actives</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Tournoi</th>
+                <th>Match</th>
+                <th>Surface</th>
+                <th id="sort-by-prob-btn" class="sortable-header" style="text-align: center;">
+                    % J1 <i class="bi bi-arrow-down-up"></i>
+                </th>
+                <th>Statut</th>
+                <th style="text-align: center;">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="predictions-tbody">
+            {% for uid, p in preds.items() %}
+            <tr id="{{uid}}" data-probability="{{p.prob}}">
+                <td>{{p.tournament}}</td>
+                <td><span class="player-1">{{p.p1}}</span> vs {{p.p2}}</td>
+                <td>{{p.surface}}</td>
+                <td style="text-align: center;">
+                    <div class="gauge-container">
+                        <svg class="gauge-svg" viewBox="0 0 36 36">
+                            <path class="gauge-background" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                            <path class="gauge-meter" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="100, 100" style="stroke-dashoffset: {{ 100 - (p.prob | float) }};"></path>
+                        </svg>
+                        <div class="gauge-text">{{ "%.0f" | format(p.prob) }}%</div>
+                    </div>
+                </td>
+                <td class="status-cell status-{{p.status | lower }}">{{ p.status | capitalize }}</td>
+                <td class="text-center action-buttons">
+                    <button class="action-btn-success" onclick="mark('{{uid}}', 'success')" title="Victoire prédite"><i class="bi bi-check-lg"></i></button>
+                    <button class="action-btn-fail" onclick="mark('{{uid}}', 'fail')" title="Défaite prédite"><i class="bi bi-x-lg"></i></button>
+                    <button class="action-btn-delete" onclick="removeRow('{{uid}}')" title="Supprimer"><i class="bi bi-trash"></i></button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
-  </div>
 </div>
+
 {% endblock %}

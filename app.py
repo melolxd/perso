@@ -1,4 +1,4 @@
-# ----------  app.py  -------------------------------------------------
+# ----------  app.py (MODIFIÉ)  ---------------------------------------
 import uuid, json, pathlib, re, unicodedata
 from flask import Flask, render_template, request, redirect, url_for, jsonify
 import pandas as pd, joblib, numpy as np
@@ -82,32 +82,66 @@ def compute_stats(preds: dict):
         "bad":     n_total - n_good,
         "hit":     hit_rate            # None si aucune décision
     }
+
 # ------------ Routes -------------------------------------------------
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        p1   = request.form["player1"].strip()
-        p2   = request.form["player2"].strip()
-        surf = request.form["surface"]
-        tourn= request.form["tournament"].strip() or "?"
-        prob = round(predict(p1, p2, surf) * 100, 2)
+        # --- MODIFICATION N°1 : Récupérer les listes de données ---
+        players1_list    = request.form.getlist("player1")
+        players2_list    = request.form.getlist("player2")
+        surfaces_list    = request.form.getlist("surface")
+        tournaments_list = request.form.getlist("tournament")
 
-        uid = str(uuid.uuid4())
-        predictions[uid] = {"p1": p1, "p2": p2, "surface": surf,
-                            "tournament": tourn, "prob": prob,
-                            "status": "pending"}
+        # --- MODIFICATION N°2 : Boucler sur les données reçues avec zip() ---
+        # zip() assemble les éléments de chaque liste, ex: (p1_match1, p2_match1, surface_match1, ...)
+        for p1_form, p2_form, surf, tourn in zip(players1_list, players2_list, surfaces_list, tournaments_list):
+            
+            # Nettoyer les entrées pour cette itération de la boucle
+            p1_form = p1_form.strip()
+            p2_form = p2_form.strip()
+            tourn = tourn.strip() or "?"
+
+            # Ignorer les lignes vides ou incomplètes que l'utilisateur aurait pu ajouter
+            if not p1_form or not p2_form:
+                continue
+
+            # --- Votre logique de prédiction existante, maintenant DANS la boucle ---
+            if p1_form.lower() < p2_form.lower():
+                p1_model, p2_model = p1_form, p2_form
+                inverted = False
+            else:
+                p1_model, p2_model = p2_form, p1_form
+                inverted = True
+            
+            prob_model = predict(p1_model, p2_model, surf)
+
+            if inverted:
+                final_prob = 1.0 - prob_model
+            else:
+                final_prob = prob_model
+
+            prob = round(final_prob * 100, 2)
+            uid = str(uuid.uuid4())
+            
+            predictions[uid] = {"p1": p1_form, "p2": p2_form, "surface": surf,
+                                "tournament": tourn, "prob": prob,
+                                "status": "pending"}
+
+        # --- MODIFICATION N°3 : Sauvegarder et rediriger UNE SEULE FOIS, après la boucle ---
         save_predictions(predictions)
         return redirect(url_for("index"))
 
+    # Le code pour la méthode GET reste identique
     return render_template("index.html",
                            preds=predictions,
                            players=player_names,
                            tours=tour_names)
 
+
 @app.route("/history")
 def history():
     stats = compute_stats(predictions)
-    # on trie par date d’ajout (facultatif)
     ordered = dict(sorted(predictions.items(),
                           key=lambda kv: kv[1].get("timestamp", 0),
                           reverse=True))
@@ -120,6 +154,9 @@ def update(uid):
     status = request.json.get("status")
     if uid in predictions and status in ("success", "fail"):
         predictions[uid]["status"] = status
+        # Optionnel mais utile: ajouter un timestamp pour un meilleur tri
+        from datetime import datetime
+        predictions[uid]["timestamp"] = datetime.now().isoformat()
         save_predictions(predictions)
         return jsonify(ok=True)
     return jsonify(ok=False), 404
@@ -133,4 +170,4 @@ def delete(uid):
     return jsonify(ok=False), 404
 # --------------------------------------------------------------------
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
