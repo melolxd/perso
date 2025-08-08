@@ -1,21 +1,25 @@
-{% extends 'base.html' %}
-{% block title %}Archives des Données{% endblock %}
-{% block content %}
+{% extends 'base.html' %} {% block title %}Archives des Données{% endblock %} {%
+block content %}
 
 <!-- --- Résumé & Gadget --- -->
 <div class="glass-card">
   <h2 class="card-title">Analyse Globale des Données</h2>
-  <div style="text-align:center;">
+  <div style="text-align: center">
     {% if stats.hit is not none %}
-      <div id="stats-chart" data-success="{{ stats.hit }}">
-          <div class="chart-center-text">{{ "%.1f" | format(stats.hit) }}%</div>
-          <div class="chart-subtext">TAUX DE RÉUSSITE</div>
-      </div>
-      <p class="stats-summary">
-        ANALYSE SUR {{stats.decided}} PRONOSTICS :: <span class="status-success">{{stats.good}} SUCCÈS</span> // <span class="status-fail">{{stats.decided - stats.good}} ÉCHECS</span>
-      </p>
+    <div id="stats-chart" data-success="{{ stats.hit }}">
+      <div class="chart-center-text">{{ "%.1f" | format(stats.hit) }}%</div>
+      <div class="chart-subtext">TAUX DE RÉUSSITE</div>
+    </div>
+    <p class="stats-summary">
+      ANALYSE SUR {{stats.decided}} PRONOSTICS ::
+      <span class="status-success">{{stats.good}} SUCCÈS</span> //
+      <span class="status-fail">{{stats.decided - stats.good}} ÉCHECS</span>
+    </p>
     {% else %}
-      <p>AUCUNE DONNÉE HISTORIQUE DISPONIBLE. SYSTÈME EN ATTENTE DE NOUVELLES ENTRÉES.</p>
+    <p>
+      AUCUNE DONNÉE HISTORIQUE DISPONIBLE. SYSTÈME EN ATTENTE DE NOUVELLES
+      ENTRÉES.
+    </p>
     {% endif %}
   </div>
 </div>
@@ -24,20 +28,28 @@
 <div class="glass-card">
   <h2 class="card-title">Archive Complète</h2>
   <table class="data-table">
-      <thead>
-        <tr><th>Date</th><th>Tournoi</th><th>Match</th><th>% J1</th><th>Résultat Prédit</th></tr>
-      </thead>
-      <tbody>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Tournoi</th>
+        <th>Match</th>
+        <th>% J1</th>
+        <th>Résultat Prédit</th>
+      </tr>
+    </thead>
+    <tbody>
       {% for uid, p in preds.items() %}
-        <tr>
-          <td>{{ p.timestamp | int | datetimeformat('%Y-%m-%d') if p.timestamp else 'N/A' }}</td>
-          <td>{{p.tournament}}</td>
-          <td><span class="player-1">{{p.p1}}</span> vs {{p.p2}}</td>
-          <td class="status-cell">{{p.prob}}%</td>
-          <td class="status-cell status-{{p.status | lower }}">{{p.status | capitalize}}</td>
-        </tr>
+      <tr>
+        <td>{{ p.timestamp | datetimeformat if p.timestamp else 'N/A' }}</td>
+        <td>{{p.tournament}}</td>
+        <td><span class="player-1">{{p.p1}}</span> vs {{p.p2}}</td>
+        <td class="status-cell">{{p.prob}}%</td>
+        <td class="status-cell status-{{p.status | lower }}">
+          {{p.status | capitalize}}
+        </td>
+      </tr>
       {% endfor %}
-      </tbody>
+    </tbody>
   </table>
 </div>
 

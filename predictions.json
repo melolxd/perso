@@ -23,7 +23,8 @@
     "surface": "Hard",
     "tournament": "Toronto",
     "prob": 41.52,
-    "status": "pending"
+    "status": "fail",
+    "timestamp": "2025-08-07T18:35:39.023383"
   },
   "468823b8-1722-4bd4-a142-93476942990d": {
     "p1": "Benjamin Bonzi",
@@ -31,7 +32,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 61.07,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T20:34:52.944718"
   },
   "86a8b964-73a1-4c22-8074-b71a91c610c4": {
     "p1": "Joao Fonseca",
@@ -39,7 +41,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 53.2,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T20:00:59.560802"
   },
   "4579527a-fdac-4fc9-9815-6bcc91cb2112": {
     "p1": "Pedro Martinez",
@@ -47,7 +50,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 65.74,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T20:01:01.024220"
   },
   "bc075593-03ee-4b56-acd5-a6313744fe77": {
     "p1": "Roberto Carballes Baena",
@@ -55,7 +59,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 54.15,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T20:01:09.942518"
   },
   "835c7d7c-16c3-4660-a797-2142fdd6cfb2": {
     "p1": "Roman Safiullin",
@@ -63,7 +68,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 72.56,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T21:19:38.655950"
   },
   "1377226a-9124-4368-87a3-992690f1b82c": {
     "p1": "Zizou Bergs",
@@ -71,7 +77,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 57.85,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T21:19:17.992409"
   },
   "8301d3db-4b1a-4af5-99c4-3ca969e22df3": {
     "p1": "Daniel Elahi Galan",
@@ -79,7 +86,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 59.16,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-07T21:38:07.910564"
   },
   "5a648aa8-ec23-4f62-a54e-8b040350c778": {
     "p1": "Giovanni Mpetshi Perricard",
@@ -87,7 +95,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 72.81,
-    "status": "pending"
+    "status": "fail",
+    "timestamp": "2025-08-07T20:35:32.575887"
   },
   "e88ca799-f3b6-4382-b3b0-b40e9add600b": {
     "p1": "Tomas Martin Etcheverry",
@@ -95,7 +104,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 61.81,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-08T08:05:38.865636"
   },
   "80dce7e5-f5ef-45db-a3f4-c22fda85c18a": {
     "p1": "Terence Atmane",
@@ -103,7 +113,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 41.4,
-    "status": "pending"
+    "status": "fail",
+    "timestamp": "2025-08-07T21:48:19.774421"
   },
   "94be0ab9-f5a5-4597-9e86-7a5441413d57": {
     "p1": "Colton Smith",
@@ -111,7 +122,8 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 28.92,
-    "status": "pending"
+    "status": "success",
+    "timestamp": "2025-08-08T08:04:40.857537"
   },
   "6c29016a-518d-492d-a595-59422f527fa1": {
     "p1": "Jordan Thompson",
@@ -119,6 +131,34 @@
     "surface": "Hard",
     "tournament": "Cincinnati",
     "prob": 72.16,
-    "status": "pending"
+    "status": "fail",
+    "timestamp": "2025-08-08T08:05:34.284256"
+  },
+  "a7012cf3-edbd-4148-98d2-00b69faf37b3": {
+    "p1": "Ben Shelton",
+    "p2": "Karen Khachanov",
+    "surface": "Hard",
+    "tournament": "Toronto",
+    "prob": 52.87,
+    "status": "success",
+    "timestamp": "2025-08-08T08:04:08.266096"
+  },
+  "92ea074e-5c50-4d6c-8b9d-5cda36efe9ed": {
+    "p1": "Sebastian Baez",
+    "p2": "David Goffin",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 36.0,
+    "status": "fail",
+    "timestamp": "2025-08-08T08:05:04.612568"
+  },
+  "e68a8a06-24d6-4c7e-8904-e126a4934479": {
+    "p1": "Corentin Moutet",
+    "p2": "Mackenzie Mcdonald",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 23.26,
+    "status": "fail",
+    "timestamp": "2025-08-08T08:05:20.421914"
   }
 }
