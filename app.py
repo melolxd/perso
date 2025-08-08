@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify
 import pandas as pd, joblib, numpy as np
 import config                     # ton fichier config.py (chemins, features…)
 from datetime import datetime     # <-- ➊ IMPORT MANQUANT AJOUTÉ
-
+import json
 # --------------------------------------------------------------------
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "change-me"
@@ -101,6 +101,54 @@ def compute_stats(preds: dict):
         "hit":     hit_rate
     }
 
+def build_history_charts(preds: dict, bins=10):
+    rows = [
+        {
+            "tournament": p.get("tournament") or "?",
+            "prob": float(p.get("prob", 0.0)),  # en %
+            "ok": 1 if p.get("status") == "success" else 0
+        }
+        for p in preds.values()
+        if p.get("status") in ("success", "fail")
+    ]
+    if not rows:
+        return {"by_tournament": {}, "calibration": {"buckets":[], "pred_mean":[], "true_rate":[], "counts":[]}}
+
+    # 1) Hit-rate par tournoi
+    by_tour = {}
+    for r in rows:
+        t = r["tournament"]
+        d = by_tour.setdefault(t, {"n": 0, "ok": 0})
+        d["n"] += 1
+        d["ok"] += r["ok"]
+    by_tour_pct = {k: round(100.0 * v["ok"] / v["n"], 1) for k, v in by_tour.items()}
+
+    # 2) Calibration (bins égaux sur 0–100)
+    B = bins
+    bucket = [{"p_sum": 0.0, "ok_sum": 0.0, "n": 0} for _ in range(B)]
+    for r in rows:
+        p = max(0.0, min(99.999, r["prob"]))
+        b = int(p // (100 / B))
+        bucket[b]["p_sum"] += p / 100.0
+        bucket[b]["ok_sum"] += r["ok"]
+        bucket[b]["n"] += 1
+
+    labels, pred_mean, true_rate, counts = [], [], [], []
+    for i, b in enumerate(bucket):
+        lo, hi = i*(100/B), (i+1)*(100/B)
+        if b["n"] == 0: 
+            continue
+        labels.append(f"{int(lo)}–{int(hi)}%")
+        pred_mean.append(round(100.0 * (b["p_sum"]/b["n"]), 1))
+        true_rate.append(round(100.0 * (b["ok_sum"]/b["n"]), 1))
+        counts.append(b["n"])
+
+    return {
+        "by_tournament": by_tour_pct,
+        "calibration": {"buckets": labels, "pred_mean": pred_mean, "true_rate": true_rate, "counts": counts}
+    }
+
+
 # ------------ Routes -------------------------------------------------
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -146,13 +194,9 @@ def index():
 @app.route("/history")
 def history():
     stats = compute_stats(predictions)
-    # Tri corrigé pour gérer les prédictions sans timestamp
-    ordered = dict(sorted(predictions.items(),
-                          key=lambda kv: kv[1].get("timestamp", ""),
-                          reverse=True))
-    return render_template("history.html",
-                           preds=ordered,
-                           stats=stats)
+    ordered = dict(sorted(predictions.items(), key=lambda kv: kv[1].get("timestamp", ""), reverse=True))
+    charts = build_history_charts(ordered, bins=10)
+    return render_template("history.html", preds=ordered, stats=stats, charts_json=json.dumps(charts))
 
 @app.post("/update/<uid>")
 def update(uid):

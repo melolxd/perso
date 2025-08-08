@@ -11,6 +11,11 @@
   --pending-color: #5d6f8f;
   --font-title: 'Oxanium', sans-serif;
   --font-data: 'Share Tech Mono', monospace;
+
+  /* Tailles par défaut de charts (modifiable au besoin) */
+  --h-chart-lg: 380px;   /* bar chart */
+  --h-chart-md: 320px;   /* calibration line */
+  --h-chart-sm: 220px;   /* counts histogram */
 }
 
 body {
@@ -37,38 +42,30 @@ body {
 .main-header nav a:hover { color: #fff; background-color: var(--glass-border); text-shadow: 0 0 8px var(--primary-glow); }
 
 /* === CARTE "GLASSMORPHISM" & TITRES === */
-.glass-card { background: var(--glass-bg); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--glass-border); margin-bottom: 2rem; clip-path: polygon(0 15px, 15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px)); padding: 2rem; animation: fadeIn 0.8s ease forwards; }
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  margin-bottom: 2rem;
+  clip-path: polygon(0 15px, 15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
+  padding: 2rem;
+  animation: fadeIn 0.8s ease forwards;
+  overflow: hidden; /* évite les débordements avec les canvases */
+}
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .card-title { font-family: var(--font-title); text-transform: uppercase; font-size: 1.5rem; font-weight: 400; margin-bottom: 1.5rem; color: #fff; text-shadow: 0 0 5px var(--secondary-glow); }
 
 /* === FORMULAIRE & AJOUTS DYNAMIQUES === */
-.prediction-form .row {
-  display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; position: relative;
-  padding-right: 35px; /* Espace pour le bouton de suppression de ligne */
-  margin-bottom: 1rem; /* Espace entre les lignes */
-}
+.prediction-form .row { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; position: relative; padding-right: 35px; margin-bottom: 1rem; }
 .form-group { flex: 1; min-width: 150px; }
 .form-label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
 .form-control-futuristic { background: transparent; border: none; border-bottom: 1px solid var(--pending-color); color: var(--text-color); width: 100%; padding: 0.5rem 0.2rem; font-family: var(--font-data); transition: border-color 0.3s ease; }
 .form-control-futuristic:focus { outline: none; border-bottom-color: var(--primary-glow); }
 .form-submit-row { margin-top: 1.5rem; text-align: right; }
 .form-submit-row .action-btn-success { padding: 0.75rem 1.5rem; width: auto; }
-
-.action-btn-add {
-  position: absolute; bottom: 1.5rem; left: 2rem; background: transparent;
-  border: 1px solid var(--primary-glow); color: var(--primary-glow);
-  width: 45px; height: 45px; border-radius: 50%; font-size: 1.5rem;
-  cursor: pointer; display: flex; justify-content: center; align-items: center;
-  transition: all 0.3s ease;
-}
+.action-btn-add { background: transparent; border: 1px solid var(--primary-glow); color: var(--primary-glow); width: 45px; height: 45px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: all 0.3s ease; }
 .action-btn-add:hover { background-color: var(--primary-glow); color: var(--bg-color); transform: scale(1.1) rotate(90deg); box-shadow: 0 0 10px var(--primary-glow); }
-
-.action-btn-remove-row {
-  position: absolute; top: 50%; right: -10px; transform: translateY(-50%);
-  background: none; border: none; color: var(--fail-color);
-  font-size: 1.5rem; cursor: pointer; opacity: 0.5;
-  transition: all 0.3s ease; padding: 5px;
-}
+.action-btn-remove-row { position: absolute; top: 50%; right: -10px; transform: translateY(-50%); background: none; border: none; color: var(--fail-color); font-size: 1.5rem; cursor: pointer; opacity: 0.5; transition: all 0.3s ease; padding: 5px; }
 .action-btn-remove-row:hover { opacity: 1; transform: translateY(-50%) scale(1.1); }
 
 /* === TABLEAU DE DONNÉES === */
@@ -82,7 +79,7 @@ body {
 .sortable-header:hover { color: #fff; text-shadow: 0 0 8px var(--primary-glow); }
 .sortable-header i { font-size: 0.8rem; margin-left: 0.5rem; opacity: 0.7; }
 
-/* === STATUTS (SUCCESS, FAIL, PENDING) === */
+/* === STATUTS === */
 .status-cell { font-weight: bold; }
 .status-success { color: var(--success-color); }
 .status-fail { color: var(--fail-color); }
@@ -97,7 +94,7 @@ body {
 .action-btn-delete { border-color: var(--pending-color); }
 .action-btn-delete:hover { background-color: var(--secondary-glow); color: #fff; border-color: var(--secondary-glow); }
 
-/* === [GADGET] JAUGE DE PROBABILITÉ EN SVG === */
+/* === [GADGET] JAUGE === */
 .gauge-container { position: relative; width: 70px; height: 70px; display: grid; place-items: center; margin: 0 auto; }
 .gauge-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
 .gauge-background { fill: none; stroke: var(--pending-color); stroke-width: 2.8; opacity: 0.3; }
@@ -105,8 +102,67 @@ body {
 @keyframes fill_gauge { from { stroke-dashoffset: 100; } }
 .gauge-text { position: absolute; font-size: 1.1rem; font-weight: bold; color: #fff; }
 
-/* === [GADGET] DONUT CHART POUR L'HISTORIQUE === */
+/* === [GADGET] DONUT MINI === */
 #stats-chart { --p-success:0; --p-fail:0; width:200px; height:200px; margin:1rem auto; border-radius:50%; display:flex; justify-content:center; align-items:center; flex-direction:column; background:conic-gradient( var(--success-color) calc(var(--p-success) * 1%),  var(--fail-color) 0 calc(var(--p-fail) * 1%), transparent 0); animation:chart_anim 1s forwards; transition:all 1s; }
 @keyframes chart_anim { from { --p-success: 0; --p-fail: 0; } }
 #stats-chart .chart-center-text { font-family: var(--font-title); font-size: 2.5rem; color: #fff; font-weight: 700; }
 #stats-chart .chart-subtext { font-size: 0.9rem; }
+
+/* === DOSSIERS === */
+.card-actions-footer { position: absolute; bottom: 1.5rem; left: 2rem; right: 2rem; display: flex; justify-content: space-between; align-items: center; }
+.action-btn-folder { background: transparent; border: 1px solid var(--secondary-glow); color: var(--secondary-glow); padding: 0.6rem 1.2rem; font-family: var(--font-data); cursor: pointer; transition: all 0.3s ease; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+.action-btn-folder:hover { background-color: var(--secondary-glow); color: var(--bg-color); box-shadow: 0 0 10px var(--secondary-glow); }
+.folder-row { transition: outline 0.2s ease-out; }
+.folder-row td { padding: 0.5rem 0; border-bottom: 2px solid var(--glass-border); }
+.folder-content { background: rgba(40, 60, 110, 0.6); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(0, 229, 255, 0.3); padding: 0.75rem 1.5rem; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+.folder-header { display: flex; align-items: center; gap: 0.8rem; font-family: var(--font-title); font-size: 1.2rem; color: #fff; }
+.folder-icon { color: var(--primary-glow); }
+.folder-name-input { background: transparent; border: none; border-bottom: 1px solid var(--primary-glow); color: #fff; font-family: var(--font-title); font-size: 1.2rem; padding: 0.2rem; outline: none; width: 250px; }
+.folder-actions button { background: none; border: none; color: var(--text-color); cursor: pointer; font-size: 1rem; padding: 0.5rem; opacity: 0.6; transition: all 0.3s ease; }
+.folder-actions button:hover { opacity: 1; color: var(--primary-glow); transform: scale(1.1); }
+.folder-actions .action-btn-delete-folder:hover { color: var(--fail-color); }
+.match-row.dragging { opacity: 0.4; background: var(--glass-border); }
+.folder-row.drag-over .folder-content { outline: 2px solid var(--primary-glow); box-shadow: 0 0 15px var(--primary-glow); }
+.match-row.in-folder td { padding-left: 2.5rem; position: relative; }
+.match-row.in-folder td:first-child::before {
+  content: ""; position: absolute; left: 1rem; top: 50%; width: 10px; height: 2px; background: var(--primary-glow); opacity: .5;
+}
+.folder-toggle { background: none; border: none; cursor: pointer; color: var(--text-color); opacity: .8; padding: .25rem; margin-right: .25rem; font-size: 1rem; transition: transform .2s ease, opacity .2s ease; }
+.folder-toggle:hover { opacity: 1; transform: scale(1.1); }
+.folder-row.collapsed .bi-caret-down-fill { transform: rotate(-90deg); }
+
+/* === GRAPHIQUES (layout unifié) === */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 colonne partout -> pas de chevauchement */
+  gap: 24px;
+}
+
+.chart-container {
+  position: relative;     /* nécessaire quand maintainAspectRatio=false */
+  width: 100%;
+  min-height: 200px;
+}
+
+/* canvases remplissent leur conteneur */
+.chart-container canvas {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Hauteurs spécifiques par id */
+#chartByTournament { height: var(--h-chart-lg) !important; }
+#chartCalibration  { height: var(--h-chart-md) !important; }
+#chartCalibrationCounts { height: var(--h-chart-sm) !important; }
+#chartGlobal { height: var(--h-chart-sm) !important; }
+
+/* Responsive: on réduit un peu les hauteurs sur mobile */
+@media (max-width: 640px) {
+  :root {
+    --h-chart-lg: 320px;
+    --h-chart-md: 280px;
+    --h-chart-sm: 200px;
+  }
+}

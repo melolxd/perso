@@ -1,84 +1,201 @@
-{% extends 'base.html' %}
-{% block title %}Terminal de Prédiction{% endblock %}
+{% extends 'base.html' %} {% block title %}Terminal de Prédiction{% endblock %}
 {% block content %}
 
 <!-- --- Formulaire de prédiction --- -->
-<!-- Style ajouté : position relative pour positionner le bouton '+' et marge basse pour lui faire de la place -->
-<div class="glass-card" style="position: relative; padding-bottom: 5rem;">
+<div class="glass-card" style="position: relative; padding-bottom: 5rem">
   <h2 class="card-title">Nouveau Signal // Entrer les paramètres du match</h2>
 
   <form class="prediction-form" method="POST">
     <datalist id="playerList">
-        {% for n in players %}<option value="{{n}}">{% endfor %}
+      {% for n in players %}
+      <option value="{{n}}">{% endfor %}</option>
     </datalist>
+
     <datalist id="tournList">
-        {% for t in tours %}<option value="{{t}}">{% endfor %}
+      {% for t in tours %}
+      <option value="{{t}}">{% endfor %}</option>
     </datalist>
 
     <!-- Conteneur pour les lignes de match dynamiques -->
     <div id="prediction-rows-container">
       <!-- Ceci est la première ligne (le modèle) -->
       <div class="row">
-        <div class="form-group"><label class="form-label">JOUEUR_01</label><input name="player1" class="form-control-futuristic" list="playerList" required></div>
-        <div class="form-group"><label class="form-label">JOUEUR_02</label><input name="player2" class="form-control-futuristic" list="playerList" required></div>
-        <div class="form-group"><label class="form-label">SURFACE</label><select name="surface" class="form-control-futuristic"><option>Hard</option><option>Clay</option><option>Grass</option></select></div>
-        <div class="form-group"><label class="form-label">TOURNOI_ID</label><input name="tournament" class="form-control-futuristic" list="tournList"></div>
+        <div class="form-group">
+          <label class="form-label">JOUEUR_01</label
+          ><input
+            name="player1"
+            class="form-control-futuristic"
+            list="playerList"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label">JOUEUR_02</label
+          ><input
+            name="player2"
+            class="form-control-futuristic"
+            list="playerList"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label">SURFACE</label
+          ><select name="surface" class="form-control-futuristic">
+            <option>Hard</option>
+            <option>Clay</option>
+            <option>Grass</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">TOURNOI_ID</label
+          ><input
+            name="tournament"
+            class="form-control-futuristic"
+            list="tournList"
+          />
+        </div>
       </div>
     </div>
-    
+
     <!-- Bouton de soumission global pour tout le formulaire -->
     <div class="form-submit-row">
-      <button type="submit" class="action-btn-success">Prédire Tous les Matchs</button>
+      <button type="submit" class="action-btn-success">
+        Prédire Tous les Matchs
+      </button>
     </div>
   </form>
 
-  <!-- NOUVEAU : Bouton pour ajouter une ligne de match -->
-  <button id="add-match-btn" class="action-btn-add" title="Ajouter un autre match">
+  <!-- NOUVEAU : Conteneur pour les boutons d'action en bas de la carte -->
+  <div class="card-actions-footer">
+    <button
+      id="create-folder-btn"
+      class="action-btn-folder"
+      title="Créer un nouveau dossier"
+    >
+      <i class="bi bi-folder-plus"></i> Créer un dossier
+    </button>
+    <button
+      id="add-match-btn"
+      class="action-btn-add"
+      title="Ajouter un autre match"
+    >
       <i class="bi bi-plus-lg"></i>
-  </button>
+    </button>
+  </div>
 </div>
 
 <!-- --- Tableau des pronostics --- -->
 <div class="glass-card">
-    <h2 class="card-title">Flux des prédictions actives</h2>
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>Tournoi</th>
-                <th>Match</th>
-                <th>Surface</th>
-                <th id="sort-by-prob-btn" class="sortable-header" style="text-align: center;">
-                    % J1 <i class="bi bi-arrow-down-up"></i>
-                </th>
-                <th>Statut</th>
-                <th style="text-align: center;">Actions</th>
-            </tr>
-        </thead>
-        <tbody id="predictions-tbody">
-            {% for uid, p in preds.items() %}
-            <tr id="{{uid}}" data-probability="{{p.prob}}">
-                <td>{{p.tournament}}</td>
-                <td><span class="player-1">{{p.p1}}</span> vs {{p.p2}}</td>
-                <td>{{p.surface}}</td>
-                <td style="text-align: center;">
-                    <div class="gauge-container">
-                        <svg class="gauge-svg" viewBox="0 0 36 36">
-                            <path class="gauge-background" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                            <path class="gauge-meter" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="100, 100" style="stroke-dashoffset: {{ 100 - (p.prob | float) }};"></path>
-                        </svg>
-                        <div class="gauge-text">{{ "%.0f" | format(p.prob) }}%</div>
-                    </div>
-                </td>
-                <td class="status-cell status-{{p.status | lower }}">{{ p.status | capitalize }}</td>
-                <td class="text-center action-buttons">
-                    <button class="action-btn-success" onclick="mark('{{uid}}', 'success')" title="Victoire prédite"><i class="bi bi-check-lg"></i></button>
-                    <button class="action-btn-fail" onclick="mark('{{uid}}', 'fail')" title="Défaite prédite"><i class="bi bi-x-lg"></i></button>
-                    <button class="action-btn-delete" onclick="removeRow('{{uid}}')" title="Supprimer"><i class="bi bi-trash"></i></button>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+  <h2 class="card-title">Flux des prédictions actives</h2>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Tournoi</th>
+        <th>Match</th>
+        <th>Surface</th>
+        <th
+          id="sort-by-prob-btn"
+          class="sortable-header"
+          style="text-align: center"
+        >
+          % J1 <i class="bi bi-arrow-down-up"></i>
+        </th>
+        <th>Statut</th>
+        <th style="text-align: center">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="predictions-tbody">
+      {% for uid, p in preds.items() %}
+      <!-- MODIFIÉ : Ajout de la classe "match-row" et de l'attribut draggable="true" -->
+      <tr
+        id="{{uid}}"
+        data-probability="{{p.prob}}"
+        class="match-row"
+        draggable="true"
+      >
+        <td>{{p.tournament}}</td>
+        <td><span class="player-1">{{p.p1}}</span> vs {{p.p2}}</td>
+        <td>{{p.surface}}</td>
+        <td style="text-align: center">
+          <div class="gauge-container">
+            <svg class="gauge-svg" viewBox="0 0 36 36">
+              <path
+                class="gauge-background"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              ></path>
+              <path
+                class="gauge-meter"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                stroke-dasharray="100, 100"
+                style="stroke-dashoffset: {{ 100 - (p.prob | float) }};"
+              ></path>
+            </svg>
+            <div class="gauge-text">{{ "%.0f" | format(p.prob) }}%</div>
+          </div>
+        </td>
+        <td class="status-cell status-{{p.status | lower }}">
+          {{ p.status | capitalize }}
+        </td>
+        <td class="text-center action-buttons">
+          <button
+            class="action-btn-success"
+            onclick="mark('{{uid}}', 'success')"
+            title="Victoire prédite"
+          >
+            <i class="bi bi-check-lg"></i>
+          </button>
+          <button
+            class="action-btn-fail"
+            onclick="mark('{{uid}}', 'fail')"
+            title="Défaite prédite"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <button
+            class="action-btn-delete"
+            onclick="removeRow('{{uid}}')"
+            title="Supprimer"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
+
+<!-- NOUVEAU : Template pour un dossier (invisible par défaut) -->
+<template id="folder-template">
+  <tr class="folder-row" data-folder-id="">
+    <td colspan="6">
+      <div class="folder-content">
+        <div class="folder-header">
+          <button
+            class="folder-toggle"
+            title="Replier/Déplier"
+            aria-label="Replier/Déplier"
+          >
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <i class="bi bi-folder folder-icon"></i>
+          <span class="folder-name">Nouveau dossier</span>
+          <input type="text" class="folder-name-input" style="display: none" />
+        </div>
+        <div class="folder-actions">
+          <button class="action-btn-rename" title="Renommer le dossier">
+            <i class="bi bi-pencil-fill"></i>
+          </button>
+          <button
+            class="action-btn-delete-folder"
+            title="Supprimer le dossier (vide)"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+      </div>
+    </td>
+  </tr>
+</template>
 
 {% endblock %}

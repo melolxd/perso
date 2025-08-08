@@ -1,5 +1,6 @@
-{% extends 'base.html' %} {% block title %}Archives des Données{% endblock %} {%
-block content %}
+{% extends 'base.html' %}
+{% block title %}Archives des Données{% endblock %}
+{% block content %}
 
 <!-- --- Résumé & Gadget --- -->
 <div class="glass-card">
@@ -52,5 +53,36 @@ block content %}
     </tbody>
   </table>
 </div>
+
+<!-- --- Graphiques --- -->
+<div class="glass-card">
+  <h2 class="card-title">Graphiques</h2>
+
+  <!-- 1) Bar chart par tournoi (pleine largeur) -->
+  <div class="chart-container" style="height: 380px;">
+    <h3 style="margin: 0 0 8px">Taux de réussite par tournoi</h3>
+    <canvas id="chartByTournament"></canvas>
+  </div>
+
+  <!-- 2) Section Calibration : on la met en dessous, pleine largeur -->
+  <div class="chart-container" style="margin-top: 24px;">
+    <h3 style="margin: 0 0 8px">Calibration des probabilités</h3>
+
+    <!-- Courbe de calibration -->
+    <div class="chart-container" style="height: 320px;">
+      <canvas id="chartCalibration"></canvas>
+    </div>
+    <small style="opacity: 0.7">La diagonale = calibration parfaite.</small>
+
+    <!-- Histogramme des counts par bucket (optionnel) -->
+    <div class="chart-container" style="height: 220px; margin-top: 16px;">
+      <canvas id="chartCalibrationCounts"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.CHARTS = {{ charts_json | safe }};
+</script>
 
 {% endblock %}
