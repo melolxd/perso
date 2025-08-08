@@ -1,8 +1,17 @@
+# requirements.txt
+
+# Core data science & ML
 pandas
 numpy
 scikit-learn
 lightgbm
 joblib
+
+# Web App & Scraping
 flask
 requests
 beautifulsoup4
+
+# Hyperparameter Optimization (NOUVEAU)
+optuna
+optuna-integration
