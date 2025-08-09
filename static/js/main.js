@@ -16,9 +16,90 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })();
   }
+  const addMatchBtn = document.getElementById("add-match-btn");
+  const predictionRowsContainer = document.getElementById(
+    "prediction-rows-container"
+  );
+
+  if (addMatchBtn && predictionRowsContainer) {
+    addMatchBtn.addEventListener("click", () => {
+      const firstRow = predictionRowsContainer.querySelector(".row");
+      if (firstRow) {
+        const newRow = firstRow.cloneNode(true);
+        newRow.querySelectorAll("input").forEach((input) => (input.value = ""));
+        predictionRowsContainer.appendChild(newRow);
+      }
+    });
+  }
 
   // --- 2) Particules de fond (si présent) ---
   if (typeof particlesJS !== "undefined") {
+    /**
+     * Marque le statut d'une prédiction (success ou fail) et l'envoie au serveur.
+     * @param {string} uid - L'identifiant unique de la prédiction.
+     * @param {string} status - Le nouveau statut ('success' ou 'fail').
+     */
+    function mark(uid, status) {
+      fetch(`/update/${uid}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ status: status }),
+      })
+        .then((response) =>
+          response.ok
+            ? response.json()
+            : Promise.reject("La mise à jour a échoué.")
+        )
+        .then((data) => {
+          if (data.ok) {
+            const row = document.getElementById(uid);
+            if (row) {
+              const statusCell = row.querySelector(".status-cell");
+              statusCell.className = `status-cell status-${status}`;
+              statusCell.textContent =
+                status.charAt(0).toUpperCase() + status.slice(1);
+            }
+          }
+        })
+        .catch((error) => console.error("Erreur lors du marquage:", error));
+    }
+
+    /**
+     * Supprime une ligne de prédiction de l'interface et du serveur.
+     * @param {string} uid - L'identifiant unique de la prédiction à supprimer.
+     */
+    function removeRow(uid) {
+      if (!confirm("Êtes-vous sûr de vouloir supprimer cette prédiction ?")) {
+        return;
+      }
+
+      fetch(`/delete/${uid}`, {
+        method: "POST",
+      })
+        .then((response) =>
+          response.ok
+            ? response.json()
+            : Promise.reject("La suppression a échoué.")
+        )
+        .then((data) => {
+          if (data.ok) {
+            document.getElementById(uid)?.remove();
+            const matchMap = JSON.parse(
+              localStorage.getItem("atp_pred_match_to_folder") || "{}"
+            );
+            if (matchMap[uid]) {
+              delete matchMap[uid];
+              localStorage.setItem(
+                "atp_pred_match_to_folder",
+                JSON.stringify(matchMap)
+              );
+            }
+          }
+        })
+        .catch((error) =>
+          console.error("Erreur lors de la suppression:", error)
+        );
+    }
     particlesJS("background-canvas", {
       /* ta config ici */
     });
@@ -365,6 +446,66 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+/**
+ * Marque le statut d'une prédiction (success ou fail) et l'envoie au serveur.
+ * @param {string} uid - L'identifiant unique de la prédiction.
+ * @param {string} status - Le nouveau statut ('success' ou 'fail').
+ */
+function mark(uid, status) {
+  fetch(`/update/${uid}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ status: status }),
+  })
+    .then((response) =>
+      response.ok ? response.json() : Promise.reject("La mise à jour a échoué.")
+    )
+    .then((data) => {
+      if (data.ok) {
+        const row = document.getElementById(uid);
+        if (row) {
+          const statusCell = row.querySelector(".status-cell");
+          statusCell.className = `status-cell status-${status}`;
+          statusCell.textContent =
+            status.charAt(0).toUpperCase() + status.slice(1);
+        }
+      }
+    })
+    .catch((error) => console.error("Erreur lors du marquage:", error));
+}
+
+/**
+ * Supprime une ligne de prédiction de l'interface et du serveur.
+ * @param {string} uid - L'identifiant unique de la prédiction à supprimer.
+ */
+function removeRow(uid) {
+  if (!confirm("Êtes-vous sûr de vouloir supprimer cette prédiction ?")) {
+    return;
+  }
+
+  fetch(`/delete/${uid}`, {
+    method: "POST",
+  })
+    .then((response) =>
+      response.ok ? response.json() : Promise.reject("La suppression a échoué.")
+    )
+    .then((data) => {
+      if (data.ok) {
+        document.getElementById(uid)?.remove();
+        const matchMap = JSON.parse(
+          localStorage.getItem("atp_pred_match_to_folder") || "{}"
+        );
+        if (matchMap[uid]) {
+          delete matchMap[uid];
+          localStorage.setItem(
+            "atp_pred_match_to_folder",
+            JSON.stringify(matchMap)
+          );
+        }
+      }
+    })
+    .catch((error) => console.error("Erreur lors de la suppression:", error));
+}
 
 // ======================= Charts =======================
 function drawHistoryCharts(chartData) {

@@ -160,5 +160,158 @@
     "prob": 47.94,
     "status": "success",
     "timestamp": "2025-08-08T12:15:26.912274"
+  },
+  "9dbc9013-ae7b-43c9-b0f4-1e64ff875a09": {
+    "p1": "Hamad Medjedovic",
+    "p2": "Aleksandar Kovacevic",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 50.02,
+    "status": "success",
+    "timestamp": "2025-08-09T00:54:49.853638"
+  },
+  "d1430c75-a324-402c-b14b-935d53d14a0b": {
+    "p1": "Sebastian Ofner",
+    "p2": "Valentin Royer",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 46.57,
+    "status": "success",
+    "timestamp": "2025-08-09T09:56:45.187375"
+  },
+  "4397dfd1-1a16-418e-bf29-eaa2411b4b02": {
+    "p1": "Jenson Brooksby",
+    "p2": "Alexandre Muller",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 50.76,
+    "status": "success",
+    "timestamp": "2025-08-09T00:54:02.340857"
+  },
+  "8b204066-27d8-4aef-be32-95bd80009859": {
+    "p1": "Mattia Bellucci",
+    "p2": "Damir Dzumhur",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 52.74,
+    "status": "fail",
+    "timestamp": "2025-08-09T09:56:17.970860"
+  },
+  "3469d634-b2ed-4ea3-9ec4-47851f9afff1": {
+    "p1": "Camilo Ugo Carabelli",
+    "p2": "Kei Nishikori",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 58.64,
+    "status": "success",
+    "timestamp": "2025-08-08T22:35:32.630729"
+  },
+  "fc891757-c006-4cf3-9113-6312398ddf61": {
+    "p1": "Luca Nardi",
+    "p2": "Thiago Agustin Tirante",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 55.24,
+    "status": "success",
+    "timestamp": "2025-08-08T22:39:34.631390"
+  },
+  "c4a3f9cc-ed3d-41f5-8b83-f377c596fa11": {
+    "p1": "Tristan Boyer",
+    "p2": "Brandon Holt",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 54.52,
+    "status": "success",
+    "timestamp": "2025-08-08T22:39:38.519674"
+  },
+  "6af1b29d-13a0-4aec-94d4-cd9b41f7ea85": {
+    "p1": "Marcos Giron",
+    "p2": "Alexander Blockx",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 52.19,
+    "status": "fail",
+    "timestamp": "2025-08-08T22:39:42.381943"
+  },
+  "f0378841-24a8-445d-8d79-cfef4da56b49": {
+    "p1": "Borna Coric",
+    "p2": "Emilio Nava",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 52.1,
+    "status": "fail",
+    "timestamp": "2025-08-08T22:39:48.330733"
+  },
+  "3ecba98d-102b-4203-927a-17b616d739c0": {
+    "p1": "Francisco Comesana",
+    "p2": "Jaume Munar",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 45.5,
+    "status": "fail",
+    "timestamp": "2025-08-08T23:42:11.047189"
+  },
+  "36556761-a80a-43b5-b07a-482aa82d961e": {
+    "p1": "Miomir Kecmanovic",
+    "p2": "Ethan Quinn",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 36.08,
+    "status": "fail",
+    "timestamp": "2025-08-08T22:42:46.913485"
+  },
+  "4da936bd-4177-41b7-8cc9-1e6a01c74d2e": {
+    "p1": "Adam Walton",
+    "p2": "Mariano Navone",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 55.58,
+    "status": "success",
+    "timestamp": "2025-08-09T09:56:32.339854"
+  },
+  "46eae807-43e2-4d56-883c-3ccd405856bd": {
+    "p1": "Hugo Dellien",
+    "p2": "Reilly Opelka",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 57.49,
+    "status": "fail",
+    "timestamp": "2025-08-09T00:54:29.505502"
+  },
+  "a5a2fae8-106f-4aa6-997f-1bdd734325fb": {
+    "p1": "Daniel Altmaier",
+    "p2": "Roberto Bautista Agut",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 52.74,
+    "status": "fail",
+    "timestamp": "2025-08-09T09:56:28.561348"
+  },
+  "60a7bacb-02e2-4e08-8914-98c7fdb45085": {
+    "p1": "Learner Tien",
+    "p2": "Leandro Riedi",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 54.63,
+    "status": "success",
+    "timestamp": "2025-08-09T09:55:56.591394"
+  },
+  "42508fb1-4f55-4511-ad16-65383aa6e2ad": {
+    "p1": "Aleksandar Vukic",
+    "p2": "Nishesh Basavareddy",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 60.84,
+    "status": "fail",
+    "timestamp": "2025-08-09T09:56:00.441970"
+  },
+  "7ad791d5-9ee3-44e0-9fe0-02b43ac10301": {
+    "p1": "Martin Landaluce",
+    "p2": "Patrick Kypson",
+    "surface": "Hard",
+    "tournament": "Cincinnati",
+    "prob": 50.21,
+    "status": "success",
+    "timestamp": "2025-08-09T09:56:39.120751"
   }
 }
